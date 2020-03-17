@@ -3,15 +3,15 @@
   <capi-20-nav-bar></capi-20-nav-bar>
   <!-- TOP CONTAINER -->
   <div class="uk-cover-container uk-light uk-flex uk-flex-middle top-wrap-height hero-bg"
-    [ngStyle]="{'background-image': radomHeroBackground()}">
+    [ngStyle]="{'background-image': radomHeroBackground()}" style="height: 520px;">
     <div class="uk-container uk-flex-auto top-container uk-position-relative uk-margin-medium-top"
       data-uk-parallax="y: 0,50; easing:0; opacity:0.2">
       <div uk-grid class="uk-grid">
-        <div class="uk-width-1-4@m uk-visible@m uk-margin-large-right uk-margin-top"
+        <div class="uk-width-1-4@m uk-visible@m uk-margin-large-right"
           data-uk-scrollspy="cls: uk-animation-slide-right-medium; target: > *; delay: 150">
           <img class="uk-margin-large-bottom" src="../../../assets/logo_round_normal.svg" alt="Logo #CapiConf">
         </div>
-        <div class="uk-width-expand@m"
+        <div class="uk-width-expand@m uk-margin-medium-top"
           data-uk-scrollspy="cls: uk-animation-slide-right-medium; target: > *; delay: 150">
           <h4 class="uk-margin-small-bottom">CURITIBA, {{ conference.date | uppercase }}</h4>
           <h1 class="uk-margin-remove-top uk-margin-remove-bottom"><span class="uk-text-lighter">O </span> <span
@@ -20,33 +20,32 @@
           </h1>
           <h2 class="subtitle-text uk-margin-small-top uk-margin-large-bottom uk-text-lighter">
             {{ conference.highlight }}</h2>
-          <a href="https://inscricao.capiconf.com/" title="INSCREVA-SE"
+          <!-- <a href="https://inscricao.capiconf.com/" title="INSCREVA-SE"
             class="uk-button uk-button-primary uk-border-pill uk-button-large tickets-button">
             <div class="inc-button">INSCREVA-SE</div>
-          </a>
+          </a> -->
         </div>
       </div>
     </div>
   </div>
   <!-- /TOP CONTAINER -->
 </div>
-<section class="uk-section uk-section uk-section-small uk-section-secondary uk-text-center uk-padding-small"
-    style="background-color:crimson;">
-    <a href="/2020/info-sobre-coronavirus" class="uk-text-muted">Atenção! Leia aqui informações atualizadas sobre o #CapiConf
-      e coronavírus!</a>
+<section class="uk-section uk-section uk-section-small uk-section uk-text-center uk-padding-small"
+    style="background-color:gold;">
+    <a href="/2020/info-sobre-coronavirus" style="color: black;">Atenção! A CapiConf está adiada. Clique aqui para entender os próximos passos!</a>
   </section>
 <!-- /TOP -->
 <!-- countdown -->
-<section id="#counter" class="uk-section uk-section-large uk-section-secondary counter">
+<section id="#counter" class="uk-section uk-section uk-section-secondary counter">
   <div class="uk-container uk-container-small uk-text-center">
     <h1>POR QUE <b>PARTICIPAR</b>?</h1>
-    <h3 class="uk-width-3-4 uk-margin-auto uk-margin-medium-bottom">
+    <h3 class="uk-width-3-4 uk-margin-auto">
       Palestras apresentando cases do mundo real, entregues por palestrantes com
       experiências práticas, profissionais do desenvolvimento, liderança de
       times e gestão técnica, tudo isso em um ambiente propício para troca de
       experiências e contatos.
     </h3>
-    <div class="uk-text-center force-center">
+    <!-- <div class="uk-text-center force-center">
       <div class="uk-grid-small" uk-grid uk-countdown="date: 2020-05-14T08:00:00+00:00">
         <div>
           <div class="uk-countdown-number uk-countdown-days"></div>
@@ -76,7 +75,7 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
   </div>
 </section>
 <!-- /countdown -->
@@ -370,7 +369,7 @@
 </section>
 <!-- /about -->
 <!-- tickets -->
-<section id="tickets" class="uk-section overlay-wrap  counter">
+<!-- <section id="tickets" class="uk-section overlay-wrap  counter">
   <div class="uk-text-center">
     <h1 class="uk-text-primary-white">GARANTA <b>SUA INSCRIÇÃO!</b></h1>
     <h3 class="uk-text-primary-white uk-text-center uk-width-3-4 uk-margin-auto uk-margin-medium-bottom">
@@ -378,11 +377,9 @@
       de software do Paraná!
     </h3>
   </div>
-  <!-- inscricao -->
   <div class="uk-container uk-container-small">
     <div class="uk-grid uk-grid-small uk-child-width-1-2@m uk-margin-medium-top uk-grid-match"
       data-uk-scrollspy="cls: uk-animation-slide-bottom-small; target: > div > .uk-card; delay: 200" data-uk-grid>
-      <!-- price -->
       <div>
         <div class="uk-card uk-card-default uk-card-hover uk-flex uk-flex-column"
           data-uk-scrollspy-class="uk-animation-slide-left-small">
@@ -422,9 +419,6 @@
           </div>
         </div>
       </div>
-      <!-- /price -->
-
-      <!-- price -->
       <div>
         <div class="uk-card uk-card-default uk-card-hover uk-flex uk-flex-column"
           data-uk-scrollspy-class="uk-animation-slide-left-small">
@@ -464,7 +458,6 @@
           </div>
         </div>
       </div>
-      <!-- /price -->
     </div>
     <div class="uk-text-center uk-text-small uk-text-muted uk-section uk-section-small">
       <p class="uk-text-primary-white">
@@ -481,8 +474,7 @@
       </a>
     </div>
   </div>
-  <!-- inscricao -->
-</section>
+</section> -->
 <!-- /tickets -->
 <capi20-sponsors></capi20-sponsors>
 <capi20-location></capi20-location>

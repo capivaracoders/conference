@@ -1,0 +1,47 @@
+.nav {
+	position: absolute;
+	top: 0;
+	z-index: 99;
+	left: 0;
+	right: 0;
+}
+.uk-logo img {
+	height: 58px;
+}
+
+.manifesto, manifesto h3 {
+	font-size: 1.4rem;
+	line-height: 2.4rem;
+	color: #222 !important;
+}
+
+.manifesto h3 {
+	font-weight: 500;
+}
+
+.manifesto p {
+	margin: 0;
+	padding: 0;
+}
+
+.manifesto p span {
+	font-weight: 600;
+}
+
+p.break {
+	margin-top: 2.0rem !important;
+}
+
+h2.headline {
+	margin-top: 80px;
+}
+
+.dart-text {
+	color: #222;
+}
+
+.tickets-button {
+    background: #FF0E5A !important;
+    color:#FFF !important;
+   }
+   

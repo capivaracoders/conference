@@ -13,7 +13,7 @@
           <ul class="uk-navbar-nav uk-visible@s">
             <li class="uk-active uk-visible@m"><a href="/online" data-uk-icon="home"></a></li>
             <li><a href="#pessoas" data-uk-scroll="duration: 500">Pessoas</a></li>
-            <li><a href="#palestras" data-uk-scroll="duration: 500">Palestras</a></li>
+            <li><a href="#agenda" data-uk-scroll="duration: 500">Agenda</a></li>
             <li><a href="#sponsors" data-uk-scroll="duration: 500">Patrocínio e Apoio</a></li>
             <li><a href="#modal-center" uk-toggle>INSCREVA-SE GRATUITAMENTE</a></li>
             <li><a href="/coc" target="_blank">COC</a></li>
@@ -24,8 +24,7 @@
       </nav>
     </div>
   </div>
-  <div class="uk-cover-container uk-light uk-flex uk-flex-middle top-wrap-height hero-bg"
-    [ngStyle]="{'background-image': radomHeroBackground()}" style="height: 520px;">
+  <div class="uk-cover-container uk-light uk-flex uk-flex-middle top-wrap-height hero-bg" style="height: 520px;">
     <div class="uk-container uk-flex-auto top-container uk-position-relative uk-margin-medium-top"
       data-uk-parallax="y: 0,50; easing:0; opacity:0.2">
       <div uk-grid class="uk-grid">
@@ -105,7 +104,7 @@
   </div>
 </section>
 <!-- agenda -->
-<section class="uk-section uk-article">
+<section id="agenda" class="uk-section uk-article" style="background-color: #EFEFEF;">
   <div class="uk-container uk-container">
     <h2 class="uk-text-bold uk-h1 uk-margin-remove-adjacent uk-margin-remove-top">Agenda de Palestras
     </h2>
@@ -114,7 +113,7 @@
         estamos sempre adicionando mais atividades :)
       </p>
       <p class="uk-article-meta">
-        Atualizado em 09 de abril 2020
+        Atualizado em 11 de abril 2020
       </p>
     </div>
   </div>
@@ -122,31 +121,39 @@
   </div>
   <div class="uk-container uk-container">
     <div class="uk-margin-small-top">
-      <div *ngFor="let item of dayOne" class="uk-margin-medium-bottom">
-        <div class="uk-card uk-card-small uk-card-default">
+      <div *ngFor="let item of onlineagenda" class="uk-margin-medium-bottom">
+        <div class="uk-card uk-card-small uk-card-default uk-margin-small-bottom">
           <div class="uk-card-header">
-            <h4 class="hour">{{item.startTime.hour}}h{{item.startTime.minute}}</h4>
+            <h4 class="hour">{{item.name}}, {{item.data}}</h4>
           </div>
-          <div class="uk-card-body">
-            <h4 class="uk-margin-remove-bottom uk-padding-remove-bottom">{{ item.title }}</h4>
-            <p class="uk-margin-remove uk-padding-remove uk-article-meta">{{item.description}}</p>
-          </div>
-          <div class="uk-card-footer" *ngIf="item.speakers?.length > 0">
-            <div class="uk-grid-small uk-flex-middle" uk-grid>
-              <div *ngFor="let speaker of item.speakers">
-                <div class="uk-grid-small uk-flex-middle" uk-grid>
-                  <div class="uk-width-auto">
-                    <img class="uk-border-circle" width="40" height="40" src="{{ speaker.picture }}">
-                  </div>
-                  <div class="uk-width-expand">
-                    <p class="uk-margin-remove-bottom">{{ speaker.name }}</p>
-                    <p class="uk-text-meta uk-margin-remove-top"></p>
+        </div>
+        <!-- body -->
+        <div *ngFor="let talk of item.talks">
+          <div class="uk-card uk-card-small uk-card-default uk-margin-small-bottom">
+            <div class="uk-card-body">
+              <h4 class=""><span class="uk-badge">{{ talk.startTime.hour }}h{{ talk.startTime.minute }}</span>
+                {{ talk.title }}</h4>
+              <p class="uk-margin-remove uk-padding-remove uk-article-meta">{{ talk.description}}</p>
+            </div>
+            <div class="uk-card-footer" *ngIf="talk.speakers?.length > 0">
+              <div class="uk-grid-small uk-flex-middle" uk-grid>
+                <div *ngFor="let speaker of talk.speakers">
+                  <div class="uk-grid-small uk-flex-middle" uk-grid>
+                    <div class="uk-width-auto">
+                      <img class="uk-border-circle" width="40" height="40" src="{{ speaker.picture }}">
+                    </div>
+                    <div class="uk-width-expand">
+                      <p class="uk-margin-remove-bottom">{{ speaker.name }}</p>
+                      <p class="uk-text-meta uk-margin-remove-top"></p>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
+        <!-- body -->
+
       </div>
     </div>
     <div class="uk-margin-large-top">
@@ -331,7 +338,7 @@
         <ul class="uk-nav-sub">
           <li><a href="/online" data-uk-icon="home"></a></li>
           <li><a href="#pessoas" data-uk-scroll="duration: 500">Pessoas</a></li>
-          <li><a href="#palestras" data-uk-scroll="duration: 500">Palestras</a></li>
+          <li><a href="#agenda" data-uk-scroll="duration: 500">agenda</a></li>
           <li><a href="#sponsors" data-uk-scroll="duration: 500">Patrocínio e Apoio</a></li>
           <li><a href="#modal-center" uk-toggle>Inscreva-se gratuitamente</a></li>
           <li><a href="/coc" target="_blank">COC</a></li>

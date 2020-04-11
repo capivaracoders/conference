@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { TALKS_ONLINE } from './talks_online.data';
+import { AGENDA_ONLINE } from './agenda_online.data';
 
 @Component({
   selector: 'app-online',
@@ -8,21 +9,30 @@ import { TALKS_ONLINE } from './talks_online.data';
 })
 export class OnlineComponent implements OnInit {
 
+  agenda = AGENDA_ONLINE;
   talks = TALKS_ONLINE;
   onlinespeakers = [];
+  onlineagenda = [];
 
   constructor() {
    }
 
   ngOnInit() {
-    this.loadPeople(this.talks);
+    this.loadPeopleFromTalks(this.talks);
+    this.loadAgenda(this.agenda);
   }
 
-  loadPeople(source: any) {
+  loadPeopleFromTalks(source: any) {
     source.forEach(content => {
       content.speakers.forEach(speaker => {
           this.onlinespeakers.push(speaker);
       });
+    });
+  }
+
+  loadAgenda(source: any) {
+    source.forEach(content => {
+          this.onlineagenda.push(content);
     });
   }
 

@@ -11,7 +11,7 @@
         </div>
         <div class="uk-navbar-right">
           <ul class="uk-navbar-nav uk-visible@s">
-            <li class="uk-active uk-visible@m"><a href="/online" data-uk-icon="home"></a></li>
+            <li class="uk-active uk-visible@m"><a href="#inicio" data-uk-icon="home" data-uk-scroll="duration: 500"></a></li>
             <li><a href="#pessoas" data-uk-scroll="duration: 500">Pessoas</a></li>
             <li><a href="#agenda" data-uk-scroll="duration: 500">Agenda</a></li>
             <li><a href="#sponsors" data-uk-scroll="duration: 500">Patrocínio e Apoio</a></li>
@@ -24,7 +24,7 @@
       </nav>
     </div>
   </div>
-  <div class="uk-cover-container uk-light uk-flex uk-flex-middle top-wrap-height hero-bg" style="height: 520px;">
+  <div id="inicio" class="uk-cover-container uk-light uk-flex uk-flex-middle top-wrap-height hero-bg" style="height: 520px;">
     <div class="uk-container uk-flex-auto top-container uk-position-relative uk-margin-medium-top"
       data-uk-parallax="y: 0,50; easing:0; opacity:0.2">
       <div uk-grid class="uk-grid">
@@ -55,10 +55,71 @@
 <div class="uk-cover-container uk-flex uk-flex-center top-wrap-height uk-background-muted">
   <div class="uk-margin-small-top"></div>
 </div>
+<section class="uk-section uk-article" style="background-color:#EAEAEA">
+  <div class="uk-container uk-container">
+    <h2 class="uk-text-bold uk-h1 uk-margin-remove-adjacent uk-margin-remove-top">Vamos ajudar, mesmo estando em casa?
+    </h2>
+    <div class="uk-margin-large-right">
+      <p>Não queremos só mais um evento on-line!
+      </p>
+      <p class="uk-article-meta">
+        Atualizado em 09 de abril 2020
+      </p>
+      <p>
+        No momento em que publicamos este evento, milhares de pessoas estão enfrentando dificuldades causadas pelo novo
+        coronavírus. Muitas já não tem uma fonte de renda segura, são famílias que normalmente já possuem pouco e nesse
+        momento têm muito menos, elas precisam de ajuda.
+      </p>
+      <p>
+        Queremos usar o #CapiConf para ajudar essas pessoas, não só fazer um evento online, vamos tentar ajudar.
+        Acreditamos que o momento é de ter mais empatia, de pensar com carinho no próximo e de encontrar formas de
+        ajudar.
+      </p>
+      <p>
+        Portanto, hoje iniciamos uma campanha de arrecadação de valores, todo o processo vai ser transparente (<a href="https://drive.google.com/drive/folders/1emggvyVkAYiy-x5nofnbz5K0skskBwOW?usp=sharing" target="blank">acompanhe
+        aqui</a>), todo o valor arrecadado vai ser usado na aquisição de produtos de higiene, alimentos e leite em pó. Esses
+        produtos serão doados nos bairros periféricos na cidade de Curitiba e região metropolitana.
+      </p>
+      <p>
+        <b>Como você pode ajudar?</b>
+      </p>
+      <ul>
+        <li>Doando via <a href="https://picpay.com/" target="_blank">PicPay</a> (lembra aquele cashback?);</li>
+        <li><a href="#modal-doar" uk-toggle>Doando a sua inscrição no #CapiConf</a>. Você não vai perder o seu lugar, iremos doar o valor referente ao
+          rateio do custo do evento que corresponde a 70% do valor pago por pessoa (você efetivamente está doando seu
+          coffee-break, crachá e brindes);</li>
+        <li>Doando por transferência bancária.</li>
+      </ul>
+      <p>
+        <b>Onde doar?</b>
+      </p>
+      <ul>
+        <li>PicPay, faça uma transferência de qualquer valor para <b>@willbuildapps</b>;</li>
+        <li>Doar sua inscrição, <a href="#modal-doar" uk-toggle>é só preencher este formulário</a> com os dados da sua inscrição;</li>
+        <li>Transferência bancária, envie um <a href="william@capiconf.com">email</a> para solicitar os dados.</li>
+      </ul>
+      <p>
+        <b>Não tenho dinheiro para doar, como posso ajudar?</b>
+      </p>
+      <ul>
+        <li>Divulgando o evento online e a iniciativa para outras pessoas;</li>
+        <li>Arrecadando produtos de higiene, alimentos e leite em pó, para doarmos junto (<a href="william@capiconf.com">entre em contato para combinar a retirada</a>).</li>
+      </ul>
+      <p>
+        <b>Quando as doações vão acontecer?</b>
+      </p>
+      <p>Nossa objetivo é adquirir os produtos na semana seguinte ao evento, e doar os produtos final de semana, 23 e 24 de Maio.</p>
+      <p>
+        <b>O que eu ganho ajudando?</b>
+      </p>
+      <p>Além de ajudar ao próximo, no CapiConf offline iremos ter um painel com o nome de todas as pessoas que participaram dessa iniciativa. Se você ajudar, seu nome vai estar lá :) </p>
+    </div>
+  </div>
+</section>
 <!-- pessoas -->
 <section id="pessoas" class="uk-section uk-article">
   <div class="uk-container uk-container">
-    <h2 class="uk-text-bold uk-h1 uk-margin-remove-adjacent uk-margin-remove-top">Pessoas palestrantes
+    <h2 class="uk-text-bold uk-h1 uk-margin-remove-adjacent uk-margin-remove-top uk-padding-remove-top">Pessoas palestrantes
     </h2>
     <div class="uk-margin-large-right">
       <p>Palestrantes e pessoas influenciadoras que são reconhecidas nacionalmente como destaques em suas áreas de
@@ -328,6 +389,17 @@
   </div>
 </div>
 <!-- /modal-->
+<!-- modal -->
+<div id="modal-doar" class="uk-flex-top uk-modal-full" uk-modal>
+  <div class="uk-modal-dialog uk-modal-body uk-margin-auto-vertical">
+    <button class="uk-modal-close-full uk-close-large" type="button" uk-close></button>
+    <div class="text-center">
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfSmfe_WqRjllKG78PVyQZiH_sASdds7sKORJexXaBS2ew83g/viewform?embedded=true" 
+        width="100%" height="947" frameborder="0" marginheight="0" marginwidth="0">Carregando…</iframe>
+    </div>
+  </div>
+</div>
+<!-- /modal-->
 <!-- side nav -->
 <div id="offcanvas-nav" data-uk-offcanvas="flip: true; overlay: false">
   <div class="uk-offcanvas-bar uk-offcanvas-bar-animation uk-offcanvas-slide">
@@ -336,7 +408,7 @@
       <li class="uk-nav-header">2020</li>
       <li class="uk-parent">
         <ul class="uk-nav-sub">
-          <li><a href="/online" data-uk-icon="home"></a></li>
+          <li><a href="#inicio" data-uk-scroll="duration: 500" data-uk-icon="home"></a></li>
           <li><a href="#pessoas" data-uk-scroll="duration: 500">Pessoas</a></li>
           <li><a href="#agenda" data-uk-scroll="duration: 500">agenda</a></li>
           <li><a href="#sponsors" data-uk-scroll="duration: 500">Patrocínio e Apoio</a></li>

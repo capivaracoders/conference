@@ -73,20 +73,20 @@ export const TALKS_ONLINE = [
         speakers: [{
             name: 'Cynthia Zanoni',
             company: 'Microsoft',
-            role: 'Dev Rel Program Manager',
+            role: 'Microsoft Developer Relations Lead LatAm',
             picture: '/assets/speakers/CynthiaZanoni.jpg',
-            bio: 'Mom of cats, developer, community leader @womakerscode, tech speaker, open source mindset and Dev Rel Program Manager @ Microsoft. #GirlPower ⚡️ Opinions my own 😺',
+            bio: 'Cynthia Zanoni é engenheira de software com mais de 10 anos de dedicação ao código e ao desenvolvimento de pessoas que querem fazer a diferença com a tecnologia. Atualmente, trabalha na Microsoft como Gerente do Programa de Relações com o Desenvolvedor para dar suporte e estimular os desenvolvedores a criar coisas incríveis na América Latina. Ela adora software livre e está muito conectada com comunidades técnicas em toda a América Latina, tendo contribuído em muitos projetos da Mozilla no Brasil. Liderou grupos de discussões técnicas sobre dispositivos móveis e software livre no Rio Grande do Sul e fundou a WoMakersCode, uma iniciativa tecnológica da mulher que trabalha para capacitar e aumentar a presença feminina no mercado de TI. Em 2016, Cynthia foi reconhecida pela Fundação Mozilla como uma das mulheres técnicas mais influentes da América Latina, apoiando Diversidade e Inclusão. Sempre querendo aprender coisas novas, ela busca agendar um novo meetup para discutir novas metodologias, ferramentas, linguagens e inteligência artificial. E, se for com JavaScript, melhor ;)',
             socialProfiles: [
                 {
                     url: 'https://twitter.com/cynthiazanoni',
                     name: 'twitter'
                 },
                 {
-                    url: 'https://cyz.github.io/',
+                    url: 'https://github.com/cyz/',
                     name: 'github'
                 },
                 {
-                    url: ' https://www.linkedin.com/in/cynthiazanoni/',
+                    url: 'https://www.linkedin.com/in/cynthiazanoni/',
                     name: 'linkedin'
                 }
                

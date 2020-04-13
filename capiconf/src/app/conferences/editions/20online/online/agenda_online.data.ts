@@ -4,10 +4,31 @@ export const AGENDA_ONLINE = [
         data: "11/05",
         talks: [
             {
-                title: 'Aguarde!',
-                description: 'Aguarde!',
+                title: 'Code Review: The Good Parts!',
+                description: 'Code Reviews são necessários em um fluxo de trabalho de desenvolvimento, mas o que acontece ao submeter ou receber um review é tão divertido quanto arrancar um dente. Transforme a cultura de code review de sua equipe com algumas dicas & truques para melhorar a qualidade do código e as relações de trabalho, simultaneamente.',
                 startTime: { hour: '21', minute: '00' },
-                speakers: [],
+                speakers: [{
+                    name: 'Cynthia Zanoni',
+                    company: 'Microsoft',
+                    role: 'Microsoft Developer Relations Lead LatAm',
+                    picture: '/assets/speakers/CynthiaZanoni.jpg',
+                    bio: 'Desenvolvedora de Software com 10+ anos de experiência em tecnologias Open Source e Acessibilidade, é fundadora da WoMakersCode - uma comunidade global focada em ajudar, inspirar e capacitar ainda mais mulheres em tecnologia que as ajuda a ganhar uma oportunidade de emprego e foi reconhecida pela Mozilla Foundation (2016) como uma das mulheres técnicas mais influentes da América Latina, apoio à diversidade e inclusão.',
+                    socialProfiles: [
+                        {
+                            url: 'https://twitter.com/cynthiazanoni',
+                            name: 'twitter'
+                        },
+                        {
+                            url: 'https://github.com/cyz/',
+                            name: 'github'
+                        },
+                        {
+                            url: 'https://www.linkedin.com/in/cynthiazanoni/',
+                            name: 'linkedin'
+                        }
+                       
+                    ]
+                }],
                 type: 'talk'
             },
             {

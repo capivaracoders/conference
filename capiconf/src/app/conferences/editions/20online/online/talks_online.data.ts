@@ -65,17 +65,17 @@ export const TALKS_ONLINE = [
     {
         id: '005',
         type: 'panel',
-        title: 'Aguarde!',
-        description: 'Aguarde!',
+        title: 'Code Review: The Good Parts!',
+        description: 'Code Reviews são necessários em um fluxo de trabalho de desenvolvimento, mas o que acontece ao submeter ou receber um review é tão divertido quanto arrancar um dente. Transforme a cultura de code review de sua equipe com algumas dicas & truques para melhorar a qualidade do código e as relações de trabalho, simultaneamente.',
         tags: [
-            { name: 'Aguarde!' }
+            { name: '' }
         ],
         speakers: [{
             name: 'Cynthia Zanoni',
             company: 'Microsoft',
             role: 'Microsoft Developer Relations Lead LatAm',
             picture: '/assets/speakers/CynthiaZanoni.jpg',
-            bio: 'Cynthia Zanoni é engenheira de software com mais de 10 anos de dedicação ao código e ao desenvolvimento de pessoas que querem fazer a diferença com a tecnologia. Atualmente, trabalha na Microsoft como Gerente do Programa de Relações com o Desenvolvedor para dar suporte e estimular os desenvolvedores a criar coisas incríveis na América Latina. Ela adora software livre e está muito conectada com comunidades técnicas em toda a América Latina, tendo contribuído em muitos projetos da Mozilla no Brasil. Liderou grupos de discussões técnicas sobre dispositivos móveis e software livre no Rio Grande do Sul e fundou a WoMakersCode, uma iniciativa tecnológica da mulher que trabalha para capacitar e aumentar a presença feminina no mercado de TI. Em 2016, Cynthia foi reconhecida pela Fundação Mozilla como uma das mulheres técnicas mais influentes da América Latina, apoiando Diversidade e Inclusão. Sempre querendo aprender coisas novas, ela busca agendar um novo meetup para discutir novas metodologias, ferramentas, linguagens e inteligência artificial. E, se for com JavaScript, melhor ;)',
+            bio: 'Desenvolvedora de Software com 10+ anos de experiência em tecnologias Open Source e Acessibilidade, é fundadora da WoMakersCode - uma comunidade global focada em ajudar, inspirar e capacitar ainda mais mulheres em tecnologia que as ajuda a ganhar uma oportunidade de emprego e foi reconhecida pela Mozilla Foundation (2016) como uma das mulheres técnicas mais influentes da América Latina, apoio à diversidade e inclusão.',
             socialProfiles: [
                 {
                     url: 'https://twitter.com/cynthiazanoni',

@@ -11,10 +11,30 @@ export const AGENDA_ONLINE = [
                 type: 'talk'
             },
             {
-                title: 'Aguarde!',
-                description: 'Aguarde!',
+                title: 'Observabilidade com o Elastic Stack',
+                description: 'A observabilidade tem um papel muito importante para as empresas, pois através dela é possível prever e resolver vários problemas. Nessa paletsra, você verá como alcançar um bom nível de observabilidade no seu ambiente de infraestrutura e na sua aplicação, utilizando o Elastic Stack.',
                 startTime: { hour: '22', minute: '00' },
-                speakers: [],
+                speakers: [{
+                    name: 'Beatriz Oliveira',
+                    company: 'Cappta Pagamentos (Stone Co)',
+                    role: 'Analista de Infraestrutura',
+                    bio: 'Beatriz, atualmente é Analista de Infraestrutura na Cappta Pagamentos (Stone Co). É graduada em Sistemas de Informação, Pós Graduada em Gerenciamento de Projetos e MBA em Arquitetura de Soluções. Participa como voluntária das comunidades PHPWomen, Womakerscode e SysAdminas que tem como objetivo incentivar a atuação feminina na área de tecnologia. Em 2020, ganhou o prêmio de Elastic Gold Contributor, por suas colaborações com a ferramenta e comunidade da Elastic no Brasil.',
+                    picture: '/assets/speakers/Beatriz.png',
+                    socialProfiles: [
+                        {
+                            url: 'https://www.linkedin.com/in/thebeaoliveira/',
+                            name: 'linkedin'
+                        },
+                        {
+                            url: 'https://twitter.com/thebeaoliveira',
+                            name: 'twitter'
+                        },
+                        {
+                            url: 'https://github.com/thebeaoliveira',
+                            name: 'github'
+                        }
+                    ]
+                }],
                 type: 'talk'
             }]
     },

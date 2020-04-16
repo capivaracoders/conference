@@ -306,6 +306,38 @@ export const TALKS_ONLINE = [
     }
     ,
     {
+        id: '017',
+        type: 'talk',
+        title: 'Docker no ambiente de desenvolvimento',
+        description: 'Como o uso de Docker no seu Desktop pode ajudar a melhorar a sua produtividade?',
+        tags: [
+            { name: 'Docker' },
+            { name: 'Produtividade' }
+        ],
+        speakers: [{
+            name: 'Carlos Dos Santos',
+            company: 'CDS Informática',
+            role: 'Sócio fundador',
+            bio: 'Sócio fundador da CDS Informática Ltda, com mais de 25 anos de experiência no desenvolvimento de software',
+            picture: '/assets/speakers/CarlosDosSantos.png',
+            socialProfiles: [
+                {
+                    name: 'linkedin',
+                    url: 'http://www.linkedin.com/in/cdssoftware'
+                },
+                {
+                    name: 'twitter',
+                    url: 'http://www.twitter.com/cdssoftware'
+                },
+                {
+                    name: 'facebook',
+                    url: 'https://www.facebook.com/carloscds '
+                }
+            ]
+        }]
+    }
+    ,
+    {
         id: '018',
         type: 'talk',
         title: 'Pensando grande em telas pequenas: como desenvolver, manter e evoluir aplicações mobile escaláveis como as gigantes do mercado!',

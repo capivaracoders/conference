@@ -34,7 +34,7 @@ export const AGENDA_ONLINE = [
             {
                 title: 'Observabilidade com o Elastic Stack',
                 description: 'A observabilidade tem um papel muito importante para as empresas, pois através dela é possível prever e resolver vários problemas. Nessa paletsra, você verá como alcançar um bom nível de observabilidade no seu ambiente de infraestrutura e na sua aplicação, utilizando o Elastic Stack.',
-                startTime: { hour: '22', minute: '00' },
+                startTime: { hour: '21', minute: '40' },
                 speakers: [{
                     name: 'Beatriz Oliveira',
                     company: 'Cappta Pagamentos (Stone Co)',
@@ -57,7 +57,16 @@ export const AGENDA_ONLINE = [
                     ]
                 }],
                 type: 'talk'
-            }]
+            }
+            ,
+            {
+                title: 'Aguarde!',
+                description: 'Aguarde!',
+                startTime: { hour: '22', minute: '20' },
+                speakers: [],
+                type: 'talk'
+            }
+        ]
     },
     {
         name: "Terça-feira",
@@ -85,7 +94,7 @@ export const AGENDA_ONLINE = [
             {
                 title: 'Kotlin vs Go: A guerra das corotinas',
                 description: 'Com a banalização dos computadores multicores a programação concorrente se tornou algo comum no dia a dia do desenvolvedor. Kotlin é uma linguagem orientada a objetos e Funcional, por outro lado Go é simples por design, ambas implementam os mesmo conceitos. Essa talk vai debater sobre concorrência estruturada e por que ela é benéfica para o desenvolvedor.',
-                startTime: { hour: '22', minute: '00' },
+                startTime: { hour: '21', minute: '40' },
                 speakers: [{
                     name: 'Alex Rios',
                     company: 'Contabilizei',
@@ -108,23 +117,59 @@ export const AGENDA_ONLINE = [
                     ]
                 }],
                 type: 'talk'
-            }]
+            },
+            {
+                title: 'Aguarde!',
+                description: 'Aguarde!',
+                startTime: { hour: '22', minute: '20' },
+                speakers: [],
+                type: 'talk'
+            }
+        ]
     },
     {
         name: "Quarta-feira",
         data: "13/05",
         talks: [
             {
-                title: 'Aguarde!',
-                description: 'Aguarde!',
+                title: 'APIs Escaláveis com Node.js & Arquitetura Serverless',
+                description: 'Node.Js é escalável. O Azure também é um serviço de nuvem escalável. E o que acha de usar os dois juntos e mais o Serverless?! Quais os benefícios de usarmos uma Arquitetura Serverless em aplicações Node.js integradas com Azure? Quais são os ganhos em usar essas tecnologias? Durante a palestra, estarei falando sobre como podemos definir uma arquitetura altamente escalável usando Node.js com Azure Functions baseado numa arquitetura Serverless. E claro que vai ter uma super demo em como podemos criar um Serverless Function App no Azure! :) ',
                 startTime: { hour: '21', minute: '00' },
-                speakers: [],
+                speakers: [{
+                    name: 'Glaucia Lemos',
+                    company: 'Microsoft',
+                    role: 'Cloud Advocate de JavaScript',
+                    bio: 'Glaucia Lemos é Cloud Advocate de JavaScript 🥑 na Microsoft. Ama realizar contribuições em projetos Open Source. Atua como Member & Contributor no Node.js Foundation e no React Community realizando contribuições nas traduções do site Nodejs.org e Reactjs.org para o português. Participa de comunidades bastante inclusivas, como a WoMakersCode – uma organização focada em ajudar, inspirar e capacitar ainda mais mulheres na tecnologia a obter uma oportunidade de emprego. Sua maior paixão: compartilhar conhecimento com outras pessoas!',
+                    picture: '/assets/speakers/glaucia-lemos.png',
+                    socialProfiles: [
+                        {
+                            name: 'github',
+                            url: 'https://github.com/glaucia86/'
+                        },
+                        {
+                            name: 'linkedin',
+                            url: 'https://www.linkedin.com/in/glaucialemos/'
+                        },
+                        {
+                            name: 'twitter',
+                            url: 'https://github.com/glaucia86/'
+                        }
+                    ]
+                }],
                 type: 'talk'
             },
             {
                 title: 'Aguarde!',
                 description: 'Aguarde!',
-                startTime: { hour: '22', minute: '00' },
+                startTime: { hour: '21', minute: '40' },
+                speakers: [],
+                type: 'talk'
+            }
+            ,
+            {
+                title: 'Aguarde!',
+                description: 'Aguarde!',
+                startTime: { hour: '22', minute: '20' },
                 speakers: [],
                 type: 'talk'
             }]
@@ -134,16 +179,71 @@ export const AGENDA_ONLINE = [
         data: "14/05",
         talks: [
             {
-                title: 'Aguarde!',
-                description: 'Aguarde!',
+                title: 'Ambientes de Teste Dinâmicos com Helm e Kubernetes',
+                description: 'Todo desenvolvedor sonha com um ambiente completo onde possa testar seu código sem atrapalhar o desenvolvimento de seus colegas, o problema com este sonho é que esta infraestrutura é complexa demais para ser criada e destruída manualmente. É ai que podemos usar o poder do Kubernetes e do Helm para criarmos ambientes de testes individuais totalmente dinâmicos para cada um dos seus commits!',
                 startTime: { hour: '21', minute: '00' },
-                speakers: [],
+                speakers: [{
+            name: 'Lucas Santos',
+            company: 'Microsoft',
+            role: 'Cloud Advocate',
+            bio: 'Lucas é Cloud Advocate na Microsoft. Apaixonado por tecnologia e, desde 2011, trabalhando com aplicações de alta escalabilidade e desempenho. Tem uma grande paixão por ensinar e aprender, escritor do livro "Kubernetes: Tudo sobre orquestração de contêineres", também é Microsoft MVP e Google Developer Expert. Member & Contributor na Node.js Foundation realizando contribuições nas traduções das documentações do runtime Node.js. Também é co-organizador de comunidades como NodeBR, JSSP, VueJs SP, Typescript BR, NodeSchool SP, TrainingCenter e ABCDev. No tempo livre, adora música, games e fazer cerveja!',
+            picture: '/assets/speakers/lucas-santos.png',
+            socialProfiles: [
+                {
+                    name: 'github',
+                    url: 'http://github.com/khaosdoctor'
+                },
+                {
+                    name: 'linkedin',
+                    url: 'https://linkedin.com/in/lhs-santos'
+                },
+                {
+                    name: 'twitter',
+                    url: 'https://twitter.com/_staticvoid'
+                }
+            ]
+        }],
+                type: 'talk'
+            },
+            {
+                title: 'Desenvolvimento Android Profissional',
+                description: 'Aprender a fazer um aplicativo Android não é tão difícil quanto pensam, há diversos ótimos materiais na Internet, vídeo aulas e excelentes livros no mercado. Por outro lado, ser uma pessoa desenvolvedora que garante suas entregas, adota as melhores práticas e oferece um produto de qualidade é algo que leva tempo, estudo e experiência. Nessa palestra, Neto Marin vai falar sobre os desafios em se tornar uma pessoa desenvolvedora profissional, quais as melhores práticas para projetos Android e algumas outras dicas que vão te ajudar a alcançar um nível melhor de entrega',
+                startTime: { hour: '21', minute: '40' },
+                speakers: [{
+                    name: 'Neto Marin',
+                    company: 'Google',
+                    role: 'Developer Advocate',
+                    bio: 'Neto Marin tem 20 anos de experiência com desenvolvimento de software, e desde 2006 trabalhando com mais foco em mobile. Acumulou projetos em Java ME, Android (Java e Kotlin) e até iOS. Desde 2012 trabalhando como Developer Advocate no Google Brasil e Califórnia, ajudando as pessoas desenvolvedoras Android a criarem apps de qualidade e sucesso no ecossistema Android. Além do trabalho no Google, participa em comunidades organizando eventos e palestrando há 15 anos e faz cerveja nas horas livres.',
+                    picture: '/assets/speakers/Nerto.png',
+                    socialProfiles: [
+                        {
+                            url: 'https://www.linkedin.com/in/netomarin/',
+                            name: 'linkedin'
+                        },
+                        {
+                            url: 'https://twitter.com/netomarin',
+                            name: 'twitter'
+                        },
+                        {
+                            url: 'https://facebook.com/netomarin',
+                            name: 'facebook'
+                        },
+                        {
+                            url: 'https://github.com/netomarin',
+                            name: 'github'
+                        },
+                        {
+                            url: 'https://instagram.com/netomarinbr',
+                            name: 'instagram'
+                        }
+                    ]
+                }],
                 type: 'talk'
             },
             {
                 title: 'Aguarde!',
                 description: 'Aguarde!',
-                startTime: { hour: '22', minute: '00' },
+                startTime: { hour: '22', minute: '20' },
                 speakers: [],
                 type: 'talk'
             }]
@@ -153,16 +253,45 @@ export const AGENDA_ONLINE = [
         data: "15/05",
         talks: [
             {
+                title: 'Azure AppService Deep Dive',
+                description: 'A nuvem trouxe muitas comodidades principalmente nas ofertas de PAAS (Paltform as a Service) onde nos preocupamos apenas em distribuir nossa aplicação e configurar sua escalabilidade. Mas juntamente com a elasticidade a plataforma nos oferece outros recursos interessantes como autenticação e autorização, integração com outros serviços e diversas maneiras de publicação. Nesta palestra veremos como extrair o máximo dos AppServices.',
+                startTime: { hour: '21', minute: '00' },
+                speakers: [{
+                    name: 'Alexandre Santos Costa',
+                    company: 'ArcTouch Mobile Experiences',
+                    role: 'Xamarin Chapter Lead',
+                    picture: '/assets/2019/img/speakers/magoo.jpg',
+                    bio: 'Desenvolvedor com deficiência visual apaixonado por tecnologia, Microsoft MVP em Development Technologies e Master Mobile Engineer na ArcTouch',
+                    socialProfiles: [
+                        {
+                            url: 'https://twitter.com/magoolation	',
+                            name: 'twitter'
+                        },
+                        {
+                            url: 'https://www.facebook.com/magoolation',
+                            name: 'facebook'
+                        },
+                        {
+                            url: 'https://github.com/magoolation',
+                            name: 'github'
+                        }
+                    ]
+                }],
+                type: 'talk'
+            }
+            ,
+            {
                 title: 'Aguarde!',
                 description: 'Aguarde!',
-                startTime: { hour: '21', minute: '00' },
+                startTime: { hour: '21', minute: '40' },
                 speakers: [],
                 type: 'talk'
-            },
+            }
+            ,
             {
                 title: 'Padrões, Arquiteturas, Modelagens e Técnicas milenares que você (não) deveria usar em seus projetos',
                 description: 'Nesse stand-up irei falar sobre padrões, arquiteturas, modelagens e outras técnicas que estão presentes nos códigos e projetos de muitas pessoas, mas, que não deveriam ser utilizadas, pois, além de não fazerem sentido nenhum, atrapalham o bom andamento das coisas. Mas, que muita gente usa porque projeto sem gambiarra não é projeto',
-                startTime: { hour: '22', minute: '00' },
+                startTime: { hour: '22', minute: '20' },
                 speakers: [{
                     name: 'Rodrigo PokemãoBR',
                     company: 'The Velopers',
@@ -197,16 +326,32 @@ export const AGENDA_ONLINE = [
         data: "16/05",
         talks: [
             {
-                title: 'Aguarde!',
-                description: 'Aguarde!',
+                title: 'App Store Optimization (ASO): como melhorar o posicionamento do seu APP',
+                description: 'Apresentar as principais técnicas de otimização de APPs para App Stores.',
                 startTime: { hour: '09', minute: '00' },
-                speakers: [],
+                speakers: [{
+                    name: 'Rafael Simões',
+                    company: '',
+                    role: 'Consultor de SEO',
+                    picture: '/assets/speakers/rafaels.jpg',
+                    bio: 'É apaixonado por internet e dados. Possui mais de 8 anos de experiência criando estratégias de SEO e Marketing de Conteúdo para grandes empresas como HSBC, Magazine Luiza, Nextel. Também trabalhou como Diretor de SEO em uma agência no Canadá, cuidando de todas as marcas da LOréal. Hoje é Consultor de SEO e trabalha atendendo grandes marcas e startups, como o Consulta Remédios, maior site de medicamentos do Brasil.',
+                    socialProfiles: [
+                        {
+                            url: 'https://twitter.com/cwbrafael',
+                            name: 'twitter'
+                        },
+                        {
+                            url: 'https://www.linkedin.com/in/cwbrafael/',
+                            name: 'linkedin'
+                        }
+                    ]
+                }],
                 type: 'talk'
             },
             {
                 title: 'Pensando grande em telas pequenas: como desenvolver, manter e evoluir aplicações mobile escaláveis como as gigantes do mercado!',
                 description: 'Já parou para se perguntar como as grandes empresas desenvolvem suas aplicações mobile para milhares de pessoas? Quais técnicas elas utilizam? O que elas priorizam? Como tudo funciona junto? E se você pudesse construir as suas próprias aplicações de forma eficiente e escalável, como essas grandes empresas costumam  fazer? Nesse talk vou tentar falar um pouco sobre como funcionam times, rotinas e técnicas de desenvolvimento de aplicações mobile de alta e escala e performance e como você pode fazer uso de muitas dessas práticas hoje mesmo!',
-                startTime: { hour: '10', minute: '00' },
+                startTime: { hour: '09', minute: '40' },
                 speakers: [{
                     name: 'Walmyr Carvalho',
                     company: 'idwall',
@@ -235,6 +380,14 @@ export const AGENDA_ONLINE = [
                 type: 'talk'
             },
             {
+                title: 'Aguarde!',
+                description: 'Aguarde!',
+                startTime: { hour: '10', minute: '20' },
+                speakers: [],
+                type: 'talk'
+            }
+            ,
+            {
                 title: 'Wiremock: testando suas aplicações Java além do Junit',
                 description: 'Usa Junit para testar suas aplicações Java? ótimo <3, mas você já ouviu falar do Wiremock? Nesta talk pretendo explicar o que é Wiremock, o que são Stubs, Matches , como simular requisições e como testar nossas APIs com ele.',
                 startTime: { hour: '11', minute: '00' },
@@ -256,10 +409,6 @@ export const AGENDA_ONLINE = [
                         {
                             url: 'https://github.com/Kamilahsantos',
                             name: 'github'
-                        },
-                        {
-                            url: 'https://instagram.com/netomarinbr',
-                            name: 'instagram'
                         }
                     ]
                 }],

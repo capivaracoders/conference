@@ -95,6 +95,64 @@ export const TALKS_ONLINE = [
     }
     ,
     {
+        id: '101',
+        type: 'talk',
+        title: 'Azure AppService Deep Dive',
+        description: 'A nuvem trouxe muitas comodidades principalmente nas ofertas de PAAS (Paltform as a Service) onde nos preocupamos apenas em distribuir nossa aplicação e configurar sua escalabilidade. Mas juntamente com a elasticidade a plataforma nos oferece outros recursos interessantes como autenticação e autorização, integração com outros serviços e diversas maneiras de publicação. Nesta palestra veremos como extrair o máximo dos AppServices.',
+        tags: [
+            { name: 'Aguarde!' }
+        ],
+        speakers: [{
+            name: 'Alexandre Santos Costa',
+            company: 'ArcTouch Mobile Experiences',
+            role: 'Xamarin Chapter Lead',
+            picture: '/assets/2019/img/speakers/magoo.jpg',
+            bio: 'Desenvolvedor com deficiência visual apaixonado por tecnologia, Microsoft MVP em Development Technologies e Master Mobile Engineer na ArcTouch',
+            socialProfiles: [
+                {
+                    url: 'https://twitter.com/magoolation	',
+                    name: 'twitter'
+                },
+                {
+                    url: 'https://www.facebook.com/magoolation',
+                    name: 'facebook'
+                },
+                {
+                    url: 'https://github.com/magoolation',
+                    name: 'github'
+                }
+            ]
+        }]
+    }
+    ,
+    {
+        id: '101',
+        type: 'talk',
+        title: 'App Store Optimization (ASO): como melhorar o posicionamento do seu APP',
+        description: 'Apresentar as principais técnicas de otimização de APPs para App Stores.',
+        tags: [
+            { name: 'ASO' }
+        ],
+        speakers: [{
+            name: 'Rafael Simões',
+            company: '',
+            role: 'Consultor de SEO',
+            picture: '/assets/speakers/rafaels.jpg',
+            bio: 'É apaixonado por internet e dados. Possui mais de 8 anos de experiência criando estratégias de SEO e Marketing de Conteúdo para grandes empresas como HSBC, Magazine Luiza, Nextel. Também trabalhou como Diretor de SEO em uma agência no Canadá, cuidando de todas as marcas da LOréal. Hoje é Consultor de SEO e trabalha atendendo grandes marcas e startups, como o Consulta Remédios, maior site de medicamentos do Brasil.',
+            socialProfiles: [
+                {
+                    url: 'https://twitter.com/cwbrafael',
+                    name: 'twitter'
+                },
+                {
+                    url: 'https://www.linkedin.com/in/cwbrafael/',
+                    name: 'linkedin'
+                }
+            ]
+        }]
+    }
+    ,
+    {
         id: '006',
         type: 'talk',
         title: '14 princípios para sua equipe de tecnologia!',
@@ -148,6 +206,68 @@ export const TALKS_ONLINE = [
                 {
                     url: 'https://github.com/pokemaobr',
                     name: 'github'
+                }
+            ]
+        }]
+    }
+    ,
+    {
+        id: '012',
+        type: 'talk',
+        title: 'APIs Escaláveis com Node.js & Arquitetura Serverless',
+        description: 'Node.Js é escalável. O Azure também é um serviço de nuvem escalável. E o que acha de usar os dois juntos e mais o Serverless?! Quais os benefícios de usarmos uma Arquitetura Serverless em aplicações Node.js integradas com Azure? Quais são os ganhos em usar essas tecnologias? Durante a palestra, estarei falando sobre como podemos definir uma arquitetura altamente escalável usando Node.js com Azure Functions baseado numa arquitetura Serverless. E claro que vai ter uma super demo em como podemos criar um Serverless Function App no Azure! :)',
+        tags: [
+            { name: 'Node.js' }
+        ],
+        speakers: [{
+            name: 'Glaucia Lemos',
+            company: 'Microsoft',
+            role: 'Cloud Advocate de JavaScript',
+            bio: 'Glaucia Lemos é Cloud Advocate de JavaScript 🥑 na Microsoft. Ama realizar contribuições em projetos Open Source. Atua como Member & Contributor no Node.js Foundation e no React Community realizando contribuições nas traduções do site Nodejs.org e Reactjs.org para o português. Participa de comunidades bastante inclusivas, como a WoMakersCode – uma organização focada em ajudar, inspirar e capacitar ainda mais mulheres na tecnologia a obter uma oportunidade de emprego. Sua maior paixão: compartilhar conhecimento com outras pessoas!',
+            picture: '/assets/speakers/glaucia-lemos.png',
+            socialProfiles: [
+                {
+                    name: 'github',
+                    url: 'https://github.com/glaucia86/'
+                },
+                {
+                    name: 'linkedin',
+                    url: 'https://www.linkedin.com/in/glaucialemos/'
+                },
+                {
+                    name: 'twitter',
+                    url: 'https://twitter.com/glaucia_lemos86'
+                }
+            ]
+        }]
+    }
+    ,
+    {
+        id: '012',
+        type: 'talk',
+        title: 'Ambientes de Teste Dinâmicos com Helm e Kubernetes',
+        description: 'Todo desenvolvedor sonha com um ambiente completo onde possa testar seu código sem atrapalhar o desenvolvimento de seus colegas, o problema com este sonho é que esta infraestrutura é complexa demais para ser criada e destruída manualmente. É ai que podemos usar o poder do Kubernetes e do Helm para criarmos ambientes de testes individuais totalmente dinâmicos para cada um dos seus commits!',
+        tags: [
+            { name: 'Kubernetes' }
+        ],
+        speakers: [{
+            name: 'Lucas Santos',
+            company: 'Microsoft',
+            role: 'Cloud Advocate',
+            bio: 'Lucas é Cloud Advocate na Microsoft. Apaixonado por tecnologia e, desde 2011, trabalhando com aplicações de alta escalabilidade e desempenho. Tem uma grande paixão por ensinar e aprender, escritor do livro "Kubernetes: Tudo sobre orquestração de contêineres", também é Microsoft MVP e Google Developer Expert. Member & Contributor na Node.js Foundation realizando contribuições nas traduções das documentações do runtime Node.js. Também é co-organizador de comunidades como NodeBR, JSSP, VueJs SP, Typescript BR, NodeSchool SP, TrainingCenter e ABCDev. No tempo livre, adora música, games e fazer cerveja!',
+            picture: '/assets/speakers/lucas-santos.png',
+            socialProfiles: [
+                {
+                    name: 'github',
+                    url: 'http://github.com/khaosdoctor'
+                },
+                {
+                    name: 'linkedin',
+                    url: 'https://linkedin.com/in/lhs-santos'
+                },
+                {
+                    name: 'twitter',
+                    url: 'https://twitter.com/_staticvoid'
                 }
             ]
         }]
@@ -224,10 +344,10 @@ export const TALKS_ONLINE = [
     {
         id: '008',
         type: 'talk',
-        title: 'Aguarde!',
-        description: 'Aguarde!',
+        title: 'Desenvolvimento Android Profissional',
+        description: 'Aprender a fazer um aplicativo Android não é tão difícil quanto pensam, há diversos ótimos materiais na Internet, vídeo aulas e excelentes livros no mercado. Por outro lado, ser uma pessoa desenvolvedora que garante suas entregas, adota as melhores práticas e oferece um produto de qualidade é algo que leva tempo, estudo e experiência. Nessa palestra, Neto Marin vai falar sobre os desafios em se tornar uma pessoa desenvolvedora profissional, quais as melhores práticas para projetos Android e algumas outras dicas que vão te ajudar a alcançar um nível melhor de entrega',
         tags: [
-            { name: 'Aguarde!' }
+            { name: 'Android' }
         ],
         speakers: [{
             name: 'Neto Marin',

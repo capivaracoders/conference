@@ -1,4 +1,35 @@
 export const TALKS_ONLINE = [
+    {
+        id: '005',
+        type: 'panel',
+        title: 'Code Review: The Good Parts!',
+        description: 'Code Reviews são necessários em um fluxo de trabalho de desenvolvimento, mas o que acontece ao submeter ou receber um review é tão divertido quanto arrancar um dente. Transforme a cultura de code review de sua equipe com algumas dicas & truques para melhorar a qualidade do código e as relações de trabalho, simultaneamente.',
+        tags: [
+            { name: '' }
+        ],
+        speakers: [{
+            name: 'Cynthia Zanoni',
+            company: 'Microsoft',
+            role: 'Microsoft Developer Relations Lead LatAm',
+            picture: '/assets/speakers/CynthiaZanoni.jpg',
+            bio: 'Desenvolvedora de Software com 10+ anos de experiência em tecnologias Open Source e Acessibilidade, é fundadora da WoMakersCode - uma comunidade global focada em ajudar, inspirar e capacitar ainda mais mulheres em tecnologia que as ajuda a ganhar uma oportunidade de emprego e foi reconhecida pela Mozilla Foundation (2016) como uma das mulheres técnicas mais influentes da América Latina, apoio à diversidade e inclusão.',
+            socialProfiles: [
+                {
+                    url: 'https://twitter.com/cynthiazanoni',
+                    name: 'twitter'
+                },
+                {
+                    url: 'https://github.com/cyz/',
+                    name: 'github'
+                },
+                {
+                    url: 'https://www.linkedin.com/in/cynthiazanoni/',
+                    name: 'linkedin'
+                }
+               
+            ]
+        }]
+    }
     ,
     {
         id: '008',
@@ -32,6 +63,38 @@ export const TALKS_ONLINE = [
     }
     ,
     {
+        id: '005',
+        type: 'panel',
+        title: 'Code Review: The Good Parts!',
+        description: 'Code Reviews são necessários em um fluxo de trabalho de desenvolvimento, mas o que acontece ao submeter ou receber um review é tão divertido quanto arrancar um dente. Transforme a cultura de code review de sua equipe com algumas dicas & truques para melhorar a qualidade do código e as relações de trabalho, simultaneamente.',
+        tags: [
+            { name: '' }
+        ],
+        speakers: [{
+            name: 'John Papa',
+            company: 'Microsoft',
+            role: 'Principal Developer Advocate',
+            picture: '/assets/speakers/john_papa.png',
+            bio: 'John Papa é um pai e um marido dedicado, Principal Developer Advocate na Microsoft e é veterano nos programas Google Developer Expert, Microsoft RD e MVP. Suas paixões são implantar e ensinar tecnologias da Web modernas e divertir-se na Disney com sua família. John é um coapresentador do podcast popular Adventures in Angular (Aventuras em Angular), autor do Angular Style Guide (Guia de estilo do Angular) e de vários cursos populares da Pluralsight.',
+            socialProfiles: [
+                {
+                    url: 'https://twitter.com/john_papa',
+                    name: 'twitter'
+                },
+                {
+                    url: 'https://github.com/johnpapa',
+                    name: 'github'
+                },
+                {
+                    url: 'https://linkedin.com/in/papajohn',
+                    name: 'linkedin'
+                }
+               
+            ]
+        }]
+    }
+    ,
+    {
         id: '008',
         type: 'talk',
         title: 'Observabilidade com o Elastic Stack',
@@ -58,38 +121,6 @@ export const TALKS_ONLINE = [
                     url: 'https://github.com/thebeaoliveira',
                     name: 'github'
                 }
-            ]
-        }]
-    }
-    ,
-    {
-        id: '005',
-        type: 'panel',
-        title: 'Code Review: The Good Parts!',
-        description: 'Code Reviews são necessários em um fluxo de trabalho de desenvolvimento, mas o que acontece ao submeter ou receber um review é tão divertido quanto arrancar um dente. Transforme a cultura de code review de sua equipe com algumas dicas & truques para melhorar a qualidade do código e as relações de trabalho, simultaneamente.',
-        tags: [
-            { name: '' }
-        ],
-        speakers: [{
-            name: 'Cynthia Zanoni',
-            company: 'Microsoft',
-            role: 'Microsoft Developer Relations Lead LatAm',
-            picture: '/assets/speakers/CynthiaZanoni.jpg',
-            bio: 'Desenvolvedora de Software com 10+ anos de experiência em tecnologias Open Source e Acessibilidade, é fundadora da WoMakersCode - uma comunidade global focada em ajudar, inspirar e capacitar ainda mais mulheres em tecnologia que as ajuda a ganhar uma oportunidade de emprego e foi reconhecida pela Mozilla Foundation (2016) como uma das mulheres técnicas mais influentes da América Latina, apoio à diversidade e inclusão.',
-            socialProfiles: [
-                {
-                    url: 'https://twitter.com/cynthiazanoni',
-                    name: 'twitter'
-                },
-                {
-                    url: 'https://github.com/cyz/',
-                    name: 'github'
-                },
-                {
-                    url: 'https://www.linkedin.com/in/cynthiazanoni/',
-                    name: 'linkedin'
-                }
-               
             ]
         }]
     }

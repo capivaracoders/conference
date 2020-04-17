@@ -26,7 +26,7 @@ export const AGENDA_ONLINE = [
                             url: 'https://www.linkedin.com/in/cynthiazanoni/',
                             name: 'linkedin'
                         }
-                       
+
                     ]
                 }],
                 type: 'talk'
@@ -203,32 +203,57 @@ export const AGENDA_ONLINE = [
                 description: 'Todo desenvolvedor sonha com um ambiente completo onde possa testar seu código sem atrapalhar o desenvolvimento de seus colegas, o problema com este sonho é que esta infraestrutura é complexa demais para ser criada e destruída manualmente. É ai que podemos usar o poder do Kubernetes e do Helm para criarmos ambientes de testes individuais totalmente dinâmicos para cada um dos seus commits!',
                 startTime: { hour: '21', minute: '00' },
                 speakers: [{
-            name: 'Lucas Santos',
-            company: 'Microsoft',
-            role: 'Cloud Advocate',
-            bio: 'Lucas é Cloud Advocate na Microsoft. Apaixonado por tecnologia e, desde 2011, trabalhando com aplicações de alta escalabilidade e desempenho. Tem uma grande paixão por ensinar e aprender, escritor do livro "Kubernetes: Tudo sobre orquestração de contêineres", também é Microsoft MVP e Google Developer Expert. Member & Contributor na Node.js Foundation realizando contribuições nas traduções das documentações do runtime Node.js. Também é co-organizador de comunidades como NodeBR, JSSP, VueJs SP, Typescript BR, NodeSchool SP, TrainingCenter e ABCDev. No tempo livre, adora música, games e fazer cerveja!',
-            picture: '/assets/speakers/lucas-santos.png',
-            socialProfiles: [
-                {
-                    name: 'github',
-                    url: 'http://github.com/khaosdoctor'
-                },
-                {
-                    name: 'linkedin',
-                    url: 'https://linkedin.com/in/lhs-santos'
-                },
-                {
-                    name: 'twitter',
-                    url: 'https://twitter.com/_staticvoid'
-                }
-            ]
-        }],
+                    name: 'Lucas Santos',
+                    company: 'Microsoft',
+                    role: 'Cloud Advocate',
+                    bio: 'Lucas é Cloud Advocate na Microsoft. Apaixonado por tecnologia e, desde 2011, trabalhando com aplicações de alta escalabilidade e desempenho. Tem uma grande paixão por ensinar e aprender, escritor do livro "Kubernetes: Tudo sobre orquestração de contêineres", também é Microsoft MVP e Google Developer Expert. Member & Contributor na Node.js Foundation realizando contribuições nas traduções das documentações do runtime Node.js. Também é co-organizador de comunidades como NodeBR, JSSP, VueJs SP, Typescript BR, NodeSchool SP, TrainingCenter e ABCDev. No tempo livre, adora música, games e fazer cerveja!',
+                    picture: '/assets/speakers/lucas-santos.png',
+                    socialProfiles: [
+                        {
+                            name: 'github',
+                            url: 'http://github.com/khaosdoctor'
+                        },
+                        {
+                            name: 'linkedin',
+                            url: 'https://linkedin.com/in/lhs-santos'
+                        },
+                        {
+                            name: 'twitter',
+                            url: 'https://twitter.com/_staticvoid'
+                        }
+                    ]
+                }],
                 type: 'talk'
-            },
+            }
+            ,
+            {
+                title: 'Escalando o Everest com Serverless Computing',
+                description: 'Imagine o que acontece com seus servidores que estão acostumados a processar 10 transações por minuto se vier uma enxurrada de 10K transações por minuto? Imagine um sistema onde você projetou uma infra para suportar 10k de transações por minuto mas onde 90% do tempo ele processa apenas 10 transações por minuto? Imagine terceirizar toda configuração de infraestrutura, elasticidade e escalabilidade e poder focar 100% na lógica de negócio enquanto desenvolve novas soluções... Serverless é o modelo de Cloud Computing que tenta resolver essas questões, facilitar a vida do desenvolvedor, e maximizar a produtividade do time de operações.',
+                startTime: { hour: '21', minute: '40' },
+                speakers: [{
+                    name: 'Frederico Policarpo Martins',
+                    company: 'EBANX',
+                    role: 'Software Engineering',
+                    picture: '/assets/speakers/Fred.png',
+                    bio: 'Cientista da Computação com 14 anos de experiência de mercado atuando prioritariamente como desenvolvedor. Nesta carreira já atuei bastante como Tech Lead,  uma temporada como Product Owner, e também um período como Engenheiro/Analista de Dados. Sou apaixonado por solucionar problemas com tecnologia, seja ela qual for! Gosto de entender toda o jornada de solução de um problema, desde a identificação da necessidade até a entrega e monitoramento, manutenção e evoluções.',
+                    socialProfiles: [
+                        {
+                            url: 'https://github.com/fredpolicarpo',
+                            name: 'github'
+                        },
+                        {
+                            url: 'https://www.linkedin.com/in/fredpolicarpo/',
+                            name: 'linkedin'
+                        }
+                    ]
+                }],
+                type: 'talk'
+            }
+            ,
             {
                 title: 'Desenvolvimento Android Profissional',
                 description: 'Aprender a fazer um aplicativo Android não é tão difícil quanto pensam, há diversos ótimos materiais na Internet, vídeo aulas e excelentes livros no mercado. Por outro lado, ser uma pessoa desenvolvedora que garante suas entregas, adota as melhores práticas e oferece um produto de qualidade é algo que leva tempo, estudo e experiência. Nessa palestra, Neto Marin vai falar sobre os desafios em se tornar uma pessoa desenvolvedora profissional, quais as melhores práticas para projetos Android e algumas outras dicas que vão te ajudar a alcançar um nível melhor de entrega',
-                startTime: { hour: '21', minute: '40' },
+                startTime: { hour: '22', minute: '20' },
                 speakers: [{
                     name: 'Neto Marin',
                     company: 'Google',
@@ -259,14 +284,8 @@ export const AGENDA_ONLINE = [
                     ]
                 }],
                 type: 'talk'
-            },
-            {
-                title: 'Aguarde!',
-                description: 'Aguarde!',
-                startTime: { hour: '22', minute: '20' },
-                speakers: [],
-                type: 'talk'
-            }]
+            }
+        ]
     },
     {
         name: "Sexta-feira",
@@ -301,10 +320,30 @@ export const AGENDA_ONLINE = [
             }
             ,
             {
-                title: 'Aguarde!',
-                description: 'Aguarde!',
+                title: 'Desmistificando o trabalho com dados: Do banco de dados relacional até a inteligência artificial',
+                description: 'Você já reparou quantas palavras da moda surgiram nos últimos anos? Quantas profissões "sexies", promessas de lucro e afins? Reparou que todas elas estão relacionadas com dados? Nesta conversa vamos desmistificar as palavras da moda e entender como podemos buscar oportunidades neste mundo com tantas possibilidades.',
                 startTime: { hour: '21', minute: '40' },
-                speakers: [],
+                speakers: [{
+                    name: 'Dani Monteiro',
+                    company: 'ArcTouch Mobile Experiences',
+                    role: 'Xamarin Chapter Lead',
+                    picture: '/assets/speakers/DaniMonteiro.jpg',
+                    bio: 'Mestra em Engenharia da Computação, TEDx Speaker, autora do blog e do canal DB4Beginners.com, apresentadora do podcast Alto Volume, criadora do programa Dados de Alto Valor.Após anos como desenvolvedora, já foi DBA e hoje é arquiteta de dados.Ganhadora dos prêmios: Microsoft Regional Director; Microsoft MVP; William Zola (prêmio de inovação da MongoDB); MongoDB Female Innovator; Microsoft Innovative Educator Expert; Palestrante internacional, foi a primeira mulher brasileira a palestrar no MongoDB World ( New York), palestrou no Oracle Code One (São Francisco), e no PHP Benelux (Bélgica). Além disso é instrutora oficial do LinkedIn Learning, tendo gravado (na Áustria) três cursos para a plataforma.',
+                    socialProfiles: [
+                        {
+                            url: 'https://twitter.com/danimonteirodba',
+                            name: 'twitter'
+                        },
+                        {
+                            url: 'https://linkedin.com/in/danimonteirodba',
+                            name: 'linkedin'
+                        },
+                        {
+                            url: 'https://github.com/danimonteirodba',
+                            name: 'github'
+                        }
+                    ]
+                }],
                 type: 'talk'
             }
             ,

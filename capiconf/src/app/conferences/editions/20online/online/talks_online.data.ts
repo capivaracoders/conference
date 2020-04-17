@@ -26,7 +26,7 @@ export const TALKS_ONLINE = [
                     url: 'https://www.linkedin.com/in/cynthiazanoni/',
                     name: 'linkedin'
                 }
-               
+
             ]
         }]
     }
@@ -89,7 +89,7 @@ export const TALKS_ONLINE = [
                     url: 'https://linkedin.com/in/papajohn',
                     name: 'linkedin'
                 }
-               
+
             ]
         }]
     }
@@ -159,6 +159,37 @@ export const TALKS_ONLINE = [
     {
         id: '101',
         type: 'talk',
+        title: 'Desmistificando o trabalho com dados: Do banco de dados relacional até a inteligência artificial',
+        description: 'Você já reparou quantas palavras da moda surgiram nos últimos anos? Quantas profissões "sexies", promessas de lucro e afins? Reparou que todas elas estão relacionadas com dados? Nesta conversa vamos desmistificar as palavras da moda e entender como podemos buscar oportunidades neste mundo com tantas possibilidades.',
+        tags: [
+            { name: 'Aguarde!' }
+        ],
+        speakers: [{
+            name: 'Dani Monteiro',
+            company: 'ArcTouch Mobile Experiences',
+            role: 'Xamarin Chapter Lead',
+            picture: '/assets/speakers/DaniMonteiro.jpg',
+            bio: 'Mestra em Engenharia da Computação, TEDx Speaker, autora do blog e do canal DB4Beginners.com, apresentadora do podcast Alto Volume, criadora do programa Dados de Alto Valor.Após anos como desenvolvedora, já foi DBA e hoje é arquiteta de dados.Ganhadora dos prêmios: Microsoft Regional Director; Microsoft MVP; William Zola (prêmio de inovação da MongoDB); MongoDB Female Innovator; Microsoft Innovative Educator Expert; Palestrante internacional, foi a primeira mulher brasileira a palestrar no MongoDB World ( New York), palestrou no Oracle Code One (São Francisco), e no PHP Benelux (Bélgica). Além disso é instrutora oficial do LinkedIn Learning, tendo gravado (na Áustria) três cursos para a plataforma.',
+            socialProfiles: [
+                {
+                    url: 'https://twitter.com/danimonteirodba',
+                    name: 'twitter'
+                },
+                {
+                    url: 'https://linkedin.com/in/danimonteirodba',
+                    name: 'linkedin'
+                },
+                {
+                    url: 'https://github.com/danimonteirodba',
+                    name: 'github'
+                }
+            ]
+        }]
+    }
+    ,
+    {
+        id: '101',
+        type: 'talk',
         title: 'App Store Optimization (ASO): como melhorar o posicionamento do seu APP',
         description: 'Apresentar as principais técnicas de otimização de APPs para App Stores.',
         tags: [
@@ -177,6 +208,33 @@ export const TALKS_ONLINE = [
                 },
                 {
                     url: 'https://www.linkedin.com/in/cwbrafael/',
+                    name: 'linkedin'
+                }
+            ]
+        }]
+    }
+    ,
+    {
+        id: '101',
+        type: 'talk',
+        title: 'Escalando o Everest com Serverless Computing',
+                description: 'Imagine o que acontece com seus servidores que estão acostumados a processar 10 transações por minuto se vier uma enxurrada de 10K transações por minuto? Imagine um sistema onde você projetou uma infra para suportar 10k de transações por minuto mas onde 90% do tempo ele processa apenas 10 transações por minuto? Imagine terceirizar toda configuração de infraestrutura, elasticidade e escalabilidade e poder focar 100% na lógica de negócio enquanto desenvolve novas soluções... Serverless é o modelo de Cloud Computing que tenta resolver essas questões, facilitar a vida do desenvolvedor, e maximizar a produtividade do time de operações.',
+        tags: [
+            { name: '' }
+        ],
+        speakers: [{
+            name: 'Frederico Policarpo Martins',
+            company: 'EBANX',
+            role: 'Software Engineering',
+            picture: '/assets/speakers/Fred.png',
+            bio: 'Cientista da Computação com 14 anos de experiência de mercado atuando prioritariamente como desenvolvedor. Nesta carreira já atuei bastante como Tech Lead,  uma temporada como Product Owner, e também um período como Engenheiro/Analista de Dados. Sou apaixonado por solucionar problemas com tecnologia, seja ela qual for! Gosto de entender toda o jornada de solução de um problema, desde a identificação da necessidade até a entrega e monitoramento, manutenção e evoluções.',
+            socialProfiles: [
+                {
+                    url: 'https://github.com/fredpolicarpo',
+                    name: 'github'
+                },
+                {
+                    url: 'https://www.linkedin.com/in/fredpolicarpo/',
                     name: 'linkedin'
                 }
             ]

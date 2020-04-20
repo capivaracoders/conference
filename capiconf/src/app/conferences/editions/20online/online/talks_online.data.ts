@@ -243,7 +243,39 @@ export const TALKS_ONLINE = [
     ,
     {
         id: '006',
-        type: 'talk',
+        type: 'talk',
+        title: 'Escalando seu Sistema com Fila em Banco',
+        description: 'Um dos principais pilares para escalar uma aplicação web é o uso mensageria, não à toa temos diversos Brokers para enfileirar as mensagens a fim de processá-las num ritmo que nossa aplicação consiga atender. Mas será mesmo que precisamos adotar um Broker?  A verdade é que não; por mais controverso que pareça, podemos usar um banco de dados relacional como uma fila de mensagens, aproveitando sua natureza ACID e todo seu controle de locking e concorrência. Com isso, obtemos um alto grau de performance e principalmente escalabilidade sem a necessidade de abrir mão do poder de um banco de dados ou ter que adicionar um novo componente de software (como um JMS Broker) na arquitetura da solução.',
+        tags: [
+            { name: 'Insights' }
+        ],
+        speakers: [{
+            name: 'Rafael Ponte',
+            company: 'TriadWorks',
+            role: 'Software Developer',
+            bio: 'Principe do Oceano, Marajá dos Legados e Rei da Gambiarras. Desenvolvedor cansado com +15 anos de experiência com desenvolvimento de software na plataforma Java e integração de sistemas. Além disso, é coordenador do maior grupo de discussão JSF do Brasil (JavaSF) e do maior JUG do Ceará (JavaCE). Também já palestrou em eventos importantes no Brazil, como QCONSP, CEJS, Agile Brasil, JavaCE Conference, entre outros. Nas horas vagas, um podcaster fracassado no @devscansados.',
+            picture: '/assets/speakers/RafaelPonte.png',
+            socialProfiles: [
+                {
+                    name: 'github',
+                    url: 'https://github.com/rponte'
+                },
+                {
+                    name: 'twitter',
+                    url: 'https://twitter.com/rponte'
+                }
+                ,
+                {
+                    name: 'linkedin',
+                    url: 'https://www.linkedin.com/in/rponte/'
+                }
+            ]
+        }]
+    }
+    ,
+    {
+        id: '006',
+        type: 'talk',
         title: '14 princípios para sua equipe de tecnologia!',
         description: 'Aguarde!',
         tags: [
@@ -259,6 +291,68 @@ export const TALKS_ONLINE = [
                 {
                     name: 'linkedin',
                     url: 'https://www.linkedin.com/in/danielwildt/'
+                }
+            ]
+        }]
+    }
+    ,
+    {
+        id: '006',
+        type: 'talk',
+        title: 'Extraindo métricas de times de desenvolvimento: Integrando Azure DevOps e Power BI',
+        description: 'Nessa sessão mostrarei como é feita a integração entre o Azure DevOps e o Power BI com integrações além das apresentadas em documentações. Serão apresentados alguns dashboards no Power BI tais como: Métricas de repositório de código fonte e Métricas de Release.',
+        tags: [
+            { name: '' }
+        ],
+        speakers: [{
+            name: 'Vinicius José de Moura',
+            company: 'Wildtech',
+            role: 'Mentor',
+            bio: 'MVP Microsoft desde 2015 focado em ALM e DevOps.',
+            picture: '/assets/speakers/ViniMoura.jpg',
+            socialProfiles: [
+                {
+                    name: 'github',
+                    url: 'https://github.com/vinijmoura'
+                },
+                {
+                    name: 'twitter',
+                    url: 'https://twitter.com/vinijmoura'
+                },
+                {
+                    name: 'linkedin',
+                    url: 'https://www.linkedin.com/in/viniciusjmoura/'
+                }
+            ]
+        }]
+    }
+    ,
+    {
+        id: '006',
+        type: 'talk',
+        title: 'Por que Elixir?',
+        description: 'Nesta talk irei apresentar o que muitos consideram o maior ponto forte do Elixir: the BEAM (vulgo VM do Erlang). Apesar de ser uma linguagem nova Elixir trabalha em uma plataforma que já está a anos no mercado e é extensivamente utilizada em telecomunicações. Irei mostrar porque faz muito sentido utilizar esta plataforma para inúmeros tipos de aplicação e principalmente aplicações web, desmantelando um pouquinho o funcionamento interno da VM. Quem sabe eu até mostre um pouco dos pontos negativos, mas só um pouco ok? ;)',
+        tags: [
+            { name: '' }
+        ],
+        speakers: [{
+            name: 'Kelvin Raffael Stinghen',
+            company: 'Toggl Plan',
+            role: 'Desenvolvedor Backend',
+            bio: 'Desenvolvedor Backend no Toggl Plan, apaixonado pelo Elixir, por Software Open Source e por aprender coisas novas.',
+            picture: '/assets/speakers/Kelvin.jpeg',
+            socialProfiles: [
+                {
+                    name: 'github',
+                    url: 'https://github.com/kelvinst'
+                },
+                {
+                    name: 'twitter',
+                    url: 'https://twitter.com/kelvinsti'
+                },
+                {
+                    name: 'linkedin',
+                    url: 'https://www.linkedin.com/in/kelvinst/'
                 }
             ]
         }]

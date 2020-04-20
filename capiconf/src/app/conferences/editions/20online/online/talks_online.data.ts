@@ -489,6 +489,39 @@ export const TALKS_ONLINE = [
     }
     ,
     {
+        id: '020',
+        type: 'talk',
+        title: 'Desenvolvimento nativo em 2020 compensa?',
+        description: 'Questionar sobre a atual situação do desenvolvimento mobile, com dados sobre o uso de smartphones, cases de empresas que se aproveitaram desse cenário, e então falar sobre a evolução do desenvolvimento mobile e as tecnologias e frameworks envolvidos, e comparar as principais tecnologias do mercado: React Native, Flutter e desenvolvimento Nativo.',
+        tags: [
+            { name: 'desenvolvimento móvel' },
+            { name: 'React Native' },
+            { name: 'Flutter' }
+        ],
+        speakers: [{
+            name: 'Diefferson Inocencio Santos',
+            company: 'Juno',
+            role: 'Tech Lead',
+            bio: 'Desenvolvedor e entusiasta de tecnologias mobile, vários anos de experiência divididos entre startups e multinacionais.',
+            picture: '/assets/speakers/diefferson.png',
+            socialProfiles: [
+                {
+                    url: 'https://github.com/diefferson',
+                    name: 'github'
+                },
+                {
+                    url: 'https://twitter.com/Dieeefferson',
+                    name: 'twitter'
+                },
+                {
+                    url: 'https://www.linkedin.com/in/diefferson-inocencio-santos-582066ba/',
+                    name: 'linkedin'
+                }
+            ]
+        }]
+    }
+    ,
+    {
         id: '017',
         type: 'talk',
         title: 'Docker no ambiente de desenvolvimento',

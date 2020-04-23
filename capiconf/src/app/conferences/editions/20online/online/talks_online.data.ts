@@ -299,6 +299,33 @@ export const TALKS_ONLINE = [
     {
         id: '006',
         type: 'talk',
+        title: 'Arquitetura Evolutiva aplicada na agilidade e teoria do caos',
+        description: 'Nessa sessão mostrarei como é feita a integração entre o Azure DevOps e o Power BI com integrações além das apresentadas em documentações. Serão apresentados alguns dashboards no Power BI tais como: Métricas de repositório de código fonte e Métricas de Release.',
+        tags: [
+            { name: '' }
+        ],
+        speakers: [{
+            name: 'Fábio Rogério',
+            company: 'Grupo Boticário',
+            role: 'Arquiteto de Soluções',
+            bio: 'Desenvolver aplicações de missão crítica, com um numero alto de requisições simultâneas, e em um ambiente corporativo que integra produção, logística, franqueado, revendedor, e-commerce e consumidor, atendendo aos requisitos de negócio e LGPD é uma mistura perfeita para inovar e colocar os melhores planos e conceitos em prática. Nesta talk Fábio e Juliana, arquitetos do Grupo Boticário, irão mostrar como construíram uma aplicação para trabalhar com Whatsapp Business API preparada para uma grande volumetria utilizando microserviços em Kubernetes, eventos (SQS) e serverless com uma insfraestrutura escalável e as code.',
+            picture: '/assets/speakers/fabior.png',
+            socialProfiles: [
+                {
+                    name: 'github',
+                    url: 'https://github.com/fabiorogeriosj'
+                },
+                {
+                    name: 'linkedin',
+                    url: 'https://www.linkedin.com/in/f%C3%A1bio-rog%C3%A9rio-4a49b722'
+                }
+            ]
+        }]
+    }
+    ,
+    {
+        id: '006',
+        type: 'talk',
         title: 'Extraindo métricas de times de desenvolvimento: Integrando Azure DevOps e Power BI',
         description: 'Nessa sessão mostrarei como é feita a integração entre o Azure DevOps e o Power BI com integrações além das apresentadas em documentações. Serão apresentados alguns dashboards no Power BI tais como: Métricas de repositório de código fonte e Métricas de Release.',
         tags: [
@@ -306,8 +333,8 @@ export const TALKS_ONLINE = [
         ],
         speakers: [{
             name: 'Vinicius José de Moura',
-            company: 'Wildtech',
-            role: 'Mentor',
+            company: 'N3',
+            role: 'DevOps Cloud Technical Solution Architect',
             bio: 'MVP Microsoft desde 2015 focado em ALM e DevOps.',
             picture: '/assets/speakers/ViniMoura.jpg',
             socialProfiles: [

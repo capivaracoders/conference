@@ -387,8 +387,8 @@ export const AGENDA_ONLINE = [
                 startTime: { hour: '21', minute: '40' },
                 speakers: [{
                     name: 'Dani Monteiro',
-                    company: 'ArcTouch Mobile Experiences',
-                    role: 'Xamarin Chapter Lead',
+                    company: 'DANI Academy',
+                    role: 'Founder',
                     picture: '/assets/speakers/DaniMonteiro.jpg',
                     bio: 'Mestra em Engenharia da Computação, TEDx Speaker, autora do blog e do canal DB4Beginners.com, apresentadora do podcast Alto Volume, criadora do programa Dados de Alto Valor.Após anos como desenvolvedora, já foi DBA e hoje é arquiteta de dados.Ganhadora dos prêmios: Microsoft Regional Director; Microsoft MVP; William Zola (prêmio de inovação da MongoDB); MongoDB Female Innovator; Microsoft Innovative Educator Expert; Palestrante internacional, foi a primeira mulher brasileira a palestrar no MongoDB World ( New York), palestrou no Oracle Code One (São Francisco), e no PHP Benelux (Bélgica). Além disso é instrutora oficial do LinkedIn Learning, tendo gravado (na Áustria) três cursos para a plataforma.',
                     socialProfiles: [

@@ -441,6 +441,10 @@ export const AGENDA_ONLINE = [
                         {
                             url: 'https://github.com/pokemaobr',
                             name: 'github'
+                        },
+                        {
+                            url: 'https://twitch.tv/pokemaobr',
+                            name: 'twitch'
                         }
                     ]
                 }],

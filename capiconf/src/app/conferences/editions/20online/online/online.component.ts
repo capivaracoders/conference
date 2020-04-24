@@ -18,7 +18,7 @@ export class OnlineComponent implements OnInit {
   ngOnInit() {
     this.loadPeopleFromTalks(this.agenda);
     this.loadAgenda(this.agenda);
-    this.shuffle(this.onlinespeakers);
+    //this.shuffle(this.onlinespeakers);
   }
 
   loadPeopleFromTalks(source: any) {

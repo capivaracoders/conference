@@ -261,9 +261,38 @@ export const AGENDA_ONLINE = [
         data: "14/05",
         talks: [
             {
+                title: 'Aguarde!',
+                description: 'Aguarde!',
+                startTime: { hour: '21', minute: '00' },
+                speakers: [{
+                    name: 'John Papa',
+                    company: 'Microsoft',
+                    role: 'Principal Developer Advocate',
+                    picture: '/assets/speakers/john_papa.png',
+                    bio: 'John Papa é um pai e um marido dedicado, Principal Developer Advocate na Microsoft e é veterano nos programas Google Developer Expert, Microsoft RD e MVP. Suas paixões são implantar e ensinar tecnologias da Web modernas e divertir-se na Disney com sua família. John é um coapresentador do podcast popular Adventures in Angular (Aventuras em Angular), autor do Angular Style Guide (Guia de estilo do Angular) e de vários cursos populares da Pluralsight.',
+                    socialProfiles: [
+                        {
+                            url: 'https://twitter.com/john_papa',
+                            name: 'twitter'
+                        },
+                        {
+                            url: 'https://github.com/johnpapa',
+                            name: 'github'
+                        },
+                        {
+                            url: 'https://linkedin.com/in/papajohn',
+                            name: 'linkedin'
+                        }
+        
+                    ]
+                }],
+                type: 'talk'
+            }
+            ,
+            {
                 title: 'Ambientes de Teste Dinâmicos com Helm e Kubernetes',
                 description: 'Todo desenvolvedor sonha com um ambiente completo onde possa testar seu código sem atrapalhar o desenvolvimento de seus colegas, o problema com este sonho é que esta infraestrutura é complexa demais para ser criada e destruída manualmente. É ai que podemos usar o poder do Kubernetes e do Helm para criarmos ambientes de testes individuais totalmente dinâmicos para cada um dos seus commits!',
-                startTime: { hour: '21', minute: '00' },
+                startTime: { hour: '21', minute: '40' },
                 speakers: [{
                     name: 'Lucas Santos',
                     company: 'Microsoft',
@@ -282,30 +311,6 @@ export const AGENDA_ONLINE = [
                         {
                             name: 'twitter',
                             url: 'https://twitter.com/_staticvoid'
-                        }
-                    ]
-                }],
-                type: 'talk'
-            }
-            ,
-            {
-                title: 'Escalando o Everest com Serverless Computing',
-                description: 'Imagine o que acontece com seus servidores que estão acostumados a processar 10 transações por minuto se vier uma enxurrada de 10K transações por minuto? Imagine um sistema onde você projetou uma infra para suportar 10k de transações por minuto mas onde 90% do tempo ele processa apenas 10 transações por minuto? Imagine terceirizar toda configuração de infraestrutura, elasticidade e escalabilidade e poder focar 100% na lógica de negócio enquanto desenvolve novas soluções... Serverless é o modelo de Cloud Computing que tenta resolver essas questões, facilitar a vida do desenvolvedor, e maximizar a produtividade do time de operações.',
-                startTime: { hour: '21', minute: '40' },
-                speakers: [{
-                    name: 'Frederico Policarpo Martins',
-                    company: 'EBANX',
-                    role: 'Software Engineering',
-                    picture: '/assets/speakers/Fred.png',
-                    bio: 'Cientista da Computação com 14 anos de experiência de mercado atuando prioritariamente como desenvolvedor. Nesta carreira já atuei bastante como Tech Lead,  uma temporada como Product Owner, e também um período como Engenheiro/Analista de Dados. Sou apaixonado por solucionar problemas com tecnologia, seja ela qual for! Gosto de entender toda o jornada de solução de um problema, desde a identificação da necessidade até a entrega e monitoramento, manutenção e evoluções.',
-                    socialProfiles: [
-                        {
-                            url: 'https://github.com/fredpolicarpo',
-                            name: 'github'
-                        },
-                        {
-                            url: 'https://www.linkedin.com/in/fredpolicarpo/',
-                            name: 'linkedin'
                         }
                     ]
                 }],
@@ -557,13 +562,13 @@ export const AGENDA_ONLINE = [
             },
             {
                 title: 'Arquitetura Evolutiva aplicada na agilidade e teoria do caos',
-                description: 'Nessa sessão mostrarei como é feita a integração entre o Azure DevOps e o Power BI com integrações além das apresentadas em documentações. Serão apresentados alguns dashboards no Power BI tais como: Métricas de repositório de código fonte e Métricas de Release.',
+                description: 'Desenvolver aplicações de missão crítica, com um numero alto de requisições simultâneas, e em um ambiente corporativo que integra produção, logística, franqueado, revendedor, e-commerce e consumidor, atendendo aos requisitos de negócio e LGPD é uma mistura perfeita para inovar e colocar os melhores planos e conceitos em prática. Nesta talk Fábio, arquiteto do Grupo Boticário, irá mostrar como construiu uma aplicação para trabalhar com Whatsapp Business API preparada para uma grande volumetria utilizando microserviços em Kubernetes, eventos (SQS) e serverless com uma insfraestrutura escalável e as code.',
                 startTime: { hour: '14', minute: '00' },
                 speakers: [{
                     name: 'Fábio Rogério',
                     company: 'Grupo Boticário',
                     role: 'Arquiteto de Soluções',
-                    bio: 'Desenvolver aplicações de missão crítica, com um numero alto de requisições simultâneas, e em um ambiente corporativo que integra produção, logística, franqueado, revendedor, e-commerce e consumidor, atendendo aos requisitos de negócio e LGPD é uma mistura perfeita para inovar e colocar os melhores planos e conceitos em prática. Nesta talk Fábio e Juliana, arquitetos do Grupo Boticário, irão mostrar como construíram uma aplicação para trabalhar com Whatsapp Business API preparada para uma grande volumetria utilizando microserviços em Kubernetes, eventos (SQS) e serverless com uma insfraestrutura escalável e as code.',
+                    bio: 'Fábio é Arquiteto de Soluções no Grupo Boticário, desenvolvedor do Clipper ao GoLang, fissurado por inovação, já criou várias startups, e faliu várias delas, arquitetou várias aplicações de missão críticas e fez vários update sem where em produção.',
                     picture: '/assets/speakers/fabior.png',
                     socialProfiles: [
                         {
@@ -578,6 +583,31 @@ export const AGENDA_ONLINE = [
                 }],
                 type: 'talk'
             }
+            ,
+            {
+                title: 'Escalando o Everest com Serverless Computing',
+                description: 'Imagine o que acontece com seus servidores que estão acostumados a processar 10 transações por minuto se vier uma enxurrada de 10K transações por minuto? Imagine um sistema onde você projetou uma infra para suportar 10k de transações por minuto mas onde 90% do tempo ele processa apenas 10 transações por minuto? Imagine terceirizar toda configuração de infraestrutura, elasticidade e escalabilidade e poder focar 100% na lógica de negócio enquanto desenvolve novas soluções... Serverless é o modelo de Cloud Computing que tenta resolver essas questões, facilitar a vida do desenvolvedor, e maximizar a produtividade do time de operações.',
+                startTime: { hour: '14', minute: '40' },
+                speakers: [{
+                    name: 'Frederico Policarpo Martins',
+                    company: 'EBANX',
+                    role: 'Software Engineering',
+                    picture: '/assets/speakers/Fred.png',
+                    bio: 'Cientista da Computação com 14 anos de experiência de mercado atuando prioritariamente como desenvolvedor. Nesta carreira já atuei bastante como Tech Lead,  uma temporada como Product Owner, e também um período como Engenheiro/Analista de Dados. Sou apaixonado por solucionar problemas com tecnologia, seja ela qual for! Gosto de entender toda o jornada de solução de um problema, desde a identificação da necessidade até a entrega e monitoramento, manutenção e evoluções.',
+                    socialProfiles: [
+                        {
+                            url: 'https://github.com/fredpolicarpo',
+                            name: 'github'
+                        },
+                        {
+                            url: 'https://www.linkedin.com/in/fredpolicarpo/',
+                            name: 'linkedin'
+                        }
+                    ]
+                }],
+                type: 'talk'
+            }
+            
         ]
     },
 ]

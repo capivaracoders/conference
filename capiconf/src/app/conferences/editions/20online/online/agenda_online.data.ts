@@ -543,8 +543,8 @@ export const AGENDA_ONLINE = [
                 startTime: { hour: '11', minute: '00' },
                 speakers: [{
                     name: 'Kamila de Fátima Santos Oliveira',
-                    company: 'Google',
-                    role: 'Developer Advocate',
+                    company: 'Ame Digital',
+                    role: 'Backend Developer',
                     bio: 'Desenvolvedora fullstack, graduada em ciencia da computação, sou apaixonada por tecnologia e pela forma como ela impacta a vida das pessoas, sou co-organizadora das comunidades DevsJavaGirl,Perifacode, WomakersCode e Nerdzao participante e palestrante de diversas comunidades e meetups principalmente aqueles que visam maior inclusão e diversidade na área. Tenho trabalhado com Javascript, Node, Angular e também com Java, Python e Ruby. Adoro compartilhar conhecimento, ajudar pessoas e espalhar a palavra do código <3',
                     picture: '/assets/speakers/Kamila.png',
                     socialProfiles: [

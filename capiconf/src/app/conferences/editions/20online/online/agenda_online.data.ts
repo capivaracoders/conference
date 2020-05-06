@@ -611,7 +611,69 @@ export const AGENDA_ONLINE = [
                 }],
                 type: 'talk'
             }
-            
+            ,
+            {
+                title: 'Brasil.IO COVID-19: dados por município (e desafios)',
+                description: 'A análise de dados é uma ferramenta poderosa para embasar tomadas de decisões em qualquer processo de gestão. Em uma crise de saúde pública sem precedentes como a pandemia de COVID-19, obter informação detalhada e atualizada é uma questão de sobrevivência. Número de infectados, taxa de mortalidade e outros indicadores são fundamentais para que os gestores públicos possam monitorar o avanço do vírus e, assim, definir os recursos necessários de combate à doença; planejar as adaptações no sistema de saúde; e implementar medidas de contenção e distanciamento social. É também por meio de dados confiáveis e de qualidade que os governos poderão decidir o momento correto de reverter medidas de isolamento.',
+                startTime: { hour: '15', minute: '20' },
+                speakers: [{
+                    name: 'Álvaro Justen',
+                    company: 'Escola de Dados | Brasil.IO',
+                    role: 'Developer',
+                    picture: '/assets/2019/img/speakers/turicas.jpeg',
+                    bio: 'Álvaro Justen é programador e professor. Ativista de software livre desde 2004 e programador Python desde 2005, atualmente trabalha capturando, convertendo, limpando e analisando dados em diversos projetos jornalísticos brasileiros; é fundador do portal de dados abertos acessíveis Brasil.IO, desenvolvedor-chefe do ImpactoJOR, professor da Escola de Dados e está sempre viajando para congressos, libertando dados públicos inacessíveis, provando cafés especiais e hipnotizando pessoas. ',
+                    socialProfiles: [
+                        {
+                            url: 'https://linkedin.com/in/alvarojusten',
+                            name: 'linkedin'
+                        },
+                        {
+                            url: 'https://twitter.com/turicas',
+                            name: 'twitter'
+                        },
+                        {
+                            url: 'https://github.com/turicas',
+                            name: 'github'
+                        }
+                    ]
+                }],
+                type: 'talk'
+            }
+            ,
+            {
+                title: 'Os desafios de gestão para equipes em home office',
+                description: 'Nesta palestra vamos conversar um pouco sobre os desafios da gestão de equipes remotas, ferramentas para comunicação e organização, o que não pode faltar em um trabalho remoto e como manter o engajamento de todo o time nesse período tão conturbado que temos vivido',
+                startTime: { hour: '16', minute: '00' },
+                speakers: [{
+                    name: 'Mauricio Lang',
+                    company: 'vhsys',
+                    role: 'Squad Leader',
+                    picture: '/assets/speakers/MauricioLang.png',
+                    bio: 'Sou um desenvolvedor muito comunicador sempre em busca de superar meus limites e me testar em novos desafios. Atualmente sou coordenador de desenvolvimento na VHSYS e responsável por direcionar squads a se apaixonarem pelo produto que desenvolvem aplicando em seu dia-a-dia técnicas e tecnologias que melhor se adaptem a necessidade do negócio.',
+                    socialProfiles: [
+                        {
+                            url: 'https://www.linkedin.com/in/mauricio-lang/',
+                            name: 'linkedin'
+                        }
+                    ]
+                }],
+                type: 'talk'
+            }
+            ,
+            {
+                title: 'Arquitetura event-driven ou “fala que eu te escuto”',
+                description: 'Então você resolveu utilizar a arquitetura de micro-serviços no seu projeto? E a comunicação entre elas, como foi desenhada? Se você respondeu HTTP/REST, que tal se livrar dessas amarras, e partir para uma arquitetura baseada em evento? Nesse talk, vou contar um pouco sobre as chamadas arquitetura event-driven, suas vantagens e desafios, e como ela foi o pilar para o desenvolvimento de uma plataforma bancária nacional baseada em nuvem e serverless.',
+                startTime: { hour: '16', minute: '40' },
+                speakers: [{
+                    name: 'Fernando Dias Belo',
+                    company: 'Bari Tecnologia (Banco Bari)',
+                    role: 'Coordenador de Desenvolvimento de Software',
+                    picture: '/assets/speakers/fernandodiasbelo.png',
+                    bio: 'Engenheiro Eletricista formado pela UTFPR-PR e pós-graduado em Big Data. 18 anos de experiência com desenvolvimento de software onde já atuou em praticamente todas as sub-áreas. Atualmente coordenando o desenvolvimento de software no Banco Bari, liderando um time de aproximadamente 40 profissionais.',
+                    socialProfiles: []
+                }],
+                type: 'talk'
+            }
         ]
     },
 ]

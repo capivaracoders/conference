@@ -261,8 +261,8 @@ export const AGENDA_ONLINE = [
         data: "14/05",
         talks: [
             {
-                title: 'Aguarde!',
-                description: 'Aguarde!',
+                title: 'Preload Strategies: Step in Time, Step in Time!',
+                description: 'Can you design your app to load progressively and predictively, creating a fast and immersive user experience that steps in time? Impossible you say? “Everything is possible, even the impossible.” (- Mary Poppins). Your users care about how fast your app works. Learn how to load just what they need when they need it, adapt your user experience to low or no wifi, and experience what supercalifragilisticexpialidocious feels like. See how understanding user behavior and combining that with preloading strategies and RxJS can make a hugely positive impact on their user experience. You’ll never need a reason, never need a rhyme, when you make your app step in time.',
                 startTime: { hour: '21', minute: '00' },
                 speakers: [{
                     name: 'John Papa',

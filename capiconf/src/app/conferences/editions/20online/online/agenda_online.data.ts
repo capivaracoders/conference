@@ -2,6 +2,7 @@ export const AGENDA_ONLINE = [
     {
         name: "Segunda-feira",
         data: "11/05",
+        link: "https://www.youtube.com/watch?v=FjdEjAqcBuc",
         talks: [            
             {
                 title: 'APIs Escaláveis com Node.js & Arquitetura Serverless',

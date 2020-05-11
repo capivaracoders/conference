@@ -188,6 +188,12 @@
         <div class="uk-card uk-card-small uk-card-default uk-margin-small-bottom">
           <div class="uk-card-header">
             <h4 class="hour">{{item.name}}, {{item.data}}</h4>
+            <div *ngIf="!!item.link" uk-lightbox>
+              <a class="uk-button uk-button-default" href="{{item.link}}" data-caption="YouTube" data-attrs="width: 1280; height: 720;">Clique aqui para ver o vídeo</a>
+            </div>
+            <h5 *ngIf="!!item.link" style="
+              margin-top: 1rem;
+            ">ou <a href="{{item.link}}" target="blank">clique aqui para abrir no YouTube</a></h5>
           </div>
         </div>
         <!-- body -->

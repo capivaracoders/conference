@@ -5,7 +5,7 @@ import { IncluaTodaPessoaComponent } from './campaigns/inclua-toda-pessoa/inclua
 import { OnlineComponent } from './conferences/editions/20online/online/online.component';
 
 const routes: Routes = [
-  { path: '', redirectTo: '2020/inicio', pathMatch: 'full' },
+  { path: '', redirectTo: 'online', pathMatch: 'full' },
   {
     path: '2020',
     loadChildren: () =>
@@ -23,7 +23,7 @@ const routes: Routes = [
   { path: 'online', component: OnlineComponent },
   { path: 'inclua-toda-pessoa', component: IncluaTodaPessoaComponent },
   { path: 'coc', component: CocComponent },
-  { path: '**', redirectTo: '2020/inicio' },
+  { path: '**', redirectTo: 'online' },
 ];
 
 @NgModule({

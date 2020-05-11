@@ -94,7 +94,7 @@ export const AGENDA_ONLINE = [
         talks: [
             {
                 title: '14 princípios para sua equipe de tecnologia!',
-                description: 'Aguarde!',
+                description: 'Toda equipe deveria organizar seus princípios de funcionamento. Princípios nos ajudam a definir menos regras e ter mais movimentos de reflexão e decisões baseadas no contexto em questão. O livro toyota way apresenta 14 princípios, Deming possui seus 14 pontos de gestão, e nesta conversa vou trazer 14 princípios que venho aprendendo e aplicando no meu trabalho em equipes de tecnologia.',
                 startTime: { hour: '21', minute: '00' },
                 speakers: [{
                     name: 'Daniel Wildt',

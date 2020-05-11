@@ -2,31 +2,30 @@ export const AGENDA_ONLINE = [
     {
         name: "Segunda-feira",
         data: "11/05",
-        talks: [
+        talks: [            
             {
-                title: 'Code Review: The Good Parts!',
-                description: 'Code Reviews são necessários em um fluxo de trabalho de desenvolvimento, mas o que acontece ao submeter ou receber um review é tão divertido quanto arrancar um dente. Transforme a cultura de code review de sua equipe com algumas dicas & truques para melhorar a qualidade do código e as relações de trabalho, simultaneamente.',
+                title: 'APIs Escaláveis com Node.js & Arquitetura Serverless',
+                description: 'Node.Js é escalável. O Azure também é um serviço de nuvem escalável. E o que acha de usar os dois juntos e mais o Serverless?! Quais os benefícios de usarmos uma Arquitetura Serverless em aplicações Node.js integradas com Azure? Quais são os ganhos em usar essas tecnologias? Durante a palestra, estarei falando sobre como podemos definir uma arquitetura altamente escalável usando Node.js com Azure Functions baseado numa arquitetura Serverless. E claro que vai ter uma super demo em como podemos criar um Serverless Function App no Azure! :) ',
                 startTime: { hour: '21', minute: '00' },
                 speakers: [{
-                    name: 'Cynthia Zanoni',
+                    name: 'Glaucia Lemos',
                     company: 'Microsoft',
-                    role: 'Microsoft Developer Relations Lead LatAm',
-                    picture: '/assets/speakers/CynthiaZanoni.jpg',
-                    bio: 'Desenvolvedora de Software com 10+ anos de experiência em tecnologias Open Source e Acessibilidade, é fundadora da WoMakersCode - uma comunidade global focada em ajudar, inspirar e capacitar ainda mais mulheres em tecnologia que as ajuda a ganhar uma oportunidade de emprego e foi reconhecida pela Mozilla Foundation (2016) como uma das mulheres técnicas mais influentes da América Latina, apoio à diversidade e inclusão.',
+                    role: 'Cloud Advocate de JavaScript',
+                    bio: 'Glaucia Lemos é Cloud Advocate de JavaScript 🥑 na Microsoft. Ama realizar contribuições em projetos Open Source. Atua como Member & Contributor no Node.js Foundation e no React Community realizando contribuições nas traduções do site Nodejs.org e Reactjs.org para o português. Participa de comunidades bastante inclusivas, como a WoMakersCode – uma organização focada em ajudar, inspirar e capacitar ainda mais mulheres na tecnologia a obter uma oportunidade de emprego. Sua maior paixão: compartilhar conhecimento com outras pessoas!',
+                    picture: '/assets/speakers/glaucia-lemos.png',
                     socialProfiles: [
                         {
-                            url: 'https://twitter.com/cynthiazanoni',
-                            name: 'twitter'
+                            name: 'github',
+                            url: 'https://github.com/glaucia86/'
                         },
                         {
-                            url: 'https://github.com/cyz/',
-                            name: 'github'
+                            name: 'linkedin',
+                            url: 'https://www.linkedin.com/in/glaucialemos/'
                         },
                         {
-                            url: 'https://www.linkedin.com/in/cynthiazanoni/',
-                            name: 'linkedin'
+                            name: 'twitter',
+                            url: 'https://github.com/glaucia86/'
                         }
-
                     ]
                 }],
                 type: 'talk'
@@ -172,29 +171,30 @@ export const AGENDA_ONLINE = [
         name: "Quarta-feira",
         data: "13/05",
         talks: [
-            {
-                title: 'APIs Escaláveis com Node.js & Arquitetura Serverless',
-                description: 'Node.Js é escalável. O Azure também é um serviço de nuvem escalável. E o que acha de usar os dois juntos e mais o Serverless?! Quais os benefícios de usarmos uma Arquitetura Serverless em aplicações Node.js integradas com Azure? Quais são os ganhos em usar essas tecnologias? Durante a palestra, estarei falando sobre como podemos definir uma arquitetura altamente escalável usando Node.js com Azure Functions baseado numa arquitetura Serverless. E claro que vai ter uma super demo em como podemos criar um Serverless Function App no Azure! :) ',
+          {
+                title: 'Code Review: The Good Parts!',
+                description: 'Code Reviews são necessários em um fluxo de trabalho de desenvolvimento, mas o que acontece ao submeter ou receber um review é tão divertido quanto arrancar um dente. Transforme a cultura de code review de sua equipe com algumas dicas & truques para melhorar a qualidade do código e as relações de trabalho, simultaneamente.',
                 startTime: { hour: '21', minute: '00' },
                 speakers: [{
-                    name: 'Glaucia Lemos',
+                    name: 'Cynthia Zanoni',
                     company: 'Microsoft',
-                    role: 'Cloud Advocate de JavaScript',
-                    bio: 'Glaucia Lemos é Cloud Advocate de JavaScript 🥑 na Microsoft. Ama realizar contribuições em projetos Open Source. Atua como Member & Contributor no Node.js Foundation e no React Community realizando contribuições nas traduções do site Nodejs.org e Reactjs.org para o português. Participa de comunidades bastante inclusivas, como a WoMakersCode – uma organização focada em ajudar, inspirar e capacitar ainda mais mulheres na tecnologia a obter uma oportunidade de emprego. Sua maior paixão: compartilhar conhecimento com outras pessoas!',
-                    picture: '/assets/speakers/glaucia-lemos.png',
+                    role: 'Microsoft Developer Relations Lead LatAm',
+                    picture: '/assets/speakers/CynthiaZanoni.jpg',
+                    bio: 'Desenvolvedora de Software com 10+ anos de experiência em tecnologias Open Source e Acessibilidade, é fundadora da WoMakersCode - uma comunidade global focada em ajudar, inspirar e capacitar ainda mais mulheres em tecnologia que as ajuda a ganhar uma oportunidade de emprego e foi reconhecida pela Mozilla Foundation (2016) como uma das mulheres técnicas mais influentes da América Latina, apoio à diversidade e inclusão.',
                     socialProfiles: [
                         {
-                            name: 'github',
-                            url: 'https://github.com/glaucia86/'
+                            url: 'https://twitter.com/cynthiazanoni',
+                            name: 'twitter'
                         },
                         {
-                            name: 'linkedin',
-                            url: 'https://www.linkedin.com/in/glaucialemos/'
+                            url: 'https://github.com/cyz/',
+                            name: 'github'
                         },
                         {
-                            name: 'twitter',
-                            url: 'https://github.com/glaucia86/'
+                            url: 'https://www.linkedin.com/in/cynthiazanoni/',
+                            name: 'linkedin'
                         }
+
                     ]
                 }],
                 type: 'talk'

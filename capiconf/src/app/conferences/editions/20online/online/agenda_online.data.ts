@@ -91,6 +91,7 @@ export const AGENDA_ONLINE = [
     {
         name: "Terça-feira",
         data: "12/05",
+        link: "https://www.youtube.com/watch?v=CQg5q_CLzn8",
         talks: [
             {
                 title: '14 princípios para sua equipe de tecnologia!',

@@ -669,7 +669,7 @@ export const AGENDA_ONLINE = [
                 speakers: [{
                     name: 'Fernando Dias Belo',
                     company: 'Bari Tecnologia (Banco Bari)',
-                    role: 'Coordenador de Desenvolvimento de Software',
+                    role: 'Gerente - Desenvolvimento de Software',
                     picture: '/assets/speakers/fernandodiasbelo.png',
                     bio: 'Engenheiro Eletricista formado pela UTFPR-PR e pós-graduado em Big Data. 18 anos de experiência com desenvolvimento de software onde já atuou em praticamente todas as sub-áreas. Atualmente coordenando o desenvolvimento de software no Banco Bari, liderando um time de aproximadamente 40 profissionais.',
                     socialProfiles: []

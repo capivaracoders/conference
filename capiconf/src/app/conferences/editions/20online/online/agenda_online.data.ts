@@ -573,7 +573,7 @@ export const AGENDA_ONLINE = [
                 speakers: [{
                     name: 'Fábio Rogério',
                     company: 'Grupo Boticário',
-                    role: 'Arquiteto de Soluções',
+                    role: 'Gerente - Desenvolvimento de Software',
                     bio: 'Fábio é Arquiteto de Soluções no Grupo Boticário, desenvolvedor do Clipper ao GoLang, fissurado por inovação, já criou várias startups, e faliu várias delas, arquitetou várias aplicações de missão críticas e fez vários update sem where em produção.',
                     picture: '/assets/speakers/fabior.png',
                     socialProfiles: [

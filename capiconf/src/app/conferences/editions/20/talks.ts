@@ -1,7 +1,12 @@
 export const TALKS = [
     {
+        agenda: {
+            order: 1,
+            day: 1,
+            startTime: { hour: '09', minute: '20' },
+        },
         id: '001',
-        type: 'talk',
+        type: 'talk',
         title: 'Da Concepção ao Delivery: Como integrar design e DevSecOps para entregar o máximo valor ao cliente',
         description: 'Resultado de mais de 10 anos de evolução, criamos um processo de desenvolvimento que mapeia a cadeia de valor do produto/projeto desde a concepção até a entrega do software em produção.',
         tags: [
@@ -40,8 +45,13 @@ export const TALKS = [
         }]
     },
     {
+        agenda: {
+            order: 1,
+            day: 1,
+            startTime: { hour: '09', minute: '20' },
+        },
         id: '002',
-        type: 'talk',
+        type: 'talk',
         title: 'Aguarde!',
         description: 'Aguarde!',
         tags: [
@@ -66,8 +76,13 @@ export const TALKS = [
         }]
     },
     {
+        agenda: {
+            order: 1,
+            day: 1,
+            startTime: { hour: '09', minute: '20' },
+        },
         id: '003',
-        type: 'talk',
+        type: 'talk',
         title: 'O poder da Acessibilidade em aplicações digitais: como a acessibilidade digital envolve diferentes pessoas e pode melhorar a experiência, usabilidade e performance de aplicações.',
         description: 'Nos dias de hoje, construir sites não é mais um diferencial. Com a conectividade e as possibilidades que encontramos no mundo web, somos exigidos a fornecer muito mais que apenas páginas com conteúdo. Precisamos oferecer experiência, qualidade e uma performance muito atrativa para diversos usuários. Mas será que estamos conseguindo? É aí que a Acessibilidade Digital entra. Será que estamos garantindo uma boa experiência para diferentes usuários? Como podemos desenvolver aplicações acessíveis? Qual a relação de aplicações acessíveis com a performance da página? Como podemos iniciar o desenvolvimento de aplicações web acessíveis? O objetivo dessa palestra é compartilhar muito do meu aprendizado contínuo com desenvolvimento de aplicações acessíveis e como ela pode impactar de forma positiva as nossas aplicações.',
         tags: [
@@ -90,6 +105,11 @@ export const TALKS = [
     },
     ,
     {
+        agenda: {
+            order: 1,
+            day: 1,
+            startTime: { hour: '09', minute: '20' },
+        },
         id: '005',
         type: 'panel',
         title: 'Aguarde!',
@@ -121,8 +141,13 @@ export const TALKS = [
         }]
     },
     {
+        agenda: {
+            order: 1,
+            day: 1,
+            startTime: { hour: '09', minute: '20' },
+        },
         id: '006',
-        type: 'talk',
+        type: 'talk',
         title: '14 princípios para sua equipe de tecnologia!',
         description: 'Aguarde!',
         tags: [
@@ -143,8 +168,13 @@ export const TALKS = [
         }]
     },
     {
+        agenda: {
+            order: 1,
+            day: 1,
+            startTime: { hour: '09', minute: '20' },
+        },
         id: '007',
-        type: 'talk',
+        type: 'talk',
         title: 'Aguarde!',
         description: 'Aguarde!',
         tags: [
@@ -177,8 +207,13 @@ export const TALKS = [
         }]
     },
     {
+        agenda: {
+            order: 1,
+            day: 1,
+            startTime: { hour: '09', minute: '20' },
+        },
         id: '008',
-        type: 'talk',
+        type: 'talk',
         title: 'Aguarde!',
         description: 'Aguarde!',
         tags: [
@@ -215,8 +250,13 @@ export const TALKS = [
         }]
     },
     {
+        agenda: {
+            order: 1,
+            day: 1,
+            startTime: { hour: '09', minute: '20' },
+        },
         id: '009',
-        type: 'talk',
+        type: 'talk',
         title: 'PeopleChain e o poder das comunidades técnicas.',
         description: 'A teoria dos seis graus de separação já foi comrpovada por diversos meios acadêmicos e científicos.  Em 2020, estamos a menos de 4 graus de separação de qualquer outro indivíduo do planeta e se a cadeia de blocos popularizou as criptomoedas, a cadeia de pessoas, peoplechain, muda completamente a forma como profissionais de tecnologia se unem e reúnem em comunidade. O conhecimento está cada vez mais abundante e só fica desempregado quem se isola.',
         tags: [
@@ -245,8 +285,13 @@ export const TALKS = [
         }]
     },
     {
+        agenda: {
+            order: 1,
+            day: 1,
+            startTime: { hour: '09', minute: '20' },
+        },
         id: '010',
-        type: 'talk',
+        type: 'talk',
         title: 'Aguarde!',
         description: 'Aguarde!',
         tags: [
@@ -280,8 +325,13 @@ export const TALKS = [
         }]
     },
     {
+        agenda: {
+            order: 1,
+            day: 1,
+            startTime: { hour: '09', minute: '20' },
+        },
         id: '011',
-        type: 'talk',
+        type: 'talk',
         title: 'Eles querem destruir com a sua carreira...',
         description: 'Ser uma pessoa desenvolvedora é um baita desafio e não saber lidar com isso pode nos impedir de avançar para o próximo nível. Quantas vezes nos perdemos em tantas possibilidades no mundo tecnológico e não saímos do lugar? Se você tem o costume de comparar o bastidor (backend) com o palco (frontend) dos outros sabe o quanto de frustração isso pode gerar. Com base em nossa experiência pessoal, depois de ficar parado no mesmo lugar por muito tempo, percebemos padrões e gatilhos negativos que acontecem em nossa mente e que, naturalmente, nos impede de voar. Vamos compartilhar ferramentas, ideias e insights para você construir sua carreira de uma forma mais assertiva e menos dolorosa!',
         tags: [
@@ -324,8 +374,13 @@ export const TALKS = [
         }]
     },
     {
+        agenda: {
+            order: 1,
+            day: 1,
+            startTime: { hour: '09', minute: '20' },
+        },
         id: '012',
-        type: 'talk',
+        type: 'talk',
         title: 'Kotlin vs Go: A guerra das corotinas',
         description: 'Com a banalização dos computadores multicores a programação concorrente se tornou algo comum no dia a dia do desenvolvedor. Kotlin é uma linguagem orientada a objetos e Funcional, por outro lado Go é simples por design, ambas implementam os mesmo conceitos. Essa talk vai debater sobre concorrência estruturada e por que ela é benéfica para o desenvolvedor.',
         tags: [
@@ -355,8 +410,13 @@ export const TALKS = [
         }]
     },
     {
+        agenda: {
+            order: 1,
+            day: 1,
+            startTime: { hour: '09', minute: '20' },
+        },
         id: '013',
-        type: 'talk',
+        type: 'talk',
         title: 'Um projeto completo de Ciência de Dados com Metaflow',
         description: 'Entenda como criar um projeto completo de ciência de dados com a nova ferramenta da Netflix o Metaflow.',
         tags: [
@@ -378,8 +438,13 @@ export const TALKS = [
         }]
     },
     {
+        agenda: {
+            order: 1,
+            day: 1,
+            startTime: { hour: '09', minute: '20' },
+        },
         id: '014',
-        type: 'talk',
+        type: 'talk',
         title: 'To pair or not to pair? Como o pareamento pode mudar o jeito que você coda hoje',
         description: 'Parear é uma técnica ágil pra entregar resultados que vem se mostrando muito eficiente. Apesar de se provar vantajosa, ainda não é muito difundida e muitas vezes as pessoas tem receio de diminuir a velocidade do time. Nessa palestra vamos abordar como o pareamento pode ajudar a tornar as pessoas desenvolvedoras do time mais ágeis e focadas no resultado garantindo a qualidade do código. Além disso, vamos abordar diferentes formas de parear e como se preparar para construir código com outras pessoas.',
         tags: [
@@ -409,8 +474,13 @@ export const TALKS = [
         }]
     },
     {
+        agenda: {
+            order: 1,
+            day: 1,
+            startTime: { hour: '09', minute: '20' },
+        },
         id: '015',
-        type: 'talk',
+        type: 'talk',
         title: 'O que te torna mais lento? ',
         description: 'Entre 2017 e 2018 fiz uma pesquisa com pessoas desenvolvedoras de todo o Brasil e tive cerca de 250 participantes. Destes a grande maioria tem mais de 4 anos de experiência. O link desta pesquisa está nos links adicionais. Uma das perguntas nesta pesquisa era sobre o termo DIVIDA TÉCNICA. Me assustei com o resultado. Metade dos respondentes informaram que não conhecem este termo ou conhecem como DEBITO TÉCNICO. Imagino que a tradução de TECHNICAL DEBT foi falha. Ward Cunningham, um dos signatários do manifesto, cunhou este termo e usou a metáfora financeira para explicar o que era. E no mundo financeiro DÍVIDA é bem diferente de DÉBITO. Nesta talk irei apresentar esta metáfora e desconstruir este conceito errado.',
         tags: [
@@ -441,8 +511,13 @@ export const TALKS = [
         }]
     },
     {
+        agenda: {
+            order: 1,
+            day: 1,
+            startTime: { hour: '09', minute: '20' },
+        },
         id: '016',
-        type: 'talk',
+        type: 'talk',
         title: 'A coisa certa e somente a coisa certa, da prática!',
         description: 'Inspirado pela "Bossa Nova", vários autores e a prática em empresas de tecnologia, apresento uma visão sobre o como resolver problemas "de ponta a ponta" através do conceito de Company-wide Agility, representada pelo ciclo Estratégia -> Descoberta -> Entrega -> Operação. A questão sempre foi e sempre será em como atravessar este ciclo e se manter fazendo a coisa certa.',
         tags: [
@@ -463,8 +538,13 @@ export const TALKS = [
         }]
     },
     {
+        agenda: {
+            order: 1,
+            day: 1,
+            startTime: { hour: '09', minute: '20' },
+        },
         id: '017',
-        type: 'talk',
+        type: 'talk',
         title: 'Docker no ambiente de desenvolvimento',
         description: 'Como o uso de Docker no seu Desktop pode ajudar a melhorar a sua produtividade?',
         tags: [
@@ -494,8 +574,13 @@ export const TALKS = [
         }]
     },
     {
+        agenda: {
+            order: 1,
+            day: 1,
+            startTime: { hour: '09', minute: '20' },
+        },
         id: '018',
-        type: 'talk',
+        type: 'talk',
         title: 'Pensando grande em telas pequenas: como desenvolver, manter e evoluir aplicações mobile escaláveis como as gigantes do mercado! ',
         description: 'Já parou para se perguntar como as grandes empresas desenvolvem suas aplicações mobile para milhares de pessoas? Quais técnicas elas utilizam? O que elas priorizam? Como tudo funciona junto? E se você pudesse construir as suas próprias aplicações de forma eficiente e escalável, como essas grandes empresas costumam  fazer? Nesse talk vou tentar falar um pouco sobre como funcionam times, rotinas e técnicas de desenvolvimento de aplicações mobile de alta e escala e performance e como você pode fazer uso de muitas dessas práticas hoje mesmo! ',
         tags: [
@@ -529,8 +614,13 @@ export const TALKS = [
         }]
     },
     {
+        agenda: {
+            order: 1,
+            day: 1,
+            startTime: { hour: '09', minute: '20' },
+        },
         id: '019',
-        type: 'talk',
+        type: 'talk',
         title: 'O que você deveria levar em consideração na hora de escolher entre React ou Vue',
         description: 'Durante o seu dia a dia você já deve ter esbarrado em inúmeros desafios como: migração do legado ou padronização da camada frontend. Nessa palestra vamos te contar qual foi o processo de decisão e alguns resultados obtidos em relação a qual seria o framework ideal para aplicar no desenvolvimento do produto, assim como aplicar a governança de tecnologia entre squads distintas.',
         tags: [
@@ -567,8 +657,13 @@ export const TALKS = [
         }]
     },
     {
+        agenda: {
+            order: 1,
+            day: 1,
+            startTime: { hour: '09', minute: '20' },
+        },
         id: '020',
-        type: 'talk',
+        type: 'talk',
         title: 'Desenvolvimento nativo em 2020 compensa?',
         description: 'Questionar sobre a atual situação do desenvolvimento mobile, com dados sobre o uso de smartphones, cases de empresas que se aproveitaram desse cenário, e então falar sobre a evolução do desenvolvimento mobile e as tecnologias e frameworks envolvidos, e comparar as principais tecnologias do mercado: React Native, Flutter e desenvolvimento Nativo.',
         tags: [
@@ -599,15 +694,3 @@ export const TALKS = [
         }]
     }
 ];
-
-export const TAG = {
-    docker: 'docker',
-    kotlin: 'kotlin',
-    frontend: 'frontend',
-    backend: 'backend',
-    go: 'go',
-    vue: 'vue',
-    angular: 'angular',
-    cloud: 'cloud',
-    insights: 'insights'
-};

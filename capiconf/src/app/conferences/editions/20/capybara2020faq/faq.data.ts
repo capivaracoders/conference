@@ -13,7 +13,13 @@ export const QUESTIONS = [
   },
   {
       question: 'Quando será realizado o evento?',
-      answer: 'A edição de 2020 será realizada nos dias 15 e 16 de Maio'
+      answer: 'Atenção! A CapiConf está adiada:',
+      itens: [
+          {
+              title: "Clique aqui para entender os próximos passos!",
+              url: "/2020/info-sobre-coronavirus"
+          }
+      ]
   },
   {
       question: 'Qual o horário do evento?',
@@ -21,7 +27,7 @@ export const QUESTIONS = [
   },
   {
       question: 'Onde será realizado o evento?',
-      answer: 'O #CapiConf vai acontecer no Teatro Positivo, Pequeno Auditório, localizado na Universidade Positivo, Campus Ecoville. R. Prof. Pedro Viriato Parigot de Souza, 5300. Campo Comprido, Curitiba,Paraná, 81280-330'
+      answer: 'O #CapiConf vai acontecer no Auditório Desembargador Cordeiro Clève, localizado na UniBrasil Centro Universitário, Rua Konrad Adenauer, 442. Tarumã, Curitiba, Paraná, 82821-020'
   },
   {
       question: 'Inscrições em grupo',

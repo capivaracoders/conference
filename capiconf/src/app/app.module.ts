@@ -6,13 +6,15 @@ import { AppComponent } from './app.component';
 import { CocComponent } from './conferences/shared/coc/coc.component';
 import { IncluaTodaPessoaComponent } from './campaigns/inclua-toda-pessoa/inclua-toda-pessoa.component';
 import { OnlineComponent } from './conferences/editions/20online/online/online.component';
+import { AdiamentoComponent } from './conferences/editions/adiamento/adiamento.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     CocComponent,
     IncluaTodaPessoaComponent,
-    OnlineComponent
+    OnlineComponent,
+    AdiamentoComponent
   ],
   imports: [
     BrowserModule,

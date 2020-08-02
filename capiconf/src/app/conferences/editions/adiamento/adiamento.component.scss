@@ -1,0 +1,43 @@
+
+.uk-sticky-placeholder {
+	height: 0 !important;
+}
+.top-wrap::before, .overlay-wrap::before {
+	position: absolute;
+	top:0;
+	right:0;
+	left: 0;
+	bottom: 0;
+	content: '';
+	z-index: 1;
+}
+.top-wrap-height {
+	height: 80vh;
+	min-height: 460px;
+	transition: height 0.25s;
+}
+
+.tickets-button {
+ background: #FFF !important;
+ color:#FF0E5A !important;
+}
+
+.uk-subnav-pill > * > :first-child {
+    padding: 0.5rem 1rem;
+    background-color: rgba(0, 0, 0, 0.04);
+}
+
+.uk-subnav-pill > .uk-active > a {
+  background: linear-gradient(75deg, #FF0E5A 0%, #FF6001 100%);
+}
+
+.top-container {
+	z-index: 2;
+}
+.uk-logo img {
+	height: 38px;
+}
+
+.bg-alternate {
+  background: #FAFAFA;
+}

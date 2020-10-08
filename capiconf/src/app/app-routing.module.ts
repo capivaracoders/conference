@@ -2,11 +2,13 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { CocComponent } from './conferences/shared/coc/coc.component';
 import { IncluaTodaPessoaComponent } from './campaigns/inclua-toda-pessoa/inclua-toda-pessoa.component';
-import { OnlineComponent } from './conferences/editions/20online/online/online.component';
 import { AdiamentoComponent } from './conferences/editions/adiamento/adiamento.component';
+import { Online2020NovComponent } from './conferences/editions/20online-nov/online/online2020-nov.component';
+
+const defaultRedirect = 'online';
 
 const routes: Routes = [
-  { path: '', redirectTo: '2020/inicio', pathMatch: 'full' },
+  { path: '', redirectTo: defaultRedirect, pathMatch: 'full' },
   {
     path: '2020',
     loadChildren: () =>
@@ -21,11 +23,11 @@ const routes: Routes = [
         m => m.Capybara2019Module,
       ),
   },
-  { path: 'online', component: OnlineComponent },
+  { path: 'online', component: Online2020NovComponent },
   { path: 'inclua-toda-pessoa', component: IncluaTodaPessoaComponent },
   { path: 'coc', component: CocComponent },
   { path: 'adiamento', component: AdiamentoComponent },
-  { path: '**', redirectTo: '2020/inicio' },
+  { path: '**', redirectTo: defaultRedirect },
 
 ];
 

@@ -1,0 +1,421 @@
+<div class="top-wrap uk-position-relative uk-light uk-background-secondary">
+  <div class="nav"
+    data-uk-sticky="cls-active: uk-background-secondary uk-box-shadow-medium; top: 100vh; animation: uk-animation-slide-top">
+    <div class="uk-container">
+      <nav class="uk-navbar uk-navbar-container uk-navbar-transparent" data-uk-navbar>
+        <div class="uk-navbar-left">
+          <div class="uk-navbar-item uk-padding-remove-horizontal">
+            <a class="uk-logo" title="Logo" href=""><img src="../../../assets/logo_dark_bg.svg"
+                alt="Logo #CapiConf"></a>
+          </div>
+        </div>
+        <div class="uk-navbar-right">
+          <ul class="uk-navbar-nav uk-visible@s">
+            <li class="uk-active uk-visible@m"><a href="#inicio" data-uk-icon="home" data-uk-scroll="duration: 500"></a></li>
+            <li><a href="#pessoas" data-uk-scroll="duration: 500">Pessoas</a></li>
+            <li><a href="#agenda" data-uk-scroll="duration: 500">Agenda</a></li>
+            <li><a href="#sponsors" data-uk-scroll="duration: 500">Patrocínio e Apoio</a></li>
+            <li><a href="{{ signUpFormURL }}" target="_blank" uk-toggle>INSCREVA-SE GRATUITAMENTE</a></li>
+            <li><a href="/coc" target="_blank">COC</a></li>
+          </ul>
+          <a class="uk-navbar-toggle uk-navbar-item uk-hidden@s" data-uk-toggle data-uk-navbar-toggle-icon
+            href="#offcanvas-nav"></a>
+        </div>
+      </nav>
+    </div>
+  </div>
+  <div id="inicio" class="uk-cover-container uk-light uk-flex uk-flex-middle top-wrap-height hero-bg" style="height: 580px;">
+    <div class="uk-container uk-flex-auto top-container uk-position-relative uk-margin-medium-top"
+      data-uk-parallax="y: 0,50; easing:0; opacity:0.2">
+      <div uk-grid class="uk-grid">
+        <div class="uk-width-1-4@m uk-visible@m uk-margin-large-right"
+          data-uk-scrollspy="cls: uk-animation-slide-right-medium; target: > *; delay: 150">
+          <img class="uk-margin-large-bottom" src="../../../assets/logo_round_normal.svg" alt="Logo #CapiConf">
+        </div>
+        <div class="uk-width-expand@m uk-margin-medium-top"
+          data-uk-scrollspy="cls: uk-animation-slide-right-medium; target: > *; delay: 150">
+          <h4 class="uk-margin-small-bottom">CURITIBA, de 16 à 21 de Novembro 2020</h4>
+          <h1 class="uk-margin-remove-top uk-margin-remove-bottom"><span class="uk-text-lighter">O </span>
+            <span class="uk-text-bolder">MAIOR EVENTO</span> <span class="uk-text-lighter"> PARA </span>
+            <span class="uk-text-bolder">PESSOAS DESENVOLVEDORAS</span> <span class="uk-text-lighter"> DO
+              PARANÁ.
+            </span>
+          </h1>
+          <h2 class="subtitle-text uk-margin-small-top uk-margin-large-bottom uk-text-lighter">
+            Em uma versão On-line #FiqueEmCasa</h2>
+          <a href="{{ signUpFormURL }}" target="_blank" uk-toggle title="INSCREVA-SE É DE GRAÇA 😃"
+            class="uk-button uk-button-primary uk-border-pill uk-button-large tickets-button">
+            <div class="inc-button">INSCREVA-SE É DE GRAÇA 😃</div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<section *ngIf="showDonateSection" class="uk-section uk-article" style="background-color:#EAEAEA">
+  <div class="uk-container uk-container">
+    <h2 class="uk-text-bold uk-h1 uk-margin-remove-adjacent uk-margin-remove-top">Vamos ajudar, mesmo estando em casa?
+    </h2>
+    <div class="uk-margin-large-right">
+      <p class="uk-article-meta">
+        Atualizado em 28 de setembro de 2020
+      </p>
+      <p>
+        No momento em que publicamos este evento, milhares de pessoas estão enfrentando dificuldades causadas pelo novo
+        coronavírus. Muitas já não tem uma fonte de renda segura, são famílias que normalmente já possuem pouco e nesse
+        momento têm muito menos, elas precisam de ajuda.
+      </p>
+      <p>
+        Queremos usar o #CapiConf para ajudar essas pessoas, não só fazer um evento online, vamos tentar ajudar.
+        Acreditamos que o momento é de ter mais empatia, de pensar com carinho no próximo e de encontrar formas de
+        ajudar.
+      </p>
+      <p>
+        Portanto, hoje iniciamos uma campanha de arrecadação de valores, todo o processo vai ser transparente (<a href="https://drive.google.com/drive/folders/1emggvyVkAYiy-x5nofnbz5K0skskBwOW?usp=sharing" target="_blank">acompanhe
+        aqui</a>), todo o valor arrecadado vai ser usado na aquisição de produtos de higiene, alimentos e leite em pó. Esses
+        produtos serão doados nos bairros periféricos na cidade de Curitiba e região metropolitana.
+      </p>
+      <p>
+        <b>Como você pode ajudar?</b>
+      </p>
+      <ul>
+        <li>Doando via <a href="https://picpay.com/" target="_blank">PicPay</a> (lembra aquele cashback?);</li>
+        <li><a href="{{ signUpFormURL }}" target="_blank" uk-toggle>Doando a sua inscrição no #CapiConf</a>. Você não vai perder o seu lugar, iremos doar o valor referente ao
+          rateio do custo do evento que corresponde a 70% do valor pago por pessoa (você efetivamente está doando seu
+          coffee-break, crachá e brindes);</li>
+        <li>Doando por transferência bancária.</li>
+      </ul>
+      <p>
+        <b>Onde doar?</b>
+      </p>
+      <ul>
+        <li>PicPay, faça uma transferência de qualquer valor para <b>@willbuildapps</b>;</li>
+        <li>Doar sua inscrição, <a href="https://forms.gle/UDAEmXbyedWng3Ny8" target="_blank" uk-toggle>é só preencher este formulário</a> com os dados da sua inscrição;</li>
+        <li>Transferência bancária, envie um <a href="mailto:william@capiconf.com">email</a> para solicitar os dados.</li>
+      </ul>
+      <p>
+        <b>Não tenho dinheiro para doar, como posso ajudar?</b>
+      </p>
+      <ul>
+        <li>Divulgando o evento online e a iniciativa para outras pessoas;</li>
+        <li>Arrecadando produtos de higiene, alimentos e leite em pó, para doarmos junto (<a href="mailto:william@capiconf.com">entre em contato para combinar a retirada</a>).</li>
+      </ul>
+      <p>
+        <b>Quando as doações vão acontecer?</b>
+      </p>
+      <p>Nossa objetivo é adquirir os produtos na semana seguinte ao evento, e doar os produtos final de semana, 23 e 24 de Maio.</p>
+      <p>
+        <b>O que eu ganho ajudando?</b>
+      </p>
+      <p>Além de ajudar ao próximo, no CapiConf offline iremos ter um painel com o nome de todas as pessoas que participaram dessa iniciativa. Se você ajudar, seu nome vai estar lá :) </p>
+    </div>
+    <p>
+      Você tem alguma dúvida, pode ajudar de alguma forma? Envie um <a href="mailto:william@capiconf.com" target="_blank">email para gente</a>, ou envie ela no nosso <a href="https://forms.gle/UBG7rEiDv2R2v4Md6" target="_blank">formulário aberto de perguntas e respostas</a>.
+    </p>
+    <p>
+      Que fique claro, não queremos discutir responsabilidades, estratégias, lado ou posição. Queremos simplesmente ajudar!
+    </p>
+  </div>
+</section>
+
+<!-- pessoas -->
+<section id="pessoas" class="uk-section uk-article">
+  <div class="uk-container uk-container">
+    <h2 class="uk-text-bold uk-h1 uk-margin-remove-adjacent uk-margin-remove-top uk-padding-remove-top">
+      Pessoas palestrantes
+    </h2>
+    <div class="uk-margin-large-right">
+      <p>Palestrantes e pessoas influenciadoras que são reconhecidas nacionalmente como destaques em suas áreas de
+        atuação vão estar juntas no #CapiConf para compartilhar conhecimento com você! Divulgaremos a lista de
+        palestrantes em breve, segura o coração! 😋
+      </p>
+      <p>
+        Se você tem interesse de palestrar, pode
+        enviar sua palestra através do <a href="{{ c4pFormURL }}" style="text-decoration: underline">form de <i>Call
+        For Papers</i></a>
+      </p>
+      <p class="uk-article-meta">
+        Atualizado em {{ lastUpdated }}
+      </p>
+    </div>
+    <!-- Speaker list here! -->
+    <div class="uk-flex uk-flex-center uk-margin-large-top" uk-grid="masonry: true">
+      <div class="uk-width-1-3@m uk-width-1-1@s" *ngFor="let item of speakers">
+        <div class="uk-card uk-card-default uk-card-hover uk-card-small uk-margin-small">
+          <div class="uk-card-media-top">
+            <img width="100%" src="{{ item.picture }}" alt="{{ item.name }} @ {{ item.role }}" />
+          </div>
+          <div class="uk-card-body uk-text-center">
+            <h5 class="uk-card-title uk-margin-remove-bottom">
+              {{ item.name }}
+            </h5>
+            <span class="uk-text-meta capiconf-text uk-text-center">
+              {{ item.role }} @ {{ item.company }}
+            </span>
+            <p class="uk-text-meta capiconf-text uk-text-center">
+              {{ item.bio }}
+            </p>
+          </div>
+          <div class="uk-card-footer uk-text-center">
+            <span *ngFor="let social of item.socialProfiles">
+              <a *ngIf="social.url" href="{{ social.url }}" target="_blank">
+                <span *ngIf="social.name === 'linkedin'" class="capiconf-text uk-margin-right	"
+                  uk-icon="linkedin"></span>
+                <span *ngIf="social.name === 'facebook'" class="capiconf-text uk-margin-right	"
+                  uk-icon="facebook"></span>
+                <span *ngIf="social.name === 'twitter'" class="capiconf-text uk-margin-right	" uk-icon="twitter"></span>
+                <span *ngIf="social.name === 'github'" class="capiconf-text uk-margin-right	" uk-icon="github"></span>
+                <span *ngIf="social.name === 'twitch'" class="capiconf-text uk-margin-right	" uk-icon="video-camera"></span>
+              </a>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- agenda -->
+<section id="agenda" class="uk-section uk-article" style="background-color: #EFEFEF;">
+  <div class="uk-container uk-container">
+    <h2 class="uk-text-bold uk-h1 uk-margin-remove-adjacent uk-margin-remove-top">
+      Agenda de Palestras
+    </h2>
+    <div class="uk-margin-large-right uk-margin-large-bottom">
+      <p>Estamos montando uma agenda para nenhuma capivara botar defeito! Fique ligado, em breve teremos novidades. 😃
+      </p>
+      <p class="uk-article-meta">
+        Atualizado em {{ lastUpdated }}
+      </p>
+    </div>
+  </div>
+  <div class="uk-container uk-container">
+  </div>
+  <div class="uk-container uk-container">
+    <div class="uk-margin-small-top">
+      <div *ngFor="let item of schedule" class="uk-margin-medium-bottom">
+        <div class="uk-card uk-card-small uk-card-default uk-margin-small-bottom">
+          <div class="uk-card-header">
+            <h4 class="hour">
+              {{item.data}} - {{item.name}}
+              <small *ngIf="showSoonMessages" class="uk-article-meta">(em breve!)</small>
+            </h4>
+          </div>
+        </div>
+        <!-- body -->
+        <div *ngFor="let talk of item.talks">
+          <div class="uk-card uk-card-small uk-card-default uk-margin-small-bottom">
+            <div class="uk-card-body">
+              <h4 class=""><span class="uk-badge">{{ talk.startTime.hour }}h{{ talk.startTime.minute }}</span>
+                {{ talk.title }}</h4>
+              <p class="uk-margin-remove uk-padding-remove uk-article-meta">{{ talk.description}}</p>
+            </div>
+            <div class="uk-card-footer" *ngIf="talk.speakers?.length > 0">
+              <div class="uk-grid-small uk-flex-middle" uk-grid>
+                <div *ngFor="let speaker of talk.speakers">
+                  <div class="uk-grid-small uk-flex-middle" uk-grid>
+                    <div class="uk-width-auto">
+                      <img class="uk-border-circle" width="40" height="40" src="{{ speaker.picture }}">
+                    </div>
+                    <div class="uk-width-expand">
+                      <p class="uk-margin-remove-bottom">{{ speaker.name }}</p>
+                      <p class="uk-text-meta uk-margin-remove-top"></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- body -->
+      </div>
+    </div>
+    <div class="uk-margin-large-top">
+      <small class="uk-article-meta">
+        <i>Grade sujeita a alterações sem aviso previo!</i>
+      </small>
+    </div>
+  </div>
+</section>
+
+<!-- SPONSORS -->
+<section id="sponsors" class="uk-section uk-section-large">
+  <div class="uk-container uk-container">
+    <h1 class=""></h1>
+    <h2 class="uk-text-bold uk-h1 uk-margin-remove-adjacent uk-margin-remove-top">Patrocínio e Apoio
+    </h2>
+    <div class="uk-margin-large-right uk-margin-large-bottom">
+      <p>
+        Empresas e grupos que incentivam e acreditam no #CapiConf
+      </p>
+    </div>
+    <div class="uk-padding"></div>
+    <div class="uk-container">
+      <div class="uk-text-center">
+        <h4 class="uk-text-muted">DIAMOND</h4>
+      </div>
+      <div class="uk-grid uk-grid-small uk-child-width-1-3@m" data-uk-grid style="margin-top: 80px;"
+        data-uk-scrollspy="target: > div; delay: 50; cls: uk-animation-slide-bottom-medium">
+        <div class="uk-text-center">
+          <a href="https://careers.rentcars.com/?utm_source=capiconf&utm_medium=home&utm_campaign=patrocinio"
+            title="Rentcars.com" target="_blank">
+            <img src="../../../assets/sponsors/rentcars.png" />
+          </a>
+        </div>
+        <div class="uk-text-center">
+          <a href="https://www.objective.com.br/?utm_source=capiconf&utm_medium=home&utm_campaign=patrocinio"
+            title="Objective Solutions" target="_blank">
+            <img src="../../../assets/sponsors/obj.png" />
+          </a>
+        </div>
+        <div class="uk-text-center">
+          <a href="https://vhsys.com.br/?utm_source=capiconf&utm_medium=home&utm_campaign=patrocinio" title="VHSYS"
+            target="_blank">
+            <img src="../../../assets/sponsors/logo_vhsys_new.png" />
+          </a>
+        </div>
+        <div class="uk-text-center">
+          <a href="https://www.ebanx.com/br/?utm_source=capiconf&utm_medium=home&utm_campaign=patrocinio" title="EBANX"
+            target="_blank">
+            <img src="../../../assets/sponsors/ebanx.png" />
+          </a>
+        </div>
+        <div class="uk-text-center">
+          <a href="http://www.grupoboticario.com.br/?utm_source=capiconf&utm_medium=home&utm_campaign=patrocinio"
+            title="Grupo Boticário" target="_blank">
+            <img src="../../../assets/sponsors/gb.png" />
+          </a>
+        </div>
+        <div class="uk-text-center">
+          <a href="http://juno.com.br/?utm_source=capiconf&utm_medium=home&utm_campaign=patrocinio" title="Juno"
+            target="_blank">
+            <img src="../../../assets/sponsors/juno.png" />
+          </a>
+        </div>
+        <div class="uk-text-center">
+          <!-- <a href="https://www.bcredi.com.br/?utm_source=capiconf&utm_medium=home&utm_campaign=patrocinio"
+                      title="BCredi"
+                      target="_blank">
+                      <img src="../../../assets/sponsors/bcredi_logo_normal_whitebg.png" />
+                  </a> -->
+        </div>
+        <div class="uk-text-center">
+          <a href="https://www.hipe.cc?utm_source=capiconf&utm_medium=home&utm_campaign=patrocinio" title="HIPE"
+            target="_blank">
+            <img src="../../../assets/sponsors/hipe.png" />
+          </a>
+        </div>
+        <div class="uk-text-center">
+          <!-- <a href="https://www.paranabanco.com.br/carreiras?utm_source=capiconf&utm_medium=home&utm_campaign=patrocinio"
+                      title="Paraná Banco"
+                      target="_blank">
+                      <img src="../../../assets/sponsors/parana_banco.png"/>
+                  </a> -->
+        </div>
+      </div>
+    </div>
+    <div class="uk-padding"></div>
+    <div class="uk-padding"></div>
+    <div class="uk-container">
+      <div class="uk-text-center">
+        <h4 class="uk-text-muted">APOIO</h4>
+      </div>
+      <div class="uk-margin-large"></div>
+      <div class="uk-grid uk-grid-large uk-child-width-1-3@m" data-uk-grid
+        data-uk-scrollspy="target: > div; delay: 150; cls: uk-animation-slide-bottom-medium">
+        <div class="uk-text-center">
+          <!-- <a href="https://www.alura.com.br/?utm_source=capiconf-2020&utm_medium=logo-infoq&utm_campaign=parceria-eventos"
+                  target="_blank"><img style="margin-top: 10px;" src="../../../assets/partners/alura.png"
+                  width="38%" data-uk-img alt="Alura"></a> -->
+        </div>
+        <div class="uk-text-center">
+          <a href="https://www.jetbrains.com/?utm_source=capiconf&utm_medium=home&utm_campaign=support"
+            target="_blank"><img src="../../../assets/partners/jetbrains.svg" data-uk-img width="30%"
+              alt="Jetbrains"></a>
+        </div>
+        <div class="uk-text-center">
+          <!-- <a href="https://www.casadocodigo.com.br/?utm_source=capiconf&utm_medium=home&utm_campaign=apoio"
+                  target="_blank"><img style="margin-top: 12px;" src="../../../assets/partners/cdc.png" data-uk-img
+                      width="38%" alt="Casa do Código"></a> -->
+        </div>
+        <div class="uk-text-center">
+        </div>
+      </div>
+    </div>
+    <div class="uk-padding"></div>
+    <div class="uk-padding"></div>
+    <div class="uk-text-center">
+      <h6 class="uk-text-center uk-width-3-4 uk-margin-auto uk-margin-bottom uk-margin-top">
+        Quer deixar sua marca no #CapiConf 2020?
+      </h6>
+      <a class="uk-text-center" class="uk-button uk-button-secondary uk-border-pill uk-button-large"
+        href="mailto:sponsors@capiconf.com">Vamos conversar 😃</a>
+    </div>
+  </div>
+</section>
+<!-- /SPONSORS -->
+
+<!-- footer -->
+<footer class="uk-section uk-section-secondary uk-padding-remove-bottom">
+  <div class="uk-container">
+    <div class="uk-grid uk-grid-large" data-uk-grid>
+      <div class="uk-width-1-6@m">
+        <img class="uk-height-max-small" src="../../../assets/logo_round_normal.svg" alt="Logo #CapiConf">
+      </div>
+      <div class="uk-width-1-2@m">
+        <p>O #CapiConf é um grande encontro de pessoas, comunidades e entusiastas de TI. O evento teve sua
+          primeira
+          edição em 2014 e desde então vem abordando os principais tópicos e temáticas de interesse das
+          comunidades
+          tecnicas.</p>
+        <div>
+          <a href="http://twitter.com/capiconf" target="_blank" class="uk-icon-button" data-uk-icon="twitter"></a>
+          <a href="https://facebook.com/capiconf/" target="_blank" class="uk-icon-button uk-margin-left"
+            data-uk-icon="facebook"></a>
+          <a href="https://instagram.com/capiconf/" target="_blank" class="uk-icon-button uk-margin-left"
+            data-uk-icon="instagram"></a>
+        </div>
+      </div>
+      <div class="uk-width-1-3@m">
+        <p>Edições</p>
+        <div>
+          <ul>
+            <li><a href="/2020/inicio">2020</a></li>
+            <li><a href="/2019/start">2019</a></li>
+            <li> <a href="/2018/index.html" title="#CapiConf 2018">2018</a></li>
+            <!-- <li><a href="/2017/start">2017</a></li> -->
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="uk-padding uk-padding-remove-horizontal uk-text-center">
+      <span class="uk-text-small uk-text-muted">© 2020 #everydaycapybara | We ❤️
+        Community</span>
+    </div>
+  </div>
+</footer>
+<!-- side nav -->
+<div id="offcanvas-nav" data-uk-offcanvas="flip: true; overlay: false">
+  <div class="uk-offcanvas-bar uk-offcanvas-bar-animation uk-offcanvas-slide">
+    <button class="uk-offcanvas-close uk-close uk-icon" type="button" data-uk-close></button>
+    <ul class="uk-nav uk-nav-default">
+      <li class="uk-nav-header">2020</li>
+      <li class="uk-parent">
+        <ul class="uk-nav-sub">
+          <li><a href="#inicio" data-uk-scroll="duration: 500" data-uk-icon="home"></a></li>
+          <li><a href="#pessoas" data-uk-scroll="duration: 500">Pessoas</a></li>
+          <li><a href="#agenda" data-uk-scroll="duration: 500">agenda</a></li>
+          <li><a href="#sponsors" data-uk-scroll="duration: 500">Patrocínio e Apoio</a></li>
+          <li><a href="#modal-center" uk-toggle>Inscreva-se gratuitamente</a></li>
+          <li><a href="/coc" target="_blank">COC</a></li>
+        </ul>
+      </li>
+    </ul>
+    <h5>SOBRE</h5>
+    <p class="uk-text-small">O #CapiConf é um grande encontro de pessoas, comunidades e entusiastas de software. O
+      evento teve sua primeira edição em 2014 e desde então vem abordando os principais tópicos e temáticas de interesse
+      das comunidades tecnicas.</p>
+  </div>
+</div>
+<!-- side nav -->

@@ -10,7 +10,7 @@ export class Online2020NovComponent implements OnInit {
 
   readonly showSoonMessages: boolean = true;
   readonly showDonateSection: boolean = false;
-  readonly signUpFormURL: string = 'https://forms.gle/UDAEmXbyedWng3Ny8';
+  readonly signUpFormURL: string = 'https://www.sympla.com.br/capiconf-2020-o-maior-evento-para-pessoas-desenvolvedoras-do-parana__1014227';
   readonly c4pFormURL: string = 'https://docs.google.com/forms/d/e/1FAIpQLScO1sbJfRdIfY9Vh1_nKzvabdYt9yv_Eu8R0jFI_aPS-R9jzw/viewform';
   readonly lastUpdated: string = '28 de setembro de 2020';
 

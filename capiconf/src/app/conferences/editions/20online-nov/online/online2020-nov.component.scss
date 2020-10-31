@@ -50,3 +50,30 @@ h2.headline {
 	background: #FF0E5A !important;
     color:#FFF !important;
 }
+
+.speaker-list {
+  .uk-card {
+    border-radius: 2px;
+    .uk-card-media-top {
+      position: relative;
+      &::after {
+        content: "";
+        display: block;
+        padding-bottom: 100%;
+      }
+      &>img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+    .uk-card-body {
+      padding-bottom: 2em;
+    }
+    p.bio {
+      text-align: justify !important;
+      line-height: 160%;
+    }
+  }
+}

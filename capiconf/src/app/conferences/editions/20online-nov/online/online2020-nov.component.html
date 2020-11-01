@@ -163,7 +163,12 @@
               {{ item.name }}
             </h5>
             <span class="uk-text-meta capiconf-text uk-text-center">
-              {{ item.role }} @ {{ item.company }}
+              <span *ngIf="item.role">
+                {{ item.role }}
+              </span>
+              <span *ngIf="item.company" class="uk-text-bold">
+                @ {{ item.company }}
+              </span>
             </span>
             <p class="uk-text-meta capiconf-text bio">
               {{ item.bio }}

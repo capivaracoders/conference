@@ -34,7 +34,13 @@ function namesToTalks(names: string[]): Presentation[] {
   return names
     .map(name => SpeakerList.get(name))
     .filter(v => v)
-    .map(speaker => speaker.activities)
+    .map(speaker => {
+      return speaker.activities
+        .map(activity => {
+          activity.speakers = [speaker];
+          return activity;
+        });
+    })
     .flat()
     .filter(presentation => presentation.dateTime)
     .map((presentation) => {
@@ -44,7 +50,7 @@ function namesToTalks(names: string[]): Presentation[] {
       };
       return presentation;
     })
-    .sort(({ dateTime: a}, { dateTime: b }) => b.getTime() - a.getTime());
+    .sort(({ dateTime: a}, { dateTime: b }) => a.getTime() - b.getTime());
 }
 
 const talksOfTheDay = (talkList: Presentation[], day, month = 11, year = 2020) => {
@@ -65,9 +71,6 @@ const talksOfTheDay = (talkList: Presentation[], day, month = 11, year = 2020) =
   });
 };
 
-// @ts-ignore
-// @ts-ignore
-// @ts-ignore
 export const SpeakerList: Map<string, Speaker> = new Map(([{
   name: 'Daniela Petruzalek',
   bio: 'Daniela Petruzalek é uma engenheira de software com experiência em desenvolvimento backend e engenharia de dados, atualmente trabalhando como Technology Principal na ThoughtWorks UK. Ela é reconhecida pelo Google como Google Developer Expert em Go e Google Cloud Platform. Ela também é Google Cloud Certfied Data Engineer, Oracle Certfied Professional, TEDx speaker e palestrante convidada no curso “Artificial Intelligence: Cloud and Edge Implementations” da Universidade de Oxford. No seu tempo livre ela se dedica a contribuições open source, jogar (e colecionar) video games e a acariciar gatos aleatórios nas ruas de Londres.',
@@ -78,9 +81,10 @@ export const SpeakerList: Map<string, Speaker> = new Map(([{
     { name: 'linkedin', url: 'https://www.linkedin.com/in/petruzalek/' } as SocialLinks,
   ] as SocialLinks[],
   activities: [{
+    type: 'talk',
     title: 'Apache Spark para Iniciantes',
     description: 'nesta talk nós vamos explorar como usar o Apache Spark para resolver o problema de Big Data. Iremos cobrir o modelo de execução, falando sobre drivers e workers, RDDs e dataframes e, finalmente, distribuição de dados (data shuffling). Todos estes conceitos serão demonstrados com live coding, executando tanto localmente como na cloud.',
-    type: 'talk',
+    dateTime: new Date('2020-11-20T19:00-03:00'),
   }] as Presentation[]
 }, {
   name: 'Gisely Lucas Bernardino',
@@ -93,6 +97,7 @@ export const SpeakerList: Map<string, Speaker> = new Map(([{
     description: `Atualmente, construir uma aplicação web, não é apenas criar uma página HTML, adicionando modificadores e pronto. É preciso olhar além, entender qual a experiência que os seus usuários estão tendo, seja em performance como em interação. Com isso, a Acessibilidade Digital vem ganhando um foco muito grande, e permitindo um diferencial nas aplicações. Pois desenvolver aplicações acessíveis é aumentar o acesso à diferentes usuários, é permitir que a experiência do usuário seja a melhor, é desenvolver seguindo as boas práticas e garantir uma boa performance.
 A ideia dessa palestra é mostrar como e o que podemos pensar ao desenvolver aplicações web. Entendendo os verdadeiros impactos da Acessibilidade e a interação dela com diferente áreas.`,
     level: 'iniciante e intermediária',
+    dateTime: new Date('2020-11-16T19:00-03:00'),
   } as Presentation]
 }, {
   name: 'Fernanda Wanderley',
@@ -108,6 +113,7 @@ A ideia dessa palestra é mostrar como e o que podemos pensar ao desenvolver apl
     title: 'O uso de IA e Ciência de Dados na detecção de patologias em imagens médicas',
     description: 'Métodos de Inteligência Artificial têm sido frequentemente utilizados na extração de conhecimentos a partir de imagens médicas, seja no auxílio ao diagnóstico, seja na triagem de pacientes. Nessa apresentação você poderá entender como a IA e a Ciência de dados são utilizadas em imagens de diferentes modalidade de exames, como raio-x, tomografia computadorizada e eletrocardiograma.',
     level: 'iniciante e intermediária.',
+    dateTime: new Date('2020-11-19T19:00-03:00'),
   }]
 }, {
   name: 'Erika Carvalho',
@@ -118,7 +124,13 @@ A ideia dessa palestra é mostrar como e o que podemos pensar ao desenvolver apl
     { name: 'twitter', url: 'twitter.com/erikones_' },
     { name: 'linkedin', url: 'https://www.linkedin.com/in/erika-carvalho/' },
   ],
-  activities: []
+  activities: [{
+    type: 'talk',
+    title: '',
+    description: '',
+    level: '',
+    dateTime: new Date('2020-11-18T20:00-03:00')
+  }]
 }, {
   name: 'Camila Campos',
   bio: 'A chata dos testes e do código bonito, formada em Sistemas de Informação na EACH-USP e é desenvolvedora de software na SumUp. Organiza duas iniciativas incríveis que visam a inclusão de mulheres na tecnologia: Rails Girls São Paulo e Women Dev Summit.',
@@ -129,9 +141,11 @@ A ideia dessa palestra é mostrar como e o que podemos pensar ao desenvolver apl
     { name: 'linkedin', url: 'https://www.linkedin.com/in/camposmilaa' },
   ],
   activities: [{
+    type: 'talk',
     title: 'Como não odiar seus testes',
     description: 'Sabemos que escrever testes automatizados é extremamente importante, pois, entre outras coisas, eles garantem a qualidade do nosso código e o funcionamento da nossa aplicação. Apesar disso, muitas vezes acabamos com uma suíte de testes que, além de ser difícil de entender e manter, não é confiável. Nessa talk, vamos ver como reconhecer e evitar alguns dos problemas mais comuns que nos fazem odiar nossos testes, além de dar algumas dicas de como melhorar nossos testes.',
     level: 'Intermediário',
+    dateTime: new Date('2020-11-16T20:00-03:00'),
   }] as Presentation[]
 }, {
   name: 'Alex Rios',
@@ -146,6 +160,7 @@ A ideia dessa palestra é mostrar como e o que podemos pensar ao desenvolver apl
     title: 'Tudo que vc precisar saber antes de ser um lider técnico',
     description: 'Liderar um time nunca foi uma tarefa fácil. Nos últimos anos muitos desenvolvedores estão caindo de para-quédas nessa situação e nem sempre com o treinamento ou a mentoria adequada. Essa talk traz um compilado de técnicas e dicas que foram extramamente importantes na ascensão para liderança de uma equipe de tecnologia.',
     level: 'Intermediário',
+    dateTime: new Date('2020-11-18T19:00-03:00'),
   }] as Presentation[]
 }, {
   name: 'Camilla Martins',
@@ -160,6 +175,7 @@ A ideia dessa palestra é mostrar como e o que podemos pensar ao desenvolver apl
     title: 'Ingressando em DevOps: como está o mercado e os processos seletivos?',
     description: 'Depois de váaarios processos seletivos passados, uma palestra sobre experiências reais. Dicas não só pra parte de DevOps, mas sobre negociação de benefícios, salário, como não cair em algumas roubadas de entrevistas, como analisar a empresa que você está em processo, o que geralmente caem em processos de DevOps, questões de migração de nível, etc. Bora bater um papo e trocar experiências sobre isso?',
     level: 'Iniciante',
+    dateTime: new Date('2020-11-17T19:00-03:00'),
   }] as Presentation[]
 }, {
   name: 'Alexandre Santos Costa',
@@ -174,6 +190,7 @@ A ideia dessa palestra é mostrar como e o que podemos pensar ao desenvolver apl
     title: 'Como hackiei minha carreira trocando as constantes por variáveis',
     description: 'No ano passado fiz uma transição de carreira assumindo uma posição de liderança. Apesar de parecer um movimento natural diversos fatores da minha jornada me levaram onde estou hoje. Nesta palestra quero compartilhar pontos importantes e que podem ajudar profissionais de todos os nívies a se desenvolverem',
     level: 'Iniciante',
+    dateTime: new Date('2020-11-17T20:00-03:00'),
   }] as Presentation[]
 }, {
   name: 'Willian Frantz',
@@ -188,16 +205,27 @@ A ideia dessa palestra é mostrar como e o que podemos pensar ao desenvolver apl
     title: 'O Elixir da juventude',
     description: 'Aprenda todo o funcionamento de um projeto, desde criação até manutenção de uma aplicação web real utilizando Elixir e Phoenix. Vamos conhecer diferentes aspectos da tecnologia, como o Phoenix LiveView, websockets com PubSub e ciclo de vida da aplicação.',
     level: 'Intermediário',
+    dateTime: new Date('2020-11-20T20:00-03:00'),
   }] as Presentation[]
 }, {
   name: 'Felipe Rodrigues',
   bio: 'Tenho 27 anos e trabalho como UX designer desde 2015. Minha experiência de 5 anos em um dos maiores bancos privados do país me permitiu participar de diversos projetos, desde a pesquisa, ideação, prototipação até o desenvolvimento e implementação de soluções digitais.',
   picture: 'https://storage.googleapis.com/production-hostgator_brasil-v1-0-7/237/117237/GSS7hfFR/3540f3d725194b369b46d101f1559f1b',
+  company: 'Objective',
+  role: 'UX Designer',
   socialProfiles: [{ name: 'linkedin', url: 'https://www.linkedin.com/in/felipe-rodrigues-17543592/' }],
   activities: [{
+    type: 'talk',
     title: 'Noções de User Experience e UX do Mal (Economia da Atenção)',
     description: 'O objetivo desta palestra é abordar noções gerais de User Experience (UX) e User Interface (UI) e como os aplicativos são desenhados para prender sua atenção. Através de exemplos práticos iremos explorar estes dois conceitos e falar um pouco sobre economia da atenção e Human Centered Design. Ideal para quem gostaria de começar a explorar o universo de UX.',
     level: 'Iniciante',
+    dateTime: new Date('2020-11-18T18:00-03:00'),
+  }, {
+    type: 'workshop',
+    title: 'Como tirar suas ideias do papel?',
+    description: 'Um workshop para apresentar ferramentas e discutir quais os melhores caminhos para estruturar seus projetos. Através de metodologias facilitadas, aplicativos e ferramentas acessíveis, irei mostrar mostrar como se organizar para tirar suas ideais do papel. A ideia é que seja uma atividade participativa, que além de apresentar métodos e ferramentas baseados no PMI e Scrum, também tenha abertura para que os participantes tragam projetos pessoais que gostariam de por em prática.',
+    level: 'Iniciante',
+    dateTime: new Date('2020-11-21T09:00-03:00'),
   }] as Presentation[]
 }, {
   name: 'Luis Henrique Matias',
@@ -205,15 +233,49 @@ A ideia dessa palestra é mostrar como e o que podemos pensar ao desenvolver apl
   picture: 'https://media-exp1.licdn.com/dms/image/C4E03AQFVJjbnMUtSKw/profile-displayphoto-shrink_800_800/0?e=1609372800&v=beta&t=1TJw8OjbrwPF6_EehzPpFiUfYTHVJX2f3XxHCc8ZEGI',
   socialProfiles: [{ name: 'linkedin', url: 'https://www.linkedin.com/in/luis-matias-1aab8635/' }] as SocialLinks[],
   activities: [{
+    type: 'talk',
     title: 'Cultura na prática: como autonomia e colaboração impactam a tecnologia',
     description: 'Ambiente inspirador, que desafie. Demandas bem direcionadas, que aproveitem o tempo com inteligência. Autonomia, para experimentar, inovar, trazer novas tecnologias, rodar novas metodologias ágeis. Trocas constantes entre pares. Tudo isso se conecta em um espaço de valorização profissional, promovendo espaço para grandes resultados surgirem. Matias vai compartilhar um pouco da sua trajetória e olhar de gestão de como a cultura é a chave para profissionais de TI.',
     level: 'Iniciante',
+    dateTime: new Date('2020-11-19T18:00-03:00'),
+  }] as Presentation[],
+}, {
+  name: 'Chrysthian Akihiro Suguiy Simão',
+  bio: 'Trabalho com tecnologias web há 15 anos, sendo os últimos 3 como arquiteto front-end na Juno. Entusiasta de novas tecnologias, concluí minha pós graduação em Desenvolvimento de Jogos para Computador em 2010, e desde então como hobby, tento encontrar alternativas para juntar o mundo web com jogos.',
+  company: 'Juno',
+  picture: 'https://media-exp1.licdn.com/dms/image/C4D03AQE5N-yULAAd1Q/profile-displayphoto-shrink_200_200/0?e=1608768000&v=beta&t=NBqcGvm3Pt2bE00uwimhaRAtA2j9w6jMcLZgQm-tvpE',
+  socialProfiles: [
+    { name: 'github', url: 'https://github.com/chrysthian/' },
+    { name: 'linkedin', url: 'https://www.linkedin.com/in/chrysthian-simao/' },
+  ] as SocialLinks[],
+  activities: [{
+    type: 'workshop',
+    title: 'Jogos em navegadores, comofas?',
+    description: 'Vamos combinar bibliotecas e ferramentas web (React, Pixi, Howler), entendendo o ciclo de vida de cada uma, fazendo elas trabalharem em conjunto para construir uma POC (prova de conceito) de um jogo simples.',
+    level: 'Intermediário',
+    dateTime: new Date('2020-11-21T09:00-03:00'),
+  }] as Presentation[],
+}, {
+  name: 'Matheus D. M. da Silva',
+  bio: 'Santista de nascimento, entusiasta JavaScript e cientista da computação, atualmente trabalho como desenvolvedor front-end na Contabilizei.',
+  picture: 'https://coens.dv.utfpr.edu.br/saes2019/wp-content/uploads/2019/08/matheus.jpeg',
+  company: 'Contabilizei',
+  role: 'Desenvolvedor',
+  socialProfiles: [
+    { name: 'github', url: 'https://github.com/MatheusDonizete' },
+    { name: 'twitter', url: 'https://twitter.com/MathDonizete' },
+    { name: 'linkedin', url: 'https://www.linkedin.com/in/matheusdonizete/' },
+  ] as SocialLinks[],
+  activities: [{
+    type: 'workshop',
+    title: 'Como tirar suas ideias do papel?',
+    description: 'Um workshop para apresentar ferramentas e discutir quais os melhores caminhos para estruturar seus projetos. Através de metodologias facilitadas, aplicativos e ferramentas acessíveis, irei mostrar mostrar como se organizar para tirar suas ideais do papel. A ideia é que seja uma atividade participativa, que além de apresentar métodos e ferramentas baseados no PMI e Scrum, também tenha abertura para que os participantes tragam projetos pessoais que gostariam de por em prática.',
+    level: 'Iniciante',
+    dateTime: new Date('2020-11-21T09:00-03:00')
   }] as Presentation[],
 }] as Speaker[])
   .sort(({ name: a }, { name: b }) => a < b ? -1 : b < a ? 1 : 0)
   .map((speaker: Speaker): [string, Speaker] => [speaker.name, speaker]));
-
-console.log({ SpeakerList });
 
 const talks = namesToTalks([...SpeakerList.keys()]);
 

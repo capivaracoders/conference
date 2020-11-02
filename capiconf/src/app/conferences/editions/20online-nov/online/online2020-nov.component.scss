@@ -42,9 +42,9 @@ h2.headline {
 
 .tickets-button {
     background: #FFFF !important;
-	color:#FF0E5A !important;
-	font-weight: 500;
-   }
+    color:#FF0E5A !important;
+    font-weight: 500;
+}
 
 .tickets-banner {
 	background: #FF0E5A !important;
@@ -95,7 +95,7 @@ h2.headline {
 }
 
 .hero-bg {
-  background:linear-gradient(180deg,#222 30.12%,#000 192.47%);
+  background:linear-gradient(180deg,#222 30.12%,#000 192.47%) url(./assets/hero-bg-online-nov.jpg);
   background-size: cover;
   content: "";
 }

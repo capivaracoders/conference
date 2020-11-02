@@ -14,11 +14,17 @@ export interface Speaker {
   activities: Presentation[] | undefined;
 }
 
+export interface TimeObject {
+  hour: string;
+  minute: string;
+}
+
 export interface Presentation {
   title: string;
   description: string;
   dateTime: Date | undefined;
-  startTime: { hour: string, minute: string };
+  startTime: TimeObject;
+  endTime: TimeObject | undefined;
   speakers: Speaker[];
   type: 'talk'|'workshop';
   level: string;
@@ -28,6 +34,13 @@ export interface EventSchedule {
   name: 'Segunda-feira'|'Terça-feira'|'Quarta-feira'|'Quinta-feira'|'Sexta-feira'|'Sábado'|'Domingo';
   data: string; // formatted string date
   talks: Presentation[];
+}
+
+function DateTimeToTimeObject(date: Date): TimeObject {
+  return {
+    hour: date.getHours().toString().padStart(2, '0'),
+    minute: date.getMinutes().toString().padStart(2, '0'),
+  };
 }
 
 function namesToTalks(names: string[]): Presentation[] {
@@ -44,10 +57,8 @@ function namesToTalks(names: string[]): Presentation[] {
     .flat()
     .filter(presentation => presentation.dateTime)
     .map((presentation) => {
-      presentation.startTime = {
-        hour: presentation.dateTime.getHours().toString().padStart(2, '0'),
-        minute: presentation.dateTime.getMinutes().toString().padStart(2, '0'),
-      };
+      const { dateTime, startTime } = presentation;
+      presentation.startTime = startTime || DateTimeToTimeObject(dateTime);
       return presentation;
     })
     .sort(({ dateTime: a}, { dateTime: b }) => a.getTime() - b.getTime());
@@ -74,7 +85,7 @@ const talksOfTheDay = (talkList: Presentation[], day, month = 11, year = 2020) =
 export const SpeakerList: Map<string, Speaker> = new Map(([{
   name: 'Daniela Petruzalek',
   bio: 'Daniela Petruzalek é uma engenheira de software com experiência em desenvolvimento backend e engenharia de dados, atualmente trabalhando como Technology Principal na ThoughtWorks UK. Ela é reconhecida pelo Google como Google Developer Expert em Go e Google Cloud Platform. Ela também é Google Cloud Certfied Data Engineer, Oracle Certfied Professional, TEDx speaker e palestrante convidada no curso “Artificial Intelligence: Cloud and Edge Implementations” da Universidade de Oxford. No seu tempo livre ela se dedica a contribuições open source, jogar (e colecionar) video games e a acariciar gatos aleatórios nas ruas de Londres.',
-  picture: 'https://github.com/danicat/public-speaking/blob/master/profile.jpg?raw=true',
+  picture: 'assets/speakers/DanielaPetruzalek.jpg',
   socialProfiles: [
     { name: 'github', url: 'https://github.com/danicat' } as SocialLinks,
     { name: 'twitter', url: 'https://twitter.com/danicat83' } as SocialLinks,
@@ -89,7 +100,7 @@ export const SpeakerList: Map<string, Speaker> = new Map(([{
 }, {
   name: 'Gisely Lucas Bernardino',
   bio: 'Engenheira de software na CI&T, com formação em Ciência da Computação pelo UNIBH, Co-fundadora da Desplugue-se. Possui experiência em desenvolvimento de aplicações web. Tendo se especializado e apaixonado a cada dia pela Acessibilidade na Web, por acreditar que é necessário tornar a web cada vez mais inclusiva. Curiosa e entusiasta pela tecnologia, adora pesquisar sobre a integração entre a computação e a natureza. Está sempre na luta por um ambiente cada vez mais diverso, respeitoso e inclusivo.',
-  picture: 'https://media-exp1.licdn.com/dms/image/C4D03AQEekQiijNo3Zw/profile-displayphoto-shrink_800_800/0?e=1609372800&v=beta&t=AVk4BAqyUTDO_KHyJIs8wpiRpvDsu4lItzo1ZgeVC8c',
+  picture: 'assets/speakers/GiselyLucasBernardino.jpeg',
   socialProfiles: [{ name: 'linkedin', url: 'https://br.linkedin.com/in/giselylucas' }],
   activities: [{
     type: 'talk',
@@ -102,7 +113,7 @@ A ideia dessa palestra é mostrar como e o que podemos pensar ao desenvolver apl
 }, {
   name: 'Fernanda Wanderley',
   bio: 'Sou Doutora em Inteligência Computacional e minha principal área de interesse é a de aplicações de aprendizado de máquina em problemas biomédicos. Ser capaz de causar um impacto positivo na vida das pessoas, usando meus conhecimentos, me traz uma satisfação enorme. Atualmente trabalho com detecção de patologias em imagens de raio-x e lesões em tomografia de tórax. Também já realizei pesquisas sobre previsão de eficácia de quimioterapia em câncer de mama e busca de variantes genéticas em DNA.',
-  picture: 'https://media-exp1.licdn.com/dms/image/C4E03AQEs_1rxCz7jKA/profile-displayphoto-shrink_800_800/0?e=1609372800&v=beta&t=MxX8BnxQVwdlonnMdVKeEwHtDnKc0GZGFyDVccusVIc',
+  picture: 'assets/speakers/FernandaWanderley.jpeg',
   socialProfiles: [
     { name: 'github', url: 'https://github.com/nandaw' },
     { name: 'twitter', url: 'https://twitter.com/nandaw' },
@@ -118,7 +129,7 @@ A ideia dessa palestra é mostrar como e o que podemos pensar ao desenvolver apl
 }, {
   name: 'Erika Carvalho',
   bio: 'Back-end developer, embaixadora do Women Techmakers e organizadora do Women Who Go Curitiba. Entusiasta de Golang, apaixonada por comunidades, além de vegana e artesã. Ela/dela.',
-  picture: 'https://media-exp1.licdn.com/dms/image/C4D03AQGTLtNOiMJzvQ/profile-displayphoto-shrink_400_400/0?e=1608768000&v=beta&t=f_WKVlThJZM2-oXko_LDiZd2a-_dGamB5wH5IsoDgPo',
+  picture: 'assets/speakers/ErikaCarvalho.jpeg',
   socialProfiles: [
     { name: 'github', url: 'github.com/erikacarvalho' },
     { name: 'twitter', url: 'twitter.com/erikones_' },
@@ -129,12 +140,12 @@ A ideia dessa palestra é mostrar como e o que podemos pensar ao desenvolver apl
     title: '',
     description: '',
     level: '',
-    dateTime: new Date('2020-11-18T20:00-03:00')
+    // dateTime: new Date('2020-11-18T20:00-03:00')
   }]
 }, {
   name: 'Camila Campos',
   bio: 'A chata dos testes e do código bonito, formada em Sistemas de Informação na EACH-USP e é desenvolvedora de software na SumUp. Organiza duas iniciativas incríveis que visam a inclusão de mulheres na tecnologia: Rails Girls São Paulo e Women Dev Summit.',
-  picture: 'https://scontent.fbfh3-3.fna.fbcdn.net/v/t1.0-9/58622708_2301445619915803_3458451762891980800_o.jpg?_nc_cat=105&ccb=2&_nc_sid=cdbe9c&_nc_eui2=AeHVWup0s_Q4zU2tpDhcQKbZ1MKPGjbSWjfUwo8aNtJaN96StBe6JvOKAkKH2izuKArqBJfbOTifCwAB1CiOBPV0&_nc_ohc=UebOuU32loUAX8LhpEB&_nc_ht=scontent.fbfh3-3.fna&oh=ca8e59fec0e0c4d575a13c7b21064969&oe=5FC3FC91',
+  picture: 'assets/speakers/CamilaCampos.jpg',
   socialProfiles: [
     { name: 'github', url: 'https://github.com/camilacampos' },
     { name: 'twitter', url: 'https://twitter.com/camposmilaa' },
@@ -150,7 +161,7 @@ A ideia dessa palestra é mostrar como e o que podemos pensar ao desenvolver apl
 }, {
   name: 'Alex Rios',
   bio: '13 anos entregando software que impacta milhões de usuários. Tech Lead na indusria de jogos, mas já passou em empresas de bilhetagem eletronica, pagamentos e telecom. Organizador das comunidades de Kotlin e Go na cidade de Curitiba.',
-  picture: 'https://avatars1.githubusercontent.com/u/515382',
+  picture: 'assets/speakers/AlexRios.jpeg',
   socialProfiles: [
     { name: 'github', url: 'https://github.com/alexrios' },
     { name: 'twitter', url: 'https://twitter.com/alextrending' },
@@ -165,7 +176,7 @@ A ideia dessa palestra é mostrar como e o que podemos pensar ao desenvolver apl
 }, {
   name: 'Camilla Martins',
   bio: 'Punk, paulista, santista e alucinada pela Marvel. Fundadora de iniciativas pra minas em TI e Docker Community Leader. Sou DevOps Engineer e atualmente trabalho na Descomplica e pós-graduanda em Forense Computacional. Nas horas vagas, estou codando (também!) e cuidando de ratinhos de estimação.',
-  picture: 'https://pbs.twimg.com/profile_images/1266452969769369608/xienVwRw_400x400.jpg',
+  picture: 'assets/speakers/CamillaMartins.jpg',
   socialProfiles: [
     { name: 'github', url: 'https://github.com/camilla-m' },
     { name: 'twitter', url: 'https://twitter.com/punkdodevops' },
@@ -180,7 +191,7 @@ A ideia dessa palestra é mostrar como e o que podemos pensar ao desenvolver apl
 }, {
   name: 'Alexandre Santos Costa',
   bio: 'Desenvolvedor com deficiencia visual apaixonado por tecnologia, palestrante internacional  e evangelista da acessibilidade e inclusão. Microsoft MVP em Development Technologies, TDC RockStar e Xamarin Chapter Lead  na ArcTouch',
-  picture: 'https://scontent.fbfh3-3.fna.fbcdn.net/v/t1.0-9/118697151_3514096171935019_2543441917847066335_n.jpg?_nc_cat=104&ccb=2&_nc_sid=09cbfe&_nc_eui2=AeF-MyQakl_I-am9CSG2Jc1VYk2tNbZ44j5iTa01tnjiPqHoGfqBC8eQjz8ZXd-B6Fyx1tdRLJPx0OE2L5bCD5x3&_nc_ohc=SVYhiOGho2AAX9ooSW2&_nc_ht=scontent.fbfh3-3.fna&oh=e293a8875db9a1e611694d9a3f4afb82&oe=5FC4ADCA',
+  picture: 'assets/speakers/AlexandreSantosCosta.jpg',
   socialProfiles: [
     { name: 'github', url: 'https://github.com/magoolation' },
     { name: 'twitter', url: 'https://www.twitter.com/magoolation' },
@@ -195,7 +206,7 @@ A ideia dessa palestra é mostrar como e o que podemos pensar ao desenvolver apl
 }, {
   name: 'Willian Frantz',
   bio: 'Trabalho com desenvolvimento de sistemas desde 2011, atualmente focando mais no backend usando Elixir/Phoenix para aplicações Web.',
-  picture: 'https://avatars3.githubusercontent.com/u/5873073?s=400&u=0daa6ff3d3c1d03505a3e9c38ce1ccd0f5ddf849&v=4',
+  picture: 'assets/speakers/WillianFrantz.jpeg',
   socialProfiles: [
     { name: 'github', url: 'https://github.com/WLSF' },
     { name: 'twitter', url: 'https://twitter.com/frantz_willian' },
@@ -210,7 +221,7 @@ A ideia dessa palestra é mostrar como e o que podemos pensar ao desenvolver apl
 }, {
   name: 'Felipe Rodrigues',
   bio: 'Tenho 27 anos e trabalho como UX designer desde 2015. Minha experiência de 5 anos em um dos maiores bancos privados do país me permitiu participar de diversos projetos, desde a pesquisa, ideação, prototipação até o desenvolvimento e implementação de soluções digitais.',
-  picture: 'https://storage.googleapis.com/production-hostgator_brasil-v1-0-7/237/117237/GSS7hfFR/3540f3d725194b369b46d101f1559f1b',
+  picture: 'assets/speakers/FelipeRodrigues.jpeg',
   company: 'Objective',
   role: 'UX Designer',
   socialProfiles: [{ name: 'linkedin', url: 'https://www.linkedin.com/in/felipe-rodrigues-17543592/' }],
@@ -226,11 +237,12 @@ A ideia dessa palestra é mostrar como e o que podemos pensar ao desenvolver apl
     description: 'Um workshop para apresentar ferramentas e discutir quais os melhores caminhos para estruturar seus projetos. Através de metodologias facilitadas, aplicativos e ferramentas acessíveis, irei mostrar mostrar como se organizar para tirar suas ideais do papel. A ideia é que seja uma atividade participativa, que além de apresentar métodos e ferramentas baseados no PMI e Scrum, também tenha abertura para que os participantes tragam projetos pessoais que gostariam de por em prática.',
     level: 'Iniciante',
     dateTime: new Date('2020-11-21T09:00-03:00'),
+    endTime: { hour: '11', minute: '00' },
   }] as Presentation[]
 }, {
   name: 'Luis Henrique Matias',
   bio: 'Há mais de 10 anos trabalhando na área de TI, com desenvolvimento e gestão de equipe, Matias é hoje o IT Manager na Juno. Com uma carreira que envolve viradas de noite para entrega de projeto, valoriza qualidade de vida e, principalmente, as pessoas. É corredor de rua, aprecia um bom chopp e é difícil de derrotar em alguns games.',
-  picture: 'https://media-exp1.licdn.com/dms/image/C4E03AQFVJjbnMUtSKw/profile-displayphoto-shrink_800_800/0?e=1609372800&v=beta&t=1TJw8OjbrwPF6_EehzPpFiUfYTHVJX2f3XxHCc8ZEGI',
+  picture: 'assets/speakers/LuisHenriqueMatias.jpeg',
   socialProfiles: [{ name: 'linkedin', url: 'https://www.linkedin.com/in/luis-matias-1aab8635/' }] as SocialLinks[],
   activities: [{
     type: 'talk',
@@ -243,7 +255,7 @@ A ideia dessa palestra é mostrar como e o que podemos pensar ao desenvolver apl
   name: 'Chrysthian Akihiro Suguiy Simão',
   bio: 'Trabalho com tecnologias web há 15 anos, sendo os últimos 3 como arquiteto front-end na Juno. Entusiasta de novas tecnologias, concluí minha pós graduação em Desenvolvimento de Jogos para Computador em 2010, e desde então como hobby, tento encontrar alternativas para juntar o mundo web com jogos.',
   company: 'Juno',
-  picture: 'https://media-exp1.licdn.com/dms/image/C4D03AQE5N-yULAAd1Q/profile-displayphoto-shrink_200_200/0?e=1608768000&v=beta&t=NBqcGvm3Pt2bE00uwimhaRAtA2j9w6jMcLZgQm-tvpE',
+  picture: 'assets/speakers/ChrysthianAkihiroSuguiySimão.jpeg',
   socialProfiles: [
     { name: 'github', url: 'https://github.com/chrysthian/' },
     { name: 'linkedin', url: 'https://www.linkedin.com/in/chrysthian-simao/' },
@@ -254,11 +266,12 @@ A ideia dessa palestra é mostrar como e o que podemos pensar ao desenvolver apl
     description: 'Vamos combinar bibliotecas e ferramentas web (React, Pixi, Howler), entendendo o ciclo de vida de cada uma, fazendo elas trabalharem em conjunto para construir uma POC (prova de conceito) de um jogo simples.',
     level: 'Intermediário',
     dateTime: new Date('2020-11-21T09:00-03:00'),
+    endTime: { hour: '11', minute: '00' },
   }] as Presentation[],
 }, {
   name: 'Matheus D. M. da Silva',
   bio: 'Santista de nascimento, entusiasta JavaScript e cientista da computação, atualmente trabalho como desenvolvedor front-end na Contabilizei.',
-  picture: 'https://coens.dv.utfpr.edu.br/saes2019/wp-content/uploads/2019/08/matheus.jpeg',
+  picture: 'assets/speakers/MatheusDMdaSilva.jpeg',
   company: 'Contabilizei',
   role: 'Desenvolvedor',
   socialProfiles: [
@@ -271,7 +284,8 @@ A ideia dessa palestra é mostrar como e o que podemos pensar ao desenvolver apl
     title: 'Como tirar suas ideias do papel?',
     description: 'Um workshop para apresentar ferramentas e discutir quais os melhores caminhos para estruturar seus projetos. Através de metodologias facilitadas, aplicativos e ferramentas acessíveis, irei mostrar mostrar como se organizar para tirar suas ideais do papel. A ideia é que seja uma atividade participativa, que além de apresentar métodos e ferramentas baseados no PMI e Scrum, também tenha abertura para que os participantes tragam projetos pessoais que gostariam de por em prática.',
     level: 'Iniciante',
-    dateTime: new Date('2020-11-21T09:00-03:00')
+    dateTime: new Date('2020-11-21T09:00-03:00'),
+    endTime: { hour: '11', minute: '00' },
   }] as Presentation[],
 }] as Speaker[])
   .sort(({ name: a }, { name: b }) => a < b ? -1 : b < a ? 1 : 0)

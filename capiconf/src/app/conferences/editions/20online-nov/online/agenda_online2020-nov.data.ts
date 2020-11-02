@@ -302,8 +302,8 @@ A ideia dessa palestra é mostrar como e o que podemos pensar ao desenvolver apl
   ] as SocialLinks[],
   activities: [{
     type: 'workshop',
-    title: 'Como tirar suas ideias do papel?',
-    description: 'Um workshop para apresentar ferramentas e discutir quais os melhores caminhos para estruturar seus projetos. Através de metodologias facilitadas, aplicativos e ferramentas acessíveis, irei mostrar mostrar como se organizar para tirar suas ideais do papel. A ideia é que seja uma atividade participativa, que além de apresentar métodos e ferramentas baseados no PMI e Scrum, também tenha abertura para que os participantes tragam projetos pessoais que gostariam de por em prática.',
+    title: 'Criando Aplicação FullStack (Vue + Node.js)',
+    description: 'Este workshop tem como objetivo criar uma aplicação básica (realizando um CRUD completo) toda feita com JavaScript/TypeScript e implementação do processo de implantação no Azure. Para o front-end será usado Vue.js na sua versão 3 e para o backend será utilizado TypeScript.',
     level: 'Iniciante',
     dateTime: new Date('2020-11-21T09:00-03:00'),
     endTime: { hour: '11', minute: '00' },

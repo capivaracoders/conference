@@ -136,13 +136,14 @@
 <!-- pessoas -->
 <section id="pessoas" class="uk-section uk-article">
   <div class="uk-container uk-container">
-    <h1 class="uk-text-center">PESSOAS PALESTRANTES</h1>
+    <h1 class="uk-text-center">Pessoas palestrantes</h1>
     <div class="uk-text-center uk-margin-large-right">
-      <h3 class="uk-text-center uk-width-3-4 uk-margin-auto uk-margin-medium-bottom">Palestrantes e pessoas influenciadoras que são reconhecidas nacionalmente como destaques em suas áreas de
-        atuação vão estar juntas no #CapiConf para compartilhar conhecimento com você! Divulgaremos a lista de
-        palestrantes em breve, segura o coração! 😋
+      <h3 class="uk-text-center uk-width-3-4 uk-margin-auto uk-margin-medium-bottom">
+        Palestrantes e pessoas influenciadoras que são reconhecidas nacionalmente como destaques em suas áreas de
+        atuação vão estar juntas no #CapiConf para compartilhar conhecimento com você! Confira a lista de
+        pessoas atuando como palestrantes abaixo! 😄
       </h3>
-      <p class="uk-text-center">
+      <p *ngIf="false">
         Se você tem interesse de palestrar, pode
         enviar sua palestra através do <a href="{{ c4pFormURL }}" style="text-decoration: underline">form de <i>Call
             For Papers</i></a>
@@ -152,20 +153,17 @@
       </p>
     </div>
     <!-- Speaker list here! -->
-    <div class="uk-flex uk-flex-center uk-margin-large-top" uk-grid="masonry: true">
+    <div class="uk-flex uk-margin-large-top speaker-list" uk-grid="masonry: true">
       <div class="uk-width-1-3@m uk-width-1-1@s" *ngFor="let item of speakers">
         <div class="uk-card uk-card-default uk-card-hover uk-card-small uk-margin-small">
-          <div class="uk-card-media-top">
+          <div class="uk-card-media-top speaker-avatar">
             <img width="100%" src="{{ item.picture }}" alt="{{ item.name }} @ {{ item.role }}" />
           </div>
           <div class="uk-card-body uk-text-center">
             <h5 class="uk-card-title uk-margin-remove-bottom">
               {{ item.name }}
             </h5>
-            <span class="uk-text-meta capiconf-text uk-text-center">
-              {{ item.role }} @ {{ item.company }}
-            </span>
-            <p class="uk-text-meta capiconf-text uk-text-center">
+            <p class="uk-text-meta capiconf-text bio">
               {{ item.bio }}
             </p>
           </div>
@@ -197,7 +195,9 @@
       Estamos montando uma agenda para nenhuma capivara botar defeito! Fique ligado, em breve teremos novidades. 😃
     </h3>
     <div class="uk-margin-large-right uk-margin-large-bottom">
-      <p class="uk-article-meta uk-text-center">
+      <p>Estamos montando uma agenda para nenhuma capivara botar defeito! Fique ligado, estamos atualizando a agenda. 😃
+      </p>
+      <p class="uk-article-meta">
         Atualizado em {{ lastUpdated }}
       </p>
     </div>
@@ -219,16 +219,27 @@
         <div *ngFor="let talk of item.talks">
           <div class="uk-card uk-card-small uk-card-default uk-margin-small-bottom">
             <div class="uk-card-body">
-              <h4 class=""><span class="uk-badge">{{ talk.startTime.hour }}h{{ talk.startTime.minute }}</span>
+              <h4 class="">
+                <span class="uk-badge">
+                  {{ talk.startTime.hour }}h{{ talk.startTime.minute }}
+                  <span *ngIf="talk.endTime">
+                    &nbsp;- {{ talk.endTime.hour }}h{{ talk.endTime.minute }}
+                  </span>
+                </span>
+                <span *ngIf="talk.type === 'workshop'">
+                  Workshop:
+                </span>
                 {{ talk.title }}</h4>
-              <p class="uk-margin-remove uk-padding-remove uk-article-meta">{{ talk.description}}</p>
+              <p class="uk-margin-remove uk-padding-remove uk-article-meta uk-text-justify">
+                {{ talk.description}}
+              </p>
             </div>
             <div class="uk-card-footer" *ngIf="talk.speakers?.length > 0">
               <div class="uk-grid-small uk-flex-middle" uk-grid>
                 <div *ngFor="let speaker of talk.speakers">
                   <div class="uk-grid-small uk-flex-middle" uk-grid>
-                    <div class="uk-width-auto">
-                      <img class="uk-border-circle" width="40" height="40" src="{{ speaker.picture }}">
+                    <div class="speaker-avatar mini-avatar">
+                      <img src="{{ speaker.picture }}">
                     </div>
                     <div class="uk-width-expand">
                       <p class="uk-margin-remove-bottom">{{ speaker.name }}</p>

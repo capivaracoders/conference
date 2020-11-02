@@ -84,6 +84,8 @@ const talksOfTheDay = (talkList: Presentation[], day, month = 11, year = 2020) =
 
 export const SpeakerList: Map<string, Speaker> = new Map(([{
   name: 'Daniela Petruzalek',
+  role: 'Principal Consultant',
+  company: 'ThoughtWorks',
   bio: 'Daniela Petruzalek é uma engenheira de software com experiência em desenvolvimento backend e engenharia de dados, atualmente trabalhando como Technology Principal na ThoughtWorks UK. Ela é reconhecida pelo Google como Google Developer Expert em Go e Google Cloud Platform. Ela também é Google Cloud Certfied Data Engineer, Oracle Certfied Professional, TEDx speaker e palestrante convidada no curso “Artificial Intelligence: Cloud and Edge Implementations” da Universidade de Oxford. No seu tempo livre ela se dedica a contribuições open source, jogar (e colecionar) video games e a acariciar gatos aleatórios nas ruas de Londres.',
   picture: 'assets/speakers/DanielaPetruzalek.jpg',
   socialProfiles: [
@@ -99,6 +101,8 @@ export const SpeakerList: Map<string, Speaker> = new Map(([{
   }] as Presentation[]
 }, {
   name: 'Gisely Lucas Bernardino',
+  role: 'Software Engineer',
+  company: 'CI&T',
   bio: 'Engenheira de software na CI&T, com formação em Ciência da Computação pelo UNIBH, Co-fundadora da Desplugue-se. Possui experiência em desenvolvimento de aplicações web. Tendo se especializado e apaixonado a cada dia pela Acessibilidade na Web, por acreditar que é necessário tornar a web cada vez mais inclusiva. Curiosa e entusiasta pela tecnologia, adora pesquisar sobre a integração entre a computação e a natureza. Está sempre na luta por um ambiente cada vez mais diverso, respeitoso e inclusivo.',
   picture: 'assets/speakers/GiselyLucasBernardino.jpeg',
   socialProfiles: [{ name: 'linkedin', url: 'https://br.linkedin.com/in/giselylucas' }],
@@ -112,6 +116,8 @@ A ideia dessa palestra é mostrar como e o que podemos pensar ao desenvolver apl
   } as Presentation]
 }, {
   name: 'Fernanda Wanderley',
+  role: 'Cientista de Dados',
+  company: 'NeuralMed',
   bio: 'Sou Doutora em Inteligência Computacional e minha principal área de interesse é a de aplicações de aprendizado de máquina em problemas biomédicos. Ser capaz de causar um impacto positivo na vida das pessoas, usando meus conhecimentos, me traz uma satisfação enorme. Atualmente trabalho com detecção de patologias em imagens de raio-x e lesões em tomografia de tórax. Também já realizei pesquisas sobre previsão de eficácia de quimioterapia em câncer de mama e busca de variantes genéticas em DNA.',
   picture: 'assets/speakers/FernandaWanderley.jpeg',
   socialProfiles: [
@@ -128,6 +134,8 @@ A ideia dessa palestra é mostrar como e o que podemos pensar ao desenvolver apl
   }]
 }, {
   name: 'Erika Carvalho',
+  role: 'Back-end developer',
+  company: 'Stone',
   bio: 'Back-end developer, embaixadora do Women Techmakers e organizadora do Women Who Go Curitiba. Entusiasta de Golang, apaixonada por comunidades, além de vegana e artesã. Ela/dela.',
   picture: 'assets/speakers/ErikaCarvalho.jpeg',
   socialProfiles: [
@@ -144,6 +152,8 @@ A ideia dessa palestra é mostrar como e o que podemos pensar ao desenvolver apl
   }]
 }, {
   name: 'Camila Campos',
+  role: 'Senior Software Engineer',
+  company: 'SumUp',
   bio: 'A chata dos testes e do código bonito, formada em Sistemas de Informação na EACH-USP e é desenvolvedora de software na SumUp. Organiza duas iniciativas incríveis que visam a inclusão de mulheres na tecnologia: Rails Girls São Paulo e Women Dev Summit.',
   picture: 'assets/speakers/CamilaCampos.jpg',
   socialProfiles: [
@@ -160,6 +170,8 @@ A ideia dessa palestra é mostrar como e o que podemos pensar ao desenvolver apl
   }] as Presentation[]
 }, {
   name: 'Alex Rios',
+  role: 'Tech Lead',
+  company: 'Wildlife Studios',
   bio: '13 anos entregando software que impacta milhões de usuários. Tech Lead na indusria de jogos, mas já passou em empresas de bilhetagem eletronica, pagamentos e telecom. Organizador das comunidades de Kotlin e Go na cidade de Curitiba.',
   picture: 'assets/speakers/AlexRios.jpeg',
   socialProfiles: [
@@ -175,6 +187,8 @@ A ideia dessa palestra é mostrar como e o que podemos pensar ao desenvolver apl
   }] as Presentation[]
 }, {
   name: 'Camilla Martins',
+  role: 'Technology Specialist II',
+  company: 'Rede Globo',
   bio: 'Punk, paulista, santista e alucinada pela Marvel. Fundadora de iniciativas pra minas em TI e Docker Community Leader. Sou DevOps Engineer e atualmente trabalho na Descomplica e pós-graduanda em Forense Computacional. Nas horas vagas, estou codando (também!) e cuidando de ratinhos de estimação.',
   picture: 'assets/speakers/CamillaMartins.jpg',
   socialProfiles: [
@@ -190,6 +204,8 @@ A ideia dessa palestra é mostrar como e o que podemos pensar ao desenvolver apl
   }] as Presentation[]
 }, {
   name: 'Alexandre Santos Costa',
+  role: 'Xamarin Chapter Lead',
+  company: 'ArcTouch',
   bio: 'Desenvolvedor com deficiencia visual apaixonado por tecnologia, palestrante internacional  e evangelista da acessibilidade e inclusão. Microsoft MVP em Development Technologies, TDC RockStar e Xamarin Chapter Lead  na ArcTouch',
   picture: 'assets/speakers/AlexandreSantosCosta.jpg',
   socialProfiles: [
@@ -205,6 +221,8 @@ A ideia dessa palestra é mostrar como e o que podemos pensar ao desenvolver apl
   }] as Presentation[]
 }, {
   name: 'Willian Frantz',
+  role: 'Software Engineer',
+  company: 'Magnetis Investimentos',
   bio: 'Trabalho com desenvolvimento de sistemas desde 2011, atualmente focando mais no backend usando Elixir/Phoenix para aplicações Web.',
   picture: 'assets/speakers/WillianFrantz.jpeg',
   socialProfiles: [
@@ -220,10 +238,10 @@ A ideia dessa palestra é mostrar como e o que podemos pensar ao desenvolver apl
   }] as Presentation[]
 }, {
   name: 'Felipe Rodrigues',
+  role: 'UX Designer',
+  company: 'Objective',
   bio: 'Tenho 27 anos e trabalho como UX designer desde 2015. Minha experiência de 5 anos em um dos maiores bancos privados do país me permitiu participar de diversos projetos, desde a pesquisa, ideação, prototipação até o desenvolvimento e implementação de soluções digitais.',
   picture: 'assets/speakers/FelipeRodrigues.jpeg',
-  company: 'Objective',
-  role: 'UX Designer',
   socialProfiles: [{ name: 'linkedin', url: 'https://www.linkedin.com/in/felipe-rodrigues-17543592/' }],
   activities: [{
     type: 'talk',
@@ -241,6 +259,8 @@ A ideia dessa palestra é mostrar como e o que podemos pensar ao desenvolver apl
   }] as Presentation[]
 }, {
   name: 'Luis Henrique Matias',
+  role: 'IT Manager',
+  company: 'Juno',
   bio: 'Há mais de 10 anos trabalhando na área de TI, com desenvolvimento e gestão de equipe, Matias é hoje o IT Manager na Juno. Com uma carreira que envolve viradas de noite para entrega de projeto, valoriza qualidade de vida e, principalmente, as pessoas. É corredor de rua, aprecia um bom chopp e é difícil de derrotar em alguns games.',
   picture: 'assets/speakers/LuisHenriqueMatias.jpeg',
   socialProfiles: [{ name: 'linkedin', url: 'https://www.linkedin.com/in/luis-matias-1aab8635/' }] as SocialLinks[],
@@ -253,8 +273,9 @@ A ideia dessa palestra é mostrar como e o que podemos pensar ao desenvolver apl
   }] as Presentation[],
 }, {
   name: 'Chrysthian Akihiro Suguiy Simão',
-  bio: 'Trabalho com tecnologias web há 15 anos, sendo os últimos 3 como arquiteto front-end na Juno. Entusiasta de novas tecnologias, concluí minha pós graduação em Desenvolvimento de Jogos para Computador em 2010, e desde então como hobby, tento encontrar alternativas para juntar o mundo web com jogos.',
+  role: 'Front End Architect',
   company: 'Juno',
+  bio: 'Trabalho com tecnologias web há 15 anos, sendo os últimos 3 como arquiteto front-end na Juno. Entusiasta de novas tecnologias, concluí minha pós graduação em Desenvolvimento de Jogos para Computador em 2010, e desde então como hobby, tento encontrar alternativas para juntar o mundo web com jogos.',
   picture: 'assets/speakers/ChrysthianAkihiroSuguiySimão.jpeg',
   socialProfiles: [
     { name: 'github', url: 'https://github.com/chrysthian/' },
@@ -270,10 +291,10 @@ A ideia dessa palestra é mostrar como e o que podemos pensar ao desenvolver apl
   }] as Presentation[],
 }, {
   name: 'Matheus D. M. da Silva',
+  role: 'Desenvolvedor',
+  company: 'Contabilizei',
   bio: 'Santista de nascimento, entusiasta JavaScript e cientista da computação, atualmente trabalho como desenvolvedor front-end na Contabilizei.',
   picture: 'assets/speakers/MatheusDMdaSilva.jpeg',
-  company: 'Contabilizei',
-  role: 'Desenvolvedor',
   socialProfiles: [
     { name: 'github', url: 'https://github.com/MatheusDonizete' },
     { name: 'twitter', url: 'https://twitter.com/MathDonizete' },

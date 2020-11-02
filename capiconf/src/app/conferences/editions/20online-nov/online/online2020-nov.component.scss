@@ -93,3 +93,9 @@ h2.headline {
   padding: 4px 8px 2px 8px;
   margin-right: 0.5em;
 }
+
+.hero-bg {
+  background:linear-gradient(180deg,#222 30.12%,#000 192.47%);
+  background-size: cover;
+  content: "";
+}

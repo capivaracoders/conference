@@ -308,6 +308,60 @@ A ideia dessa palestra é mostrar como e o que podemos pensar ao desenvolver apl
     dateTime: new Date('2020-11-21T09:00-03:00'),
     endTime: { hour: '11', minute: '00' },
   }] as Presentation[],
+}, {
+  name: 'Vinícius Campitelli',
+  role: 'Web Developer',
+  company: 'Curseduca',
+  bio: 'Desenvolvedor Web desde os 16 anos, apaixonado por tecnologia e principalmente Web. Me interesso por arquitetura de soluções, boas práticas de codificação e segurança da informação. Sócio-fundador do Curseduca, uma startup na área de e-learning para produtores de conteúdos e treinamentos corporativos.',
+  picture: 'assets/speakers/ViniciusCampitelli.jpg',
+  socialProfiles: [
+    { name: 'twitter', url: 'https://twitter.com/vcampitelli' }
+  ] as SocialLinks[],
+  activities: [{
+    type: 'talk',
+    title: 'Criando APIs seguras',
+    description: `Com a disseminação do uso de microserviços, vários aspectos de segurança em nossas APIs precisam ser repensados, pois um simples problema pode ser escalado a níveis preocupantes.
+
+    Alguns exemplos serão baseados em códigos utilizando Symfony, mas outros serão agnósticos de framework.
+    
+    Pontos que serão abordados:
+    
+    - como fazer o uso correto dos processos de autenticação e autorização (além da diferença entre eles) utilizando OAuth2;
+    
+    - melhores práticas na adoção de access tokens e refresh tokens com JWT e suas alternativas;
+    
+    - aplicação de throttling e rate limiting;
+    
+    - camuflagem de IDs sequencias (através de GUIDs ou hashes);
+    
+    - criptografando e assinando a requisição para evitar tampering.`,
+    level: 'Intermediário',
+    dateTime: new Date('2020-11-20T18:00-03:00'),
+  }] as Presentation[],
+}, {
+  name: 'Letícia Silva',
+  role: 'Cientista de dados',
+  company: '',
+  bio: `Letícia Silva é Cientista de Dados, graduanda em Ciência da Computação, podcaster, escritora e palestrante. Atualmente é head de Dados na 2Mi.
+  É Developer Student Club Lead (DSC), organizadora do Django Girls, PyLadies, GruPy, Women Techmakers e GDG de São José dos Campos.
+  Luta para incentivar mulheres a entrarem em TI, acreditarem em si mesmas e mostrar que programar transforma vidas.`,
+  picture: 'assets/speakers/LeticiaSilva.jpg',
+  socialProfiles: [
+    { name: 'twitter', url: 'https://twitter.com/dii_lua' },
+    { name: 'github', url: 'https://github.com/leticiadasilva' },
+    { name: 'linkedin', url: 'https://www.linkedin.com/in/leticiasilvar/' },
+  ] as SocialLinks[],
+  activities: [{
+    type: 'talk',
+    title: 'GPT-3: herói ou vilão?',
+    description: `Considerada o futuro da Inteligência Artificial, GPT-3 é o modelo de linguagem mais poderoso criado até hoje. Seus resultados vão desde geração de códigos e layouts até criação de sites e histórias.
+
+    Contudo, sua capacidade de perfomance ainda implica no uso de raciocínio. Seria essa uma tecnologia superestimada?
+    
+    Nessa palestra contarei um pouco sobre a nova joia da Inteligência Artificial, como ela funciona, e o que é possível (ou não) fazer com a ferramenta.`,
+    level: 'Intermediário',
+    dateTime: new Date('2020-11-17T18:00-03:00'),
+  }] as Presentation[],
 }] as Speaker[])
   .sort(({ name: a }, { name: b }) => a < b ? -1 : b < a ? 1 : 0)
   .map((speaker: Speaker): [string, Speaker] => [speaker.name, speaker]));

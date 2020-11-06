@@ -50,7 +50,7 @@ function namesToTalks(names: string[]): Presentation[] {
     .map(speaker => {
       return speaker.activities
         .map(activity => {
-          activity.speakers = [speaker];
+          activity.speakers = [...(activity.speakers || []), speaker];
           return activity;
         });
     })
@@ -82,7 +82,22 @@ const talksOfTheDay = (talkList: Presentation[], day, month = 11, year = 2020) =
   });
 };
 
-export const SpeakerList: Map<string, Speaker> = new Map(([{
+const DeboraBC: Speaker = {
+  name: 'Débora Beda de Carvalho',
+  role: 'Sênior Consultant Developer',
+  company: 'ThoughtWorks',
+  bio: 'Sênior Consultant Developer na ThoughtWorks, com anos de experiência em diversos setores do mercado. Gosta de construir e fazer parte de times de alta performance, contribuindo para o seu crescimento, apoiando a jornada e motivação das pessoas que atuam com ela nesse propósito.',
+  picture: 'assets/speakers/DeboraCarvalho.jpeg',
+  socialProfiles: [
+    { name: 'github', url: 'https://github.com/deborabeda' },
+    { name: 'twitter', url: 'https://twitter.com/dbeda_' },
+    { name: 'linkedin', url: 'https://www.linkedin.com/in/debora-beda' },
+  ],
+  activities: [],
+}
+
+export const SpeakerList: Map<string, Speaker> = new Map(([
+  DeboraBC, {
   name: 'Daniela Petruzalek',
   role: 'Principal Consultant',
   company: 'ThoughtWorks',
@@ -187,8 +202,8 @@ A ideia dessa palestra é mostrar como e o que podemos pensar ao desenvolver apl
   }] as Presentation[]
 }, {
   name: 'Camilla Martins',
-  role: 'Technology Specialist II',
-  company: 'Rede Globo',
+  role: 'Senior Site Reliability Engineer',
+  company: 'Descomplica',
   bio: 'Punk, paulista, santista e alucinada pela Marvel. Fundadora de iniciativas pra minas em TI e Docker Community Leader. Sou DevOps Engineer e atualmente trabalho na Descomplica e pós-graduanda em Forense Computacional. Nas horas vagas, estou codando (também!) e cuidando de ratinhos de estimação.',
   picture: 'assets/speakers/CamillaMartins.jpg',
   socialProfiles: [
@@ -224,7 +239,7 @@ A ideia dessa palestra é mostrar como e o que podemos pensar ao desenvolver apl
   role: 'Software Engineer',
   company: 'Magnetis Investimentos',
   bio: 'Trabalho com desenvolvimento de sistemas desde 2011, atualmente focando mais no backend usando Elixir/Phoenix para aplicações Web.',
-  picture: 'assets/speakers/WillianFrantz.jpeg',
+  picture: 'assets/speakers/WillianFrantz.jpg',
   socialProfiles: [
     { name: 'github', url: 'https://github.com/WLSF' },
     { name: 'twitter', url: 'https://twitter.com/frantz_willian' },
@@ -361,6 +376,27 @@ A ideia dessa palestra é mostrar como e o que podemos pensar ao desenvolver apl
     Nessa palestra contarei um pouco sobre a nova joia da Inteligência Artificial, como ela funciona, e o que é possível (ou não) fazer com a ferramenta.`,
     level: 'Intermediário',
     dateTime: new Date('2020-11-17T18:00-03:00'),
+  }] as Presentation[],
+}, {
+  name: 'Juliana Helena Januário Gonçalves',
+  role: 'Consultant Developer',
+  company: 'ThoughtWorks',
+  bio: 'Juliana é Consultant Developer na ThoughtWorks e acredita extremamente na importância da multidisciplinaridade, inclusão e diversidade do mercado de Tecnologia.',
+  picture: 'assets/speakers/JulianaGoncalves.jpg',
+  socialProfiles: [
+    { name: 'twitter', url: 'https://twitter.com/_julianahelena' },
+    { name: 'github', url: 'https://github.com/JulianaHelena5' },
+    { name: 'linkedin', url: 'https://www.linkedin.com/in/juliana-helena' },
+  ] as SocialLinks[],
+  activities: [{
+    type: 'talk',
+    title: 'Carreira em desenvolvimento: o que gostaríamos de ter entendido antes?',
+    description: `Todos os dias somos bombardeadas por anúncios milagrosos prometendo que qualquer pessoa consegue crescer de forma exponencial em um espaço curtíssimo de tempo com uma carreira no mercado de Desenvolvimento de Software, o que pode nos fazer sentir pressionadas a saber ou aprender todas os frameworks, tecnologias e processos de uma vez só e ao mesmo tempo: o que não é saudável, acaba com a auto estima e convenhamos - é bem impossível. 
+
+    Nessa palestra vamos conversar sobre o que aprendemos ao longo de nossa jornada, como estamos lidando com esse excesso de informação e cobranças para ser uma pessoa profissional com 1001 utilidades, o que gostaríamos que tivéssemos entendido mais cedo e principalmente: discutir com vocês como estamos - tentando - nos preparar e evoluir nossa bagagem técnica de forma saudável e principalmente: sem surtar muito.`,
+    level: 'Iniciante/Intermediária',
+    speakers: [DeboraBC],
+    dateTime: new Date('2020-11-19T20:00-03:00'),
   }] as Presentation[],
 }] as Speaker[])
   .sort(({ name: a }, { name: b }) => a < b ? -1 : b < a ? 1 : 0)

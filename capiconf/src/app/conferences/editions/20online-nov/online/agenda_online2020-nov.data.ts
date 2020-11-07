@@ -50,7 +50,7 @@ function namesToTalks(names: string[]): Presentation[] {
     .map(speaker => {
       return speaker.activities
         .map(activity => {
-          activity.speakers = [speaker];
+          activity.speakers = [...(activity.speakers || []), speaker];
           return activity;
         });
     })
@@ -82,7 +82,61 @@ const talksOfTheDay = (talkList: Presentation[], day, month = 11, year = 2020) =
   });
 };
 
-export const SpeakerList: Map<string, Speaker> = new Map(([{
+const DeboraBC: Speaker = {
+  name: 'Débora Beda de Carvalho',
+  role: 'Sênior Consultant Developer',
+  company: 'ThoughtWorks',
+  bio: 'Sênior Consultant Developer na ThoughtWorks, com anos de experiência em diversos setores do mercado. Gosta de construir e fazer parte de times de alta performance, contribuindo para o seu crescimento, apoiando a jornada e motivação das pessoas que atuam com ela nesse propósito.',
+  picture: 'assets/speakers/DeboraCarvalho.jpeg',
+  socialProfiles: [
+    { name: 'github', url: 'https://github.com/deborabeda' },
+    { name: 'twitter', url: 'https://twitter.com/dbeda_' },
+    { name: 'linkedin', url: 'https://www.linkedin.com/in/debora-beda' },
+  ],
+  activities: [],
+}
+
+const CarlosSantos: Speaker = {
+  name: 'Carlos dos Santos',
+  role: 'Sócio fundador',
+  company: 'CDS Informática Ltda',
+  bio: `•	Sócio fundador da CDS Informática Ltda.
+  •	Mais de 25 anos de experiência no desenvolvimento de software
+  •	Trabalha com tecnologia Microsoft desde 2003
+  •	Participa de vários programas Beta da Microsoft, como Windows, Office e Visual Studio, conversando ativamente com vários times de produtos
+  •	Trabalha como moderador das traduções do site MSDN e WIKI
+  •	Trabalha como revisor de vários livros para a Microsoft
+  •	Microsoft MVP desde 2008
+  •	Possui diversas certificações Microsoft: MCPD, MCTS, MCT
+  •	Possui certificação em Team Foundation Server, tendo implementado em várias empresas;
+  •	Professional Scrum Developer, Professional Scrum Master
+  •	Ganhou o prêmio Advisory Council Member Top Award 2012, que contemplou apenas 5 pessoas em todo o mundo 
+  •	Palestrante em diversos eventos sobre tecnologias Microsoft
+  •	Já criou vários projetos com Microsoft Azure
+  •	Participou dos testes iniciais do datacenter Brasil do Microsoft Azure
+  •	Responsável pela área de inovações na CDS Informática.
+  •	Participante do programa de revisão linguística do Visual Studio 2015, onde o Brasil novamente de destacou.
+  •	Membro fundador do projeto Code Cracker (www.github.com/code-cracker), um projeto Open Source para analisadores estáticos de código da linguagem C#
+  •	Mantenedor do projeto Open Source  BoletoNet (www.github.com/boletonet), uma iniciativa de código aberto para emissão de boletos bancários, remessas e retornos.
+  •	Mentor no Startup Weekend Londrina 2015.
+  •	Membro do Programa Microsoft Regional Director.
+  •	Palestrante no Microsoft Ignite 2018
+  •	Palestrante no evento internacional Gira Latam
+  •	SlideShare onde compartilho muitas apresentações: https://www.slideshare.net/carloscds/presentations
+  •	Palestrante confirmado no evento global DotNetConf: www.dotnetconf.net 
+  •	Feedback em diversos produtos da Microsoft, incluindo sugestão de features e feedbacks de produtos`,
+  picture: 'assets/speakers/CarlosSantos.png',
+  socialProfiles: [
+    { name: 'github', url: 'https://www.github.com/carloscds' },
+    { name: 'twitter', url: 'https://www.twitter.com/cdssoftware' },
+    { name: 'linkedin', url: 'https://www.linkedin.com/in/cdssoftware' },
+  ],
+  activities: [],
+}
+
+export const SpeakerList: Map<string, Speaker> = new Map(([
+  DeboraBC,
+  CarlosSantos, {
   name: 'Daniela Petruzalek',
   role: 'Principal Consultant',
   company: 'ThoughtWorks',
@@ -187,8 +241,8 @@ A ideia dessa palestra é mostrar como e o que podemos pensar ao desenvolver apl
   }] as Presentation[]
 }, {
   name: 'Camilla Martins',
-  role: 'Technology Specialist II',
-  company: 'Rede Globo',
+  role: 'Senior Site Reliability Engineer',
+  company: 'Descomplica',
   bio: 'Punk, paulista, santista e alucinada pela Marvel. Fundadora de iniciativas pra minas em TI e Docker Community Leader. Sou DevOps Engineer e atualmente trabalho na Descomplica e pós-graduanda em Forense Computacional. Nas horas vagas, estou codando (também!) e cuidando de ratinhos de estimação.',
   picture: 'assets/speakers/CamillaMartins.jpg',
   socialProfiles: [
@@ -224,7 +278,7 @@ A ideia dessa palestra é mostrar como e o que podemos pensar ao desenvolver apl
   role: 'Software Engineer',
   company: 'Magnetis Investimentos',
   bio: 'Trabalho com desenvolvimento de sistemas desde 2011, atualmente focando mais no backend usando Elixir/Phoenix para aplicações Web.',
-  picture: 'assets/speakers/WillianFrantz.jpeg',
+  picture: 'assets/speakers/WillianFrantz.jpg',
   socialProfiles: [
     { name: 'github', url: 'https://github.com/WLSF' },
     { name: 'twitter', url: 'https://twitter.com/frantz_willian' },
@@ -361,6 +415,51 @@ A ideia dessa palestra é mostrar como e o que podemos pensar ao desenvolver apl
     Nessa palestra contarei um pouco sobre a nova joia da Inteligência Artificial, como ela funciona, e o que é possível (ou não) fazer com a ferramenta.`,
     level: 'Intermediário',
     dateTime: new Date('2020-11-17T18:00-03:00'),
+  }] as Presentation[],
+}, {
+  name: 'Juliana Helena Januário Gonçalves',
+  role: 'Consultant Developer',
+  company: 'ThoughtWorks',
+  bio: 'Juliana é Consultant Developer na ThoughtWorks e acredita extremamente na importância da multidisciplinaridade, inclusão e diversidade do mercado de Tecnologia.',
+  picture: 'assets/speakers/JulianaGoncalves.jpg',
+  socialProfiles: [
+    { name: 'twitter', url: 'https://twitter.com/_julianahelena' },
+    { name: 'github', url: 'https://github.com/JulianaHelena5' },
+    { name: 'linkedin', url: 'https://www.linkedin.com/in/juliana-helena' },
+  ] as SocialLinks[],
+  activities: [{
+    type: 'talk',
+    title: 'Carreira em desenvolvimento: o que gostaríamos de ter entendido antes?',
+    description: `Todos os dias somos bombardeadas por anúncios milagrosos prometendo que qualquer pessoa consegue crescer de forma exponencial em um espaço curtíssimo de tempo com uma carreira no mercado de Desenvolvimento de Software, o que pode nos fazer sentir pressionadas a saber ou aprender todas os frameworks, tecnologias e processos de uma vez só e ao mesmo tempo: o que não é saudável, acaba com a auto estima e convenhamos - é bem impossível. 
+
+    Nessa palestra vamos conversar sobre o que aprendemos ao longo de nossa jornada, como estamos lidando com esse excesso de informação e cobranças para ser uma pessoa profissional com 1001 utilidades, o que gostaríamos que tivéssemos entendido mais cedo e principalmente: discutir com vocês como estamos - tentando - nos preparar e evoluir nossa bagagem técnica de forma saudável e principalmente: sem surtar muito.`,
+    level: 'Iniciante/Intermediária',
+    speakers: [DeboraBC],
+    dateTime: new Date('2020-11-19T20:00-03:00'),
+  }] as Presentation[],
+}, {
+  name: 'Bruno Brito',
+  role: 'Arquiteto de Software',
+  company: 'Desenvolvedor.IO',
+  bio: `Arquiteto de software e desenvolvedor há 15 anos. Microsoft MVP, membro do OpenId e OAuth working group. Pai do João e das gêmeas Maria e Rebeca.
+  Entusiasta de open source, secure coding e performance. No GitHub fiz contruibuições em projetos como o IdentityServer4, ServiceStack Text e Redis.
+  Também sou mantenedor do NetDevPacks, além de outros projetos com foco em segurança ou performance.
+  Na minha trajetória profissional trabalhei tanto para empresas nacionais quanto internacionais. Com histórico de projetos com OAuth 2.0. PCI/DSS. Além de ter sido responsável por manter ambientes de alta disponibilidade.
+  Atualmente sou Arquiteto de Software na Desenvolvedor.IO.`,
+  picture: 'assets/speakers/BrunoBrito.jpg',
+  socialProfiles: [
+    { name: 'twitter', url: 'https://twitter.com/bruno_hbrito' },
+    { name: 'github', url: 'https://github.com/brunohbrito' },
+    { name: 'linkedin', url: 'https://www.linkedin.com/in/bhdebrito/' },
+  ] as SocialLinks[],
+  activities: [{
+    type: 'workshop',
+    title: 'Do JWT ao OAuth2, tudo o que você precisa saber!',
+    description: `Você vai saber como implementar um JWT bem simples e depois evoluir para um serviço de autenticação OAuth 2.0, mais robusto e escalável. E mais, irá entender quando precisa de um e quando precisa do outro.tentando - nos preparar e evoluir nossa bagagem técnica de forma saudável e principalmente: sem surtar muito.`,
+    level: 'Intermediário',
+    speakers: [CarlosSantos],
+    dateTime: new Date('2020-11-21T09:00-03:00'),
+    endTime: { hour: '11', minute: '00' },
   }] as Presentation[],
 }] as Speaker[])
   .sort(({ name: a }, { name: b }) => a < b ? -1 : b < a ? 1 : 0)

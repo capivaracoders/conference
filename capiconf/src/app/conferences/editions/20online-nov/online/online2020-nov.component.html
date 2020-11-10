@@ -267,6 +267,52 @@
 <capi20-sponsors></capi20-sponsors>
 <!-- /SPONSORS -->
 
+<!-- org -->
+<section class="uk-section uk-article" style="background-color: #EBEBEB;">
+  <div class="uk-container uk-container">
+      <h2 class="uk-text-bold uk-h1 uk-margin-remove-adjacent uk-margin-remove-top">Quem organiza o #CapiConf?
+      </h2>
+      <div class="uk-margin-large-right">
+          <p>
+            Muita dedicação, dezenas de horas de trabalho não remunerado, muita pressão, suor e ansiedade. Tudo isso é o que retrata um pouco as pessoas organizadoras do #CapiConf, que organizam essa mega conferência por amor a comunidade de software e por entender que capivaras unidas jamais serão vencidas.
+          </p>
+          <p class="uk-article-meta">
+              Atualizado em 03 de fevereiro 2020
+          </p>
+      </div>
+      <div class="uk-flex uk-flex-center uk-margin-large-top"  uk-grid="masonry: false">
+          <div class="uk-width-1-4@m uk-width-1-1@s" *ngFor="let item of team">
+                <div class="uk-card uk-card-default uk-card-hover uk-card-small uk-margin-small">
+                  <div class="uk-card-media-top">
+                    <img width="100%" src="{{ item.picture }}" alt="{{ item.name }} @ {{ item.role }}" />
+                  </div>
+                  <div class="uk-card-body uk-text-center">
+                    <h5 class="uk-card-title uk-margin-remove-bottom">
+                      {{ item.name }}
+                    </h5>
+                    <span class="uk-text-meta capiconf-text uk-text-center">
+                      {{ item.role }} @ {{ item.company }}
+                    </span>
+                    <p class="uk-text-meta capiconf-text uk-text-center">
+                      {{ item.bio }} 
+                    </p>
+                  </div>
+                  <div class="uk-card-footer uk-text-center">
+                      <span *ngFor="let social of item.socialProfiles" >
+                          <a *ngIf="social.url" href="{{ social.url }}" target="_blank">
+                            <span *ngIf="social.name === 'linkedin'" class="capiconf-text uk-margin-right	" uk-icon="linkedin"></span>
+                            <span *ngIf="social.name === 'facebook'" class="capiconf-text uk-margin-right	" uk-icon="facebook"></span>
+                            <span *ngIf="social.name === 'twitter'" class="capiconf-text uk-margin-right	" uk-icon="twitter"></span>
+                            <span *ngIf="social.name === 'github'" class="capiconf-text uk-margin-right	" uk-icon="github"></span>
+                          </a>
+                       </span>
+                  </div>
+                </div>
+          </div>
+        </div>
+  </div>
+</section>
+
 <!-- footer -->
 <footer class="uk-section uk-section-secondary uk-padding-remove-bottom">
   <div class="uk-container">

@@ -28,6 +28,7 @@ export interface Presentation {
   speakers: Speaker[];
   type: 'talk'|'workshop';
   level: string;
+  eventLink: string;
 }
 
 export interface EventSchedule {
@@ -310,6 +311,7 @@ A ideia dessa palestra é mostrar como e o que podemos pensar ao desenvolver apl
     level: 'Iniciante',
     dateTime: new Date('2020-11-21T09:00-03:00'),
     endTime: { hour: '11', minute: '00' },
+    eventLink: 'https://www.sympla.com.br/workshop-como-tirar-suas-ideias-do-papel-capiconf-2020__1048139'
   }] as Presentation[]
 }, {
   name: 'Luis Henrique Matias',
@@ -342,6 +344,7 @@ A ideia dessa palestra é mostrar como e o que podemos pensar ao desenvolver apl
     level: 'Intermediário',
     dateTime: new Date('2020-11-21T09:00-03:00'),
     endTime: { hour: '11', minute: '00' },
+    eventLink: 'https://www.sympla.com.br/workshop-jogos-em-navegadores-comofas-capiconf-2020__1048131'
   }] as Presentation[],
 }, {
   name: 'Matheus D. M. da Silva',
@@ -361,6 +364,7 @@ A ideia dessa palestra é mostrar como e o que podemos pensar ao desenvolver apl
     level: 'Iniciante',
     dateTime: new Date('2020-11-21T09:00-03:00'),
     endTime: { hour: '11', minute: '00' },
+    eventLink:'https://www.sympla.com.br/workshop-criando-aplicacao-fullstack-vue--nodejs-capiconf-2020__1048160'
   }] as Presentation[],
 }, {
   name: 'Vinícius Campitelli',
@@ -460,6 +464,7 @@ A ideia dessa palestra é mostrar como e o que podemos pensar ao desenvolver apl
     speakers: [CarlosSantos],
     dateTime: new Date('2020-11-21T09:00-03:00'),
     endTime: { hour: '11', minute: '00' },
+    eventLink: 'https://www.sympla.com.br/workshop-do-jwt-ao-oauth2-tudo-o-que-voce-precisa-saber-capiconf-2020__1048126'
   }] as Presentation[],
 }] as Speaker[])
   .sort(({ name: a }, { name: b }) => a < b ? -1 : b < a ? 1 : 0)

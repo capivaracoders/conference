@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { TEAM } from '../../20/team';
 import {AGENDA_ONLINE, SpeakerList, EventSchedule, Presentation, Speaker} from './agenda_online2020-nov.data';
 
 @Component({
@@ -16,7 +17,8 @@ export class Online2020NovComponent implements OnInit {
 
   speakers: Speaker[] = [];
   schedule: EventSchedule[] = [];
-
+  team = TEAM;
+  
   constructor() {
   }
 

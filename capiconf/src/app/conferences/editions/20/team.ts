@@ -1,7 +1,7 @@
 export const TEAM = [
     {
         name: 'Isabelle Samways',
-        company: 'HeroSpark',
+        company: 'Idopter Labs',
         role: 'Desenvolvedora de Software',
         picture: '/assets/speakers/IsabelleSamways.jpg',
         bio: 'Apaixonada por comunidades e tecnologia, graduanda de Análise e Desenvolvimento de Sistemas, desenvolvedora Ruby on Rails e Product Manager, amante de motos e doces.',
@@ -22,7 +22,7 @@ export const TEAM = [
     },
     {
         name: 'Thamirys Gardinalli',
-        company: '',
+        company: 'Viasoft',
         role: 'Desenvolvedora de Software',
         picture: '/assets/speakers/ThamirysGardinalli.jpg',
         bio: 'Apaixonada por tecnologia, graduada em Sistemas de Informação e pós-graduada em Gestão de Projetos, além de corredora amadora, ama livros e séries.',
@@ -43,8 +43,8 @@ export const TEAM = [
     },
     {
         name: 'Matheus Donizete',
-        company: 'Status 200',
-        role: 'Desenvolvedor FullStack',
+        company: 'Contabilizei',
+        role: 'Desenvolvedor Front-end',
         picture: '/assets/speakers/Math.png',
         bio: 'Um verdadeiro pedreiro de software, cursando Ciência da Computação pela UFPR; Atualmente trabalhando com aplicações Full-Stack feitas em JavaScript, Python e um pouco de Go. Apaixonado por futebol e um bom Corinthiano amigo da galera.',
         socialProfiles: [
@@ -100,8 +100,8 @@ export const TEAM = [
     ,
     {
         name: 'Wellington Mitrut',
-        company: 'Playax',
-        role: 'UI Engineer',
+        company: 'DiscoveryTalks',
+        role: 'Software Engineer',
         picture: '/assets/speakers/wm.png',
         bio: 'Músico com pé na programação ou programador com pé na música. Engenheiro de Software, formado em sistemas de informação pela Universidade Paranaense, trabalha na Playax criando experiências em software para o mercado musical. Ouve bandas estranhas, gosta de viajar, palestrar e contribuir com a comunidade Open Source.',
         socialProfiles: [
@@ -118,10 +118,10 @@ export const TEAM = [
     ,
     {
         name: 'William S Rodriguez',
-        company: 'ArcTouch Mobile Experiences',
-        role: 'Master Software Engineer',
+        company: 'XP Inc',
+        role: 'Tech Lead',
         picture: '/assets/speakers/will.jpg',
-        bio: 'focus. gratitude. love.',
+        bio: 'Líder técnico, marido, pai de quatro filhos incríveis e apoiador da comunidade.',
         socialProfiles: [
             {
                 url: 'https://twitter.com/willbuildapps',

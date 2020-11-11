@@ -200,10 +200,10 @@ A ideia dessa palestra é mostrar como e o que podemos pensar ao desenvolver apl
   ],
   activities: [{
     type: 'talk',
-    title: '',
-    description: '',
-    level: '',
-    // dateTime: new Date('2020-11-18T20:00-03:00')
+    title: 'Sobrevivendo a uma integração com o Bacen',
+    description: 'Integrar com um sistema do Banco Central do Brasil é desafiador mas pode trazer muitas lições. Nessa talk, vamos conversar sobre algumas lições aprendidas ao integrar com o sistema responsável pelas chaves PIX, o DICT.',
+    level: 'Iniciante/Intermediário',
+    dateTime: new Date('2020-11-18T20:00-03:00')
   }]
 }, {
   name: 'Camila Campos',
@@ -418,7 +418,7 @@ A ideia dessa palestra é mostrar como e o que podemos pensar ao desenvolver apl
     
     Nessa palestra contarei um pouco sobre a nova joia da Inteligência Artificial, como ela funciona, e o que é possível (ou não) fazer com a ferramenta.`,
     level: 'Intermediário',
-    dateTime: new Date('2020-11-17T18:00-03:00'),
+    dateTime: new Date('2020-11-16T18:00-03:00'),
   }] as Presentation[],
 }, {
   name: 'Juliana Helena Januário Gonçalves',

@@ -370,7 +370,7 @@ A ideia dessa palestra é mostrar como e o que podemos pensar ao desenvolver apl
   name: 'Vinícius Campitelli',
   role: 'Web Developer',
   company: 'Curseduca',
-  bio: 'Desenvolvedor Web desde os 16 anos, apaixonado por tecnologia e principalmente Web. Me interesso por arquitetura de soluções, boas práticas de codificação e segurança da informação. Sócio-fundador do Curseduca, uma startup na área de e-learning para produtores de conteúdos e treinamentos corporativos.',
+  bio: 'Desenvolvedor Web desde os 16 anos, apaixonado por empreendedorismo, educação e tecnologia. Me interesso por arquitetura de soluções, boas práticas de codificação e segurança da informação. Já fundei uma startup na área de e-learning e agora presto consultoria pontuais de TI.',
   picture: 'assets/speakers/ViniciusCampitelli.jpg',
   socialProfiles: [
     { name: 'twitter', url: 'https://twitter.com/vcampitelli' }

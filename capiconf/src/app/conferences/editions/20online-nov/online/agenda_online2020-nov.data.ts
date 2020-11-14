@@ -95,45 +95,50 @@ const DeboraBC: Speaker = {
     { name: 'linkedin', url: 'https://www.linkedin.com/in/debora-beda' },
   ],
   activities: [],
-}
+};
 
 const CarlosSantos: Speaker = {
   name: 'Carlos dos Santos',
   role: 'Sócio fundador',
   company: 'CDS Informática Ltda',
   bio: `•	Sócio fundador da CDS Informática Ltda.
-  •	Mais de 25 anos de experiência no desenvolvimento de software
-  •	Trabalha com tecnologia Microsoft desde 2003
-  •	Participa de vários programas Beta da Microsoft, como Windows, Office e Visual Studio, conversando ativamente com vários times de produtos
-  •	Trabalha como moderador das traduções do site MSDN e WIKI
-  •	Trabalha como revisor de vários livros para a Microsoft
-  •	Microsoft MVP desde 2008
-  •	Possui diversas certificações Microsoft: MCPD, MCTS, MCT
-  •	Possui certificação em Team Foundation Server, tendo implementado em várias empresas;
-  •	Professional Scrum Developer, Professional Scrum Master
-  •	Ganhou o prêmio Advisory Council Member Top Award 2012, que contemplou apenas 5 pessoas em todo o mundo 
-  •	Palestrante em diversos eventos sobre tecnologias Microsoft
-  •	Já criou vários projetos com Microsoft Azure
-  •	Participou dos testes iniciais do datacenter Brasil do Microsoft Azure
-  •	Responsável pela área de inovações na CDS Informática.
-  •	Participante do programa de revisão linguística do Visual Studio 2015, onde o Brasil novamente de destacou.
-  •	Membro fundador do projeto Code Cracker (www.github.com/code-cracker), um projeto Open Source para analisadores estáticos de código da linguagem C#
-  •	Mantenedor do projeto Open Source  BoletoNet (www.github.com/boletonet), uma iniciativa de código aberto para emissão de boletos bancários, remessas e retornos.
-  •	Mentor no Startup Weekend Londrina 2015.
-  •	Membro do Programa Microsoft Regional Director.
-  •	Palestrante no Microsoft Ignite 2018
-  •	Palestrante no evento internacional Gira Latam
-  •	SlideShare onde compartilho muitas apresentações: https://www.slideshare.net/carloscds/presentations
-  •	Palestrante confirmado no evento global DotNetConf: www.dotnetconf.net 
-  •	Feedback em diversos produtos da Microsoft, incluindo sugestão de features e feedbacks de produtos`,
+    •	Mais de 25 anos de experiência no desenvolvimento de software
+    •	Trabalha com tecnologia Microsoft desde 2003
+    •	Participa de vários programas Beta da Microsoft, como Windows, Office e Visual Studio, conversando ativamente com vários times de produtos
+    •	Trabalha como moderador das traduções do site MSDN e WIKI
+    •	Trabalha como revisor de vários livros para a Microsoft
+    •	Microsoft MVP desde 2008
+    •	Possui diversas certificações Microsoft: MCPD, MCTS, MCT
+    •	Possui certificação em Team Foundation Server, tendo implementado em várias empresas;
+    •	Professional Scrum Developer, Professional Scrum Master
+    •	Ganhou o prêmio Advisory Council Member Top Award 2012, que contemplou apenas 5 pessoas em todo o mundo
+    •	Palestrante em diversos eventos sobre tecnologias Microsoft
+    •	Já criou vários projetos com Microsoft Azure
+    •	Participou dos testes iniciais do datacenter Brasil do Microsoft Azure
+    •	Responsável pela área de inovações na CDS Informática.
+    •	Participante do programa de revisão linguística do Visual Studio 2015, onde o Brasil novamente de destacou.
+    •	Membro fundador do projeto Code Cracker (www.github.com/code-cracker), um projeto Open Source para analisadores estáticos de código da linguagem C#
+    •	Mantenedor do projeto Open Source  BoletoNet (www.github.com/boletonet), uma iniciativa de código aberto para emissão de boletos bancários, remessas e retornos.
+    •	Mentor no Startup Weekend Londrina 2015.
+    •	Membro do Programa Microsoft Regional Director.
+    •	Palestrante no Microsoft Ignite 2018
+    •	Palestrante no evento internacional Gira Latam
+    •	SlideShare onde compartilho muitas apresentações: https://www.slideshare.net/carloscds/presentations
+    •	Palestrante confirmado no evento global DotNetConf: www.dotnetconf.net
+    •	Feedback em diversos produtos da Microsoft, incluindo sugestão de features e feedbacks de produtos`,
   picture: 'assets/speakers/CarlosSantos.png',
   socialProfiles: [
     { name: 'github', url: 'https://www.github.com/carloscds' },
     { name: 'twitter', url: 'https://www.twitter.com/cdssoftware' },
     { name: 'linkedin', url: 'https://www.linkedin.com/in/cdssoftware' },
   ],
-  activities: [],
-}
+  activities: [{
+    type: 'talk',
+    title: 'Futuro do .NET',
+    description: 'O que mudou e o que ainda vai mudar no ecossistema .NET',
+    dateTime: new Date('2020-11-17T18:00-03:00'),
+  }] as Presentation[],
+};
 
 export const SpeakerList: Map<string, Speaker> = new Map(([
   DeboraBC,
@@ -381,17 +386,17 @@ A ideia dessa palestra é mostrar como e o que podemos pensar ao desenvolver apl
     description: `Com a disseminação do uso de microserviços, vários aspectos de segurança em nossas APIs precisam ser repensados, pois um simples problema pode ser escalado a níveis preocupantes.
 
     Alguns exemplos serão baseados em códigos utilizando Symfony, mas outros serão agnósticos de framework.
-    
+
     Pontos que serão abordados:
-    
+
     - como fazer o uso correto dos processos de autenticação e autorização (além da diferença entre eles) utilizando OAuth2;
-    
+
     - melhores práticas na adoção de access tokens e refresh tokens com JWT e suas alternativas;
-    
+
     - aplicação de throttling e rate limiting;
-    
+
     - camuflagem de IDs sequencias (através de GUIDs ou hashes);
-    
+
     - criptografando e assinando a requisição para evitar tampering.`,
     level: 'Intermediário',
     dateTime: new Date('2020-11-20T18:00-03:00'),
@@ -415,7 +420,7 @@ A ideia dessa palestra é mostrar como e o que podemos pensar ao desenvolver apl
     description: `Considerada o futuro da Inteligência Artificial, GPT-3 é o modelo de linguagem mais poderoso criado até hoje. Seus resultados vão desde geração de códigos e layouts até criação de sites e histórias.
 
     Contudo, sua capacidade de perfomance ainda implica no uso de raciocínio. Seria essa uma tecnologia superestimada?
-    
+
     Nessa palestra contarei um pouco sobre a nova joia da Inteligência Artificial, como ela funciona, e o que é possível (ou não) fazer com a ferramenta.`,
     level: 'Intermediário',
     dateTime: new Date('2020-11-16T18:00-03:00'),
@@ -434,7 +439,7 @@ A ideia dessa palestra é mostrar como e o que podemos pensar ao desenvolver apl
   activities: [{
     type: 'talk',
     title: 'Carreira em desenvolvimento: o que gostaríamos de ter entendido antes?',
-    description: `Todos os dias somos bombardeadas por anúncios milagrosos prometendo que qualquer pessoa consegue crescer de forma exponencial em um espaço curtíssimo de tempo com uma carreira no mercado de Desenvolvimento de Software, o que pode nos fazer sentir pressionadas a saber ou aprender todas os frameworks, tecnologias e processos de uma vez só e ao mesmo tempo: o que não é saudável, acaba com a auto estima e convenhamos - é bem impossível. 
+    description: `Todos os dias somos bombardeadas por anúncios milagrosos prometendo que qualquer pessoa consegue crescer de forma exponencial em um espaço curtíssimo de tempo com uma carreira no mercado de Desenvolvimento de Software, o que pode nos fazer sentir pressionadas a saber ou aprender todas os frameworks, tecnologias e processos de uma vez só e ao mesmo tempo: o que não é saudável, acaba com a auto estima e convenhamos - é bem impossível.
 
     Nessa palestra vamos conversar sobre o que aprendemos ao longo de nossa jornada, como estamos lidando com esse excesso de informação e cobranças para ser uma pessoa profissional com 1001 utilidades, o que gostaríamos que tivéssemos entendido mais cedo e principalmente: discutir com vocês como estamos - tentando - nos preparar e evoluir nossa bagagem técnica de forma saudável e principalmente: sem surtar muito.`,
     level: 'Iniciante/Intermediária',

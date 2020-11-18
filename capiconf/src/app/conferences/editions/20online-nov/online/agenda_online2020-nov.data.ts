@@ -327,7 +327,7 @@ A ideia dessa palestra é mostrar como e o que podemos pensar ao desenvolver apl
   socialProfiles: [{ name: 'linkedin', url: 'https://www.linkedin.com/in/luis-matias-1aab8635/' }] as SocialLinks[],
   activities: [{
     type: 'talk',
-    title: 'Cultura na prática: como autonomia e colaboração impactam a tecnologia',
+    title: 'Tamo junto na prática”',
     description: 'Ambiente inspirador, que desafie. Demandas bem direcionadas, que aproveitem o tempo com inteligência. Autonomia, para experimentar, inovar, trazer novas tecnologias, rodar novas metodologias ágeis. Trocas constantes entre pares. Tudo isso se conecta em um espaço de valorização profissional, promovendo espaço para grandes resultados surgirem. Matias vai compartilhar um pouco da sua trajetória e olhar de gestão de como a cultura é a chave para profissionais de TI.',
     level: 'Iniciante',
     dateTime: new Date('2020-11-19T18:00-03:00'),

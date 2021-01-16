@@ -81,11 +81,11 @@ export const TEAM = [
     }
     ,
     {
-        name: 'Gabriel',
-        company: 'Emprego.net',
-        role: 'Desenvolvedor Front',
+        name: 'Gabriel Rodrigues',
+        company: 'Jobsity',
+        role: 'Fullstack Developer',
         picture: '/assets/speakers/gabriel.jpeg',
-        bio: 'Code Wizard, software developer, JavaScript sorcerer.',
+        bio: 'Fullsquack Web ES HTML5 Dev, Gaming Enthusiast, Home Cuisine Chef. Loves farofa.',
         socialProfiles: [
             {
                 url: 'https://twitter.com/yemolai',
